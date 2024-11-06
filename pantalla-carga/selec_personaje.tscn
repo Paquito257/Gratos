@@ -1,0 +1,82 @@
+[gd_scene load_steps=5 format=3 uid="uid://csyf614fi1bwu"]
+
+[ext_resource type="Script" path="res://selec_personaje.gd" id="1_6tvf1"]
+[ext_resource type="Texture2D" uid="uid://bcr15l2dv41ip" path="res://Sprites/fondo1.jpeg" id="1_s23wk"]
+[ext_resource type="Texture2D" uid="uid://gtgmagp8idtd" path="res://Sprites/sample sprite.jpg" id="2_yoqyd"]
+[ext_resource type="FontFile" uid="uid://c1r6wut7sljrb" path="res://Fonts/Minecraft.ttf" id="4_l8r70"]
+
+[node name="Selector" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6tvf1")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1148.0
+offset_bottom = 649.0
+texture = ExtResource("1_s23wk")
+expand_mode = 1
+
+[node name="Personaje1" type="Sprite2D" parent="."]
+position = Vector2(166, 346)
+scale = Vector2(0.11303, 0.184375)
+texture = ExtResource("2_yoqyd")
+
+[node name="Button" type="Button" parent="Personaje1"]
+offset_left = -646.0
+offset_top = -651.0
+offset_right = 646.0
+offset_bottom = 640.0
+
+[node name="Personaje2" type="Sprite2D" parent="."]
+position = Vector2(463, 345)
+scale = Vector2(0.11303, 0.184375)
+texture = ExtResource("2_yoqyd")
+
+[node name="Button2" type="Button" parent="Personaje2"]
+offset_left = -646.0
+offset_top = -645.0
+offset_right = 646.0
+offset_bottom = 640.0
+
+[node name="Personaje3" type="Sprite2D" parent="."]
+position = Vector2(748, 345)
+scale = Vector2(0.11303, 0.184375)
+texture = ExtResource("2_yoqyd")
+
+[node name="Button3" type="Button" parent="Personaje3"]
+offset_left = -646.0
+offset_top = -651.0
+offset_right = 655.0
+offset_bottom = 645.0
+
+[node name="Personaje4" type="Sprite2D" parent="."]
+position = Vector2(1009, 342)
+scale = Vector2(0.11303, 0.184375)
+texture = ExtResource("2_yoqyd")
+
+[node name="Button4" type="Button" parent="Personaje4"]
+offset_left = -646.0
+offset_top = -651.0
+offset_right = 628.0
+offset_bottom = 645.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 15.0
+offset_right = 1105.0
+offset_bottom = 106.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_l8r70")
+theme_override_font_sizes/font_size = 90
+text = "Seleccione su personaje"
+
+[connection signal="pressed" from="Personaje1/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Personaje2/Button2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Personaje3/Button3" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Personaje4/Button4" to="." method="_on_button_pressed"]
