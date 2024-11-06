@@ -6,9 +6,9 @@ func _ready():
 
 
 func _on_timer_timeout():
-	$ProgressBar.value += 25
-	$TextureProgressBar.value += 25
+	$ProgressBar.value += 5
+	$TextureProgressBar.value += 5
 
 
 func _on_animation_player_animation_finished(anim_name: StringName):
-	get_tree().change_scene_to_file("res://menu.tscn")
+	get_tree().change_scene_to_file("res://selec_personaje.tscn")

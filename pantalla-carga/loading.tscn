@@ -52,6 +52,7 @@ texture_under = ExtResource("2_l35jp")
 texture_progress = ExtResource("2_l35jp")
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 0.2
 autostart = true
 
 [node name="Label" type="Label" parent="."]
