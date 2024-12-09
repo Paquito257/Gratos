@@ -1,0 +1,12 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1733709555
+icon.svg::CompressedTexture2D::4238159558433039039::1733708790::1733709556::1::::<><>::
+Menu.gd::GDScript::-1::1733708790::0::1::::<>Node<>::
+Menu.tscn::PackedScene::2631605673150274849::1733708790::0::1::::<><>::res://Menu.gd
+Player_handle.gd::GDScript::-1::1733708790::0::1::::<>Node<>::
+::res://Characters/::1733708790
+RPG_character.gd::GDScript::-1::1733708790::0::1::::<>CharacterBody2D<>::
+RPG_character.tscn::PackedScene::3546045638862774471::1733708790::0::1::::<><>::res://Characters/RPG_character.gd<>uid://b1m84sil4okhj::::res://icon.svg
+::res://Maps/::1733708790
+Manager.gd::GDScript::-1::1733708790::0::1::::<>Node2D<>::
+Test_map.tscn::PackedScene::669239784417098673::1733708790::0::1::::<><>::res://Maps/Manager.gd<>uid://bqry4a0o2fpul::::res://Characters/RPG_character.tscn
