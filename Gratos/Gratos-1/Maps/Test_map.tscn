@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://jsgjtm8opnlp"]
+
+[ext_resource type="Script" path="res://Maps/Manager.gd" id="1_8sk3l"]
+[ext_resource type="PackedScene" uid="uid://bqry4a0o2fpul" path="res://Characters/RPG_character.tscn" id="2_ca3qn"]
+
+[node name="Map" type="Node2D"]
+script = ExtResource("1_8sk3l")
+RPG_character = ExtResource("2_ca3qn")
+
+[node name="Spawn" type="Node2D" parent="."]
+
+[node name="0" type="Node2D" parent="Spawn" groups=["Spawnpoint"]]
+position = Vector2(844, 85)
+
+[node name="1" type="Node2D" parent="Spawn" groups=["Spawnpoint"]]
+position = Vector2(138, 86)
+
+[node name="2" type="Node2D" parent="Spawn" groups=["Spawnpoint"]]
+position = Vector2(84, 486)
+
+[node name="3" type="Node2D" parent="Spawn" groups=["Spawnpoint"]]
+position = Vector2(845, 503)
