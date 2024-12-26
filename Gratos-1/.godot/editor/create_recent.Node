@@ -1,0 +1,13 @@
+AudioStreamPlayer2D
+Label
+Panel
+BoxContainer
+AcceptDialog
+MarginContainer
+HBoxContainer
+CanvasLayer
+CollisionShape2D
+Area2D
+CharacterBody2D
+Camera2D
+TileMap

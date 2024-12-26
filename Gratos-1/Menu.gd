@@ -3,6 +3,7 @@ extends Node
 var peer
 var port = 9999
 var host_id = 0
+
 # Llama a una funcion segun el estado del jugador
 func _ready():
 	
@@ -17,6 +18,7 @@ func peer_connected(id):
 func peer_disconnected(id):
 	print("Player disconnected " + str(id))
 	
+#LLama cuando un jugador se conecta al servidor
 func connected_to_server():
 	print("Connected to server! " + %Player_name.text)
 	player_info.rpc_id(1,%Player_name.text,multiplayer.get_unique_id())
@@ -26,6 +28,8 @@ func connected_to_server():
 func connection_failed():
 	print("Couldn't connect")
 	
+
+#Todos los jugadores llaman a la funcion (guarda informacion de los mismos)
 @rpc("any_peer")
 func player_info(name,id):
 	if !PlayerHandle.players.has(id):
@@ -38,6 +42,8 @@ func player_info(name,id):
 		for i in PlayerHandle.players:
 			player_info.rpc(PlayerHandle.players[i].name, i)
 
+
+#Inicia el juego al presionar el boton de iniciar 
 @rpc("any_peer", "call_local")
 func StartGame():
 	print("Game started" + %Player_name.text)
