@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://b7opfhs7jg6kc"]
+
+[ext_resource type="Script" path="res://Characters/npc.gd" id="1_66xf0"]
+[ext_resource type="Texture2D" uid="uid://b1m84sil4okhj" path="res://icon.svg" id="2_7pd6p"]
+[ext_resource type="PackedScene" uid="uid://b4dgqhgyuawxu" path="res://Textbox.tscn" id="3_s4kqi"]
+[ext_resource type="AudioStream" uid="uid://b6ty312ne64fw" path="res://Sfx/rpg-text-speech-sound-131477.mp3" id="4_10u7b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ymw5c"]
+size = Vector2(32, 35)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_udrva"]
+radius = 35.0571
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_66xf0")
+
+[node name="Icon" type="Sprite2D" parent="."]
+scale = Vector2(0.273438, 0.289063)
+texture = ExtResource("2_7pd6p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -0.5)
+shape = SubResource("RectangleShape2D_ymw5c")
+
+[node name="Event" type="Area2D" parent="."]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Event"]
+shape = SubResource("CircleShape2D_udrva")
+
+[node name="Textbox" parent="." instance=ExtResource("3_s4kqi")]
+unique_name_in_owner = true
+visible = true
+
+[node name="Textboxsfx" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("4_10u7b")
