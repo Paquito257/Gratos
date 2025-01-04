@@ -16,6 +16,7 @@ motion_mode = 1
 script = ExtResource("1_sqk3j")
 
 [node name="Icon" type="Sprite2D" parent="."]
+z_index = 6
 scale = Vector2(0.128907, 0.140625)
 texture = ExtResource("2_4yc0n")
 
@@ -25,3 +26,6 @@ shape = SubResource("RectangleShape2D_yvfyn")
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
 unique_name_in_owner = true
 replication_config = SubResource("SceneReplicationConfig_1vlqb")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
