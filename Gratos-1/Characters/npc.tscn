@@ -12,6 +12,7 @@ size = Vector2(32, 35)
 radius = 35.0571
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+z_index = 6
 motion_mode = 1
 script = ExtResource("1_66xf0")
 
@@ -31,7 +32,6 @@ shape = SubResource("CircleShape2D_udrva")
 
 [node name="Textbox" parent="." instance=ExtResource("3_s4kqi")]
 unique_name_in_owner = true
-visible = true
 
 [node name="Textboxsfx" type="AudioStreamPlayer2D" parent="."]
 unique_name_in_owner = true
