@@ -1,0 +1,304 @@
+[gd_scene load_steps=6 format=3 uid="uid://cjfy4ntmnlwtc"]
+
+[ext_resource type="Script" path="res://inventory/inventario.gd" id="1_2aghd"]
+[ext_resource type="PackedScene" uid="uid://bl4dmejgvk7v2" path="res://inventory/items/item1.tscn" id="2_5m3yq"]
+[ext_resource type="Texture2D" uid="uid://dwlgvfdmcan57" path="res://inventory/inventario.png" id="2_loqg3"]
+[ext_resource type="Script" path="res://inventory/slot.gd" id="4_yllpq"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n8hjd"]
+texture = ExtResource("2_loqg3")
+
+[node name="inventario" type="Node2D"]
+visibility_layer = 1023
+z_index = 100
+script = ExtResource("1_2aghd")
+item_scene = ExtResource("2_5m3yq")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+custom_minimum_size = Vector2(300, 30)
+offset_left = -168.0
+offset_top = -17.0
+offset_right = 168.0
+offset_bottom = 13.0
+columns = 10
+metadata/_edit_group_ = true
+
+[node name="slot1" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_n8hjd")
+script = ExtResource("4_yllpq")
+
+[node name="Button" type="Button" parent="GridContainer/slot1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="number" type="Label" parent="GridContainer/slot1/Button"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 17.0
+offset_top = -5.0
+offset_right = 57.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 10
+
+[node name="slot2" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_n8hjd")
+script = ExtResource("4_yllpq")
+
+[node name="Button" type="Button" parent="GridContainer/slot2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="number" type="Label" parent="GridContainer/slot2/Button"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 17.0
+offset_top = -5.0
+offset_right = 57.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 10
+
+[node name="slot3" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_n8hjd")
+script = ExtResource("4_yllpq")
+
+[node name="Button" type="Button" parent="GridContainer/slot3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="number" type="Label" parent="GridContainer/slot3/Button"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 17.0
+offset_top = -5.0
+offset_right = 57.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 10
+
+[node name="slot4" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_n8hjd")
+script = ExtResource("4_yllpq")
+
+[node name="Button" type="Button" parent="GridContainer/slot4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="number" type="Label" parent="GridContainer/slot4/Button"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 17.0
+offset_top = -5.0
+offset_right = 57.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 10
+
+[node name="slot5" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_n8hjd")
+script = ExtResource("4_yllpq")
+
+[node name="Button" type="Button" parent="GridContainer/slot5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="number" type="Label" parent="GridContainer/slot5/Button"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 17.0
+offset_top = -5.0
+offset_right = 57.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 10
+
+[node name="slot6" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_n8hjd")
+script = ExtResource("4_yllpq")
+
+[node name="Button" type="Button" parent="GridContainer/slot6"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="number" type="Label" parent="GridContainer/slot6/Button"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 17.0
+offset_top = -5.0
+offset_right = 57.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 10
+
+[node name="slot7" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_n8hjd")
+script = ExtResource("4_yllpq")
+
+[node name="Button" type="Button" parent="GridContainer/slot7"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="number" type="Label" parent="GridContainer/slot7/Button"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 17.0
+offset_top = -5.0
+offset_right = 57.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 10
+
+[node name="slot8" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_n8hjd")
+script = ExtResource("4_yllpq")
+
+[node name="Button" type="Button" parent="GridContainer/slot8"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="number" type="Label" parent="GridContainer/slot8/Button"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 17.0
+offset_top = -5.0
+offset_right = 57.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 10
+
+[node name="slot9" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_n8hjd")
+script = ExtResource("4_yllpq")
+
+[node name="Button" type="Button" parent="GridContainer/slot9"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="number" type="Label" parent="GridContainer/slot9/Button"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 17.0
+offset_top = -5.0
+offset_right = 57.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 10
+
+[node name="slot10" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_n8hjd")
+script = ExtResource("4_yllpq")
+
+[node name="Button" type="Button" parent="GridContainer/slot10"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="number" type="Label" parent="GridContainer/slot10/Button"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 17.0
+offset_top = -5.0
+offset_right = 57.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 10
+
+[node name="Warning" type="Label" parent="."]
+offset_left = -140.0
+offset_top = -43.0
+offset_right = 115.0
+offset_bottom = -20.0
+horizontal_alignment = 1
+
+[node name="time" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="Election" type="HBoxContainer" parent="."]
+offset_left = -90.0
+offset_top = -61.0
+offset_right = 84.0
+offset_bottom = -21.0
+alignment = 1
+
+[node name="old" type="Button" parent="Election"]
+layout_mode = 2
+flat = true
+
+[node name="Label" type="Label" parent="Election"]
+layout_mode = 2
+
+[node name="new" type="Button" parent="Election"]
+layout_mode = 2
+flat = true
+
+[connection signal="button_up" from="GridContainer/slot1/Button" to="GridContainer/slot1" method="_on_button_button_up"]
+[connection signal="button_up" from="GridContainer/slot2/Button" to="GridContainer/slot2" method="_on_button_button_up"]
+[connection signal="button_up" from="GridContainer/slot3/Button" to="GridContainer/slot3" method="_on_button_button_up"]
+[connection signal="button_up" from="GridContainer/slot4/Button" to="GridContainer/slot4" method="_on_button_button_up"]
+[connection signal="button_up" from="GridContainer/slot5/Button" to="GridContainer/slot5" method="_on_button_button_up"]
+[connection signal="button_up" from="GridContainer/slot6/Button" to="GridContainer/slot6" method="_on_button_button_up"]
+[connection signal="button_up" from="GridContainer/slot7/Button" to="GridContainer/slot7" method="_on_button_button_up"]
+[connection signal="button_up" from="GridContainer/slot8/Button" to="GridContainer/slot8" method="_on_button_button_up"]
+[connection signal="button_up" from="GridContainer/slot9/Button" to="GridContainer/slot9" method="_on_button_button_up"]
+[connection signal="button_up" from="GridContainer/slot10/Button" to="GridContainer/slot10" method="_on_button_button_up"]
+[connection signal="timeout" from="time" to="." method="_on_time_timeout"]
