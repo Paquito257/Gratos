@@ -69,5 +69,3 @@ func show_textbox():
 	symbol.text = "V"
 	current_step = Step.FINISHED
 	
-
-

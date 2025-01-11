@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://jsgjtm8opnlp"]
+[gd_scene load_steps=29 format=3 uid="uid://jsgjtm8opnlp"]
 
 [ext_resource type="Script" path="res://Maps/Manager.gd" id="1_8sk3l"]
 [ext_resource type="PackedScene" uid="uid://bqry4a0o2fpul" path="res://Characters/RPG_character.tscn" id="2_ca3qn"]
@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://bfwe46ptpumjg" path="res://inventory/items/espada.png" id="15_2jtwm"]
 [ext_resource type="Texture2D" uid="uid://bd06wq7h17hkj" path="res://inventory/items/hacha.png" id="16_88ur2"]
 [ext_resource type="Texture2D" uid="uid://dku1fid8ww8nl" path="res://inventory/items/arco.png" id="17_qa56m"]
+[ext_resource type="Texture2D" uid="uid://q36hipp17qlt" path="res://inventory/items/veneno.png" id="18_ptwoe"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xqnhr"]
 texture = ExtResource("3_5aye5")
@@ -2719,6 +2720,7 @@ script = ExtResource("1_8sk3l")
 RPG_character = ExtResource("2_ca3qn")
 
 [node name="Player" parent="." instance=ExtResource("2_ca3qn")]
+position = Vector2(-61, -61)
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = 1
@@ -2748,7 +2750,6 @@ layer_7/name = "Props"
 layer_7/z_index = 5
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_a8n3o")]
-visible = false
 position = Vector2(586, 61)
 
 [node name="Spawn" type="Node2D" parent="."]
@@ -2793,3 +2794,7 @@ image = ExtResource("14_lvnsq")
 [node name="Item7" parent="." instance=ExtResource("13_dyuyn")]
 position = Vector2(-103, 106)
 image = ExtResource("14_lvnsq")
+
+[node name="Item8" parent="." instance=ExtResource("13_dyuyn")]
+position = Vector2(-233, 45)
+image = ExtResource("18_ptwoe")

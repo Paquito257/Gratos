@@ -2,30 +2,18 @@
 
 [ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="1_1xpm8"]
 [ext_resource type="Script" path="res://Textbox.gd" id="1_18c27"]
+[ext_resource type="StyleBox" uid="uid://fctf1pb8qdsj" path="res://Textbox.tres" id="2_1grp6"]
+[ext_resource type="LabelSettings" uid="uid://bxntsx7xb0kfc" path="res://font.tres" id="4_6xw4n"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_lfgwf"]
 
 [sub_resource type="Theme" id="Theme_2vlck"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ic3r"]
-bg_color = Color(0.237539, 0.237539, 0.237539, 1)
-border_width_left = 15
-border_width_top = 10
-border_width_right = 15
-border_width_bottom = 10
-border_color = Color(0.520004, 0.317515, 0.07121, 1)
 
 [sub_resource type="Theme" id="Theme_u7nmn"]
 default_font = ExtResource("1_1xpm8")
 
 [sub_resource type="LabelSettings" id="LabelSettings_nf8go"]
 line_spacing = 5.0
-font = ExtResource("1_1xpm8")
-font_size = 32
-shadow_size = 8
-shadow_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_6jqtc"]
 font = ExtResource("1_1xpm8")
 font_size = 32
 shadow_size = 8
@@ -51,7 +39,7 @@ size_flags_vertical = 4
 material = SubResource("CanvasItemMaterial_lfgwf")
 layout_mode = 2
 theme = SubResource("Theme_2vlck")
-theme_override_styles/panel = SubResource("StyleBoxFlat_1ic3r")
+theme_override_styles/panel = ExtResource("2_1grp6")
 
 [node name="Container Beta" type="MarginContainer" parent="Container Alpha"]
 custom_minimum_size = Vector2(1000, 90)
@@ -80,6 +68,6 @@ layout_direction = 1
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 8
-label_settings = SubResource("LabelSettings_6jqtc")
+label_settings = ExtResource("4_6xw4n")
 horizontal_alignment = 2
 vertical_alignment = 2

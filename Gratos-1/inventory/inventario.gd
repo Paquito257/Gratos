@@ -1,4 +1,4 @@
-extends Node2D
+extends CanvasLayer
 
 var items = ["sword"]
 
@@ -16,3 +16,13 @@ func _process(delta: float) -> void:
 func _on_time_timeout() -> void:
 	$Warning.text = ""
 	$Warning.queue_redraw()
+	$bg.visible = false
+
+
+
+func _on_time_2_timeout() -> void:
+	$Election.visible = false
+	$Election.active = false
+	$bg.visible = false
+	$Election/new.icon = null
+	$Election/old.icon = null

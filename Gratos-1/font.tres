@@ -1,0 +1,9 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bxntsx7xb0kfc"]
+
+[ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="1_aul1n"]
+
+[resource]
+font = ExtResource("1_aul1n")
+font_size = 32
+shadow_size = 8
+shadow_color = Color(0, 0, 0, 1)
