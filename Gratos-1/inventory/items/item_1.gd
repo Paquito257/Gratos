@@ -65,14 +65,17 @@ func _on_body_entered(body: Node2D) -> void:
 					if i.item['id'] == 3: # Si el slot esta ocupado y es un objeto especial directamente envia un warning
 						if id_item == i.item['id']:
 							var container = body.get_node("inventario/Election")
-							container.visible = true
+							container.visible = true # se hace visible el panel para la elección
 							body.get_node("inventario/bg").visible = true
+							
+							# se obtienen los nodos que se mostraran para que el usuario elija
 							var old = body.get_node("inventario/Election/old")
 							var new = body.get_node("inventario/Election/new")
 							old.icon = button.icon
 							new.icon = image
+							# Se envian al script del panel para realizar el cambio
 							container.emit_signal("election",button,$".")
-							body.get_node("inventario/time2").start()
+							body.get_node("inventario/time2").start() # se inicia un contador de 2 segundos para esperar que el usuario decido sino se oculta todo
 							return
 			if not body.get_node("inventario/Election").visible:
 				body.get_node("inventario/bg").visible = true

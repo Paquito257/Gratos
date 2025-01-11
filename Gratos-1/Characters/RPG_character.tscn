@@ -38,3 +38,4 @@ position = Vector2(-1, 0)
 zoom = Vector2(2, 2)
 
 [node name="inventario" parent="." instance=ExtResource("3_1bgv4")]
+visible = false
