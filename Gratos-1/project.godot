@@ -18,6 +18,15 @@ config/icon="res://icon.svg"
 [autoload]
 
 PlayerHandle="*res://Player_handle.gd"
+Firebase="*res://addons/FirebaseAPI/firebase.tscn"
+
+[editor]
+
+movie_writer/movie_file="/home/jdam/Documentos/programming stuff/Gratos/Gratos-1/video.avi"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/FirebaseAPI/plugin.cfg")
 
 [input]
 

@@ -1,12 +1,16 @@
 extends CharacterBody2D
-
+@export_category("Player settings")
 @export var mov_speed: float
+@export_enum("arquero", "mago", "caballero", "barbaro") var clase: String = "caballero"
+@export var nivel:int = 1
+
 func _ready():
 	pass
 	set_multiplayer_authority(name.to_int())
 
 func _physics_process(delta):
 	if is_multiplayer_authority(): 
+		$Stats.visible = true
 		$inventario.visible = true # Esto es para que el inventario solo sea visible por el propietario
 		var directionx = Input.get_axis("ui_left", "ui_right")
 		var directiony = Input.get_axis("ui_up","ui_down")
@@ -23,5 +27,6 @@ func _physics_process(delta):
 		
 		move_and_slide()
 	else: 
-		$inventario.visible = false # Aqui se oculta para que los oros players no lo vean
+		$Stats.visible = false
+		$inventario.visible = false # Aqui se oculta para que los otros players no lo vean
 		

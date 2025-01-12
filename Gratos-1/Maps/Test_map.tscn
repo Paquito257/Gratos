@@ -2721,6 +2721,8 @@ RPG_character = ExtResource("2_ca3qn")
 
 [node name="Player" parent="." instance=ExtResource("2_ca3qn")]
 position = Vector2(-61, -61)
+clase = "barbaro"
+nivel = 5
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = 1

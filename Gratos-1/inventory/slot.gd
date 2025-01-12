@@ -55,6 +55,7 @@ func _process(delta: float) -> void:
 				
 		# Para el uso del item se conserva la misma logica del anterior con la diferencia que este modificara las stats del jugador
 		elif active and Input.is_action_just_pressed("usar") and item["id"] == 2:
+			get_parent().get_parent().get_parent().get_node("Stats").add_to("vida",-5)
 			if $Button.get_child(0).text.to_int() - 1 == 1:
 				$Button.get_child(0).text = ""
 				$Button.queue_redraw()

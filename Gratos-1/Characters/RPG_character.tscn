@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bqry4a0o2fpul"]
+[gd_scene load_steps=7 format=3 uid="uid://bqry4a0o2fpul"]
 
 [ext_resource type="Script" path="res://Characters/RPG_character.gd" id="1_sqk3j"]
 [ext_resource type="Texture2D" uid="uid://b1m84sil4okhj" path="res://icon.svg" id="2_4yc0n"]
 [ext_resource type="PackedScene" uid="uid://cjfy4ntmnlwtc" path="res://inventory/inventario.tscn" id="3_1bgv4"]
+[ext_resource type="PackedScene" uid="uid://dov57pita5uig" path="res://stats/stats.tscn" id="4_0kuru"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yvfyn"]
 size = Vector2(14, 16)
@@ -39,3 +40,5 @@ zoom = Vector2(2, 2)
 
 [node name="inventario" parent="." instance=ExtResource("3_1bgv4")]
 visible = false
+
+[node name="Stats" parent="." instance=ExtResource("4_0kuru")]
