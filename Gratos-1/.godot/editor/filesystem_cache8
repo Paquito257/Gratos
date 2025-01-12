@@ -1,38 +1,69 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1736049411
+::res://::1736637501
 icon.svg::CompressedTexture2D::4238159558433039039::1733708790::1733709556::1::::<><>::
-Menu.gd::GDScript::-1::1735241508::0::1::::<>Node<>::
-Menu.tscn::PackedScene::2631605673150274849::1734405344::0::1::::<><>::res://Menu.gd
-Player_handle.gd::GDScript::-1::1733708790::0::1::::<>Node<>::
-Textbox.gd::GDScript::-1::1734760377::0::1::::<>CanvasLayer<>::
-Textbox.tscn::PackedScene::4428483535166777274::1735006603::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>res://Textbox.gd
-::res://Characters/::1736049403
-npc.gd::GDScript::-1::1735448065::0::1::::<>CharacterBody2D<>::
-npc.tscn::PackedScene::4662285049464158738::1735522677::0::1::::<><>::res://Characters/npc.gd<>uid://b1m84sil4okhj::::res://icon.svg<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3
-NPC_Class.gd::GDScript::-1::1734995051::0::1::::<>Node<>::
-RPG_character.gd::GDScript::-1::1735536417::0::1::::<>CharacterBody2D<>::
-RPG_character.tscn::PackedScene::3546045638862774471::1736049403::0::1::::<><>::res://Characters/RPG_character.gd<>uid://b1m84sil4okhj::::res://icon.svg
-::res://Fonts/::1734580041
-::res://Fonts/ldfcomicsans-font/::1734582167
-info.txt::TextFile::-1::1734580034::0::1::::<><>::
-Ldfcomicsans-jj7l.ttf::FontFile::5455712321289802502::1734580034::1734580053::1::::<><>::
-Ldfcomicsansbold-zgma.ttf::FontFile::1455116053613772833::1734580034::1734580053::1::::<><>::
-Ldfcomicsanshairline-5PmL.ttf::FontFile::809459794058717639::1734580034::1734580053::1::::<><>::
-Ldfcomicsanslight-6dZo.ttf::FontFile::5008688069458907892::1734580034::1734580053::1::::<><>::
-::res://Maps/::1736049403
-hub.tscn::PackedScene::8432443394854468202::1735000133::0::1::::<><>::uid://1rclml3p5d3c::::res://Texture/TX Tileset Grass.png
-Manager.gd::GDScript::-1::1735448690::0::1::::<>Node2D<>::
-Test_map.tscn::PackedScene::669239784417098673::1736049403::0::1::::<><>::res://Maps/Manager.gd<>uid://bqry4a0o2fpul::::res://Characters/RPG_character.tscn<>uid://1rclml3p5d3c::::res://Texture/TX Tileset Grass.png<>uid://b7opfhs7jg6kc::::res://Characters/npc.tscn<>uid://devctucr0iukf::::res://Texture/TX Struct.png<>uid://5lmeelwn7rhe::::res://Texture/TX Props.png<>uid://dy87uooclvmgw::::res://Texture/TX Plant.png<>uid://gx5sidbfbjfo::::res://Texture/TX Tileset Wall.png<>uid://ddlreo2g67fxy::::res://Texture/TX Tileset Stone Ground.png<>uid://brl1xwhwyw26q::::res://Texture/TX Shadow.png<>uid://ddokr53muqahi::::res://Texture/TX Shadow Plant.png<>uid://ckemtjvnh0m3v::::res://Texture/Water+.png
-::res://Sfx/::1734758945
-rpg-text-speech-sound-131477.mp3::AudioStreamMP3::4603006631769053900::1734758935::1734758945::1::::<><>::
-::res://Texture/::1735518734
-TX Plant.png::CompressedTexture2D::8913898180983251626::1734060405::1734060445::1::::<><>::
-TX Player.png::CompressedTexture2D::1292032670716181570::1734060405::1734060445::1::::<><>::
-TX Props.png::CompressedTexture2D::2129109439628924678::1734060405::1734060445::1::::<><>::
-TX Shadow Plant.png::CompressedTexture2D::7399369018501893942::1734060405::1734060445::1::::<><>::
-TX Shadow.png::CompressedTexture2D::3603960063265932234::1734060405::1734060445::1::::<><>::
-TX Struct.png::CompressedTexture2D::7483525776899174169::1734060405::1734060445::1::::<><>::
-TX Tileset Grass.png::CompressedTexture2D::1860146082692815718::1734060405::1734060445::1::::<><>::
-TX Tileset Stone Ground.png::CompressedTexture2D::7393576846692631850::1734060405::1734060445::1::::<><>::
-TX Tileset Wall.png::CompressedTexture2D::470467829118232596::1734060405::1734060445::1::::<><>::
-Water+.png::CompressedTexture2D::5483750354532211989::1735002366::1735518734::1::::<><>::
+Menu.gd::GDScript::-1::1736129840::0::1::::<>Node<>::
+Menu.tscn::PackedScene::2631605673150274849::1736129840::0::1::::<><>::res://Menu.gd
+Player_handle.gd::GDScript::-1::1736129840::0::1::::<>Node<>::
+Textbox.gd::GDScript::-1::1736129840::0::1::::<>CanvasLayer<>::
+Textbox.tscn::PackedScene::4428483535166777274::1736564430::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>res://Textbox.gd
+::res://Characters/::1736554408
+npc.gd::GDScript::-1::1736129840::0::1::::<>CharacterBody2D<>::
+npc.tscn::PackedScene::4662285049464158738::1736554408::0::1::::<><>::res://Characters/npc.gd<>uid://b1m84sil4okhj::::res://icon.svg<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3
+NPC_Class.gd::GDScript::-1::1736129840::0::1::::<>Node<>::
+RPG_character.gd::GDScript::-1::1736129840::0::1::::<>CharacterBody2D<>::
+RPG_character.tscn::PackedScene::3546045638862774471::1736478335::0::1::::<><>::res://Characters/RPG_character.gd<>uid://b1m84sil4okhj::::res://icon.svg
+::res://Combat/::1736637287
+Attacks.gd::GDScript::-1::1736555635::0::1::::<>Node<>::
+Combat_menu.gd::GDScript::-1::1736635707::0::1::::<>CanvasLayer<>::
+Combat_menu.tscn::PackedScene::2401171033394759451::1736637287::0::1::::<><>::res://Combat/Combat_menu.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://cqekhr244iaxt::::res://Texture/Combat_icons/Sword.png<>uid://cvtqrrnc6kio8::::res://Texture/Combat_icons/Fire.webp<>uid://cvgypcfh7xnur::::res://Fonts/Combat_menu.tres<>uid://dk0yri2awrr8u::::res://Texture/Combat_icons/healing_potion.png<>uid://c34bexx0cwasx::::res://Texture/Combat_icons/Run.png<>uid://daho6ewyuivpt::::res://Sfx/menu-move.ogg
+::res://Combat/Combat maps/::1736637287
+Basico_combate.tscn::PackedScene::1607698883855270164::1736637287::0::1::::<><>::uid://dgxqjn4yhw4jv::::res://Texture/Clouds 1/1.png<>uid://devctucr0iukf::::res://Texture/TX Struct.png<>uid://bmo1fxjjkup23::::res://Texture/Clouds 1/2.png<>uid://1rclml3p5d3c::::res://Texture/TX Tileset Grass.png<>uid://56am6bbo7j4e::::res://Texture/Clouds 1/4.png<>uid://gx5sidbfbjfo::::res://Texture/TX Tileset Wall.png<>uid://bahe63ewgm2mx::::res://Combat/Combat_menu.tscn<>uid://5lmeelwn7rhe::::res://Texture/TX Props.png
+::res://Fonts/::1736635567
+Combat_menu.tres::Theme::6260677458176662213::1736635567::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
+::res://Fonts/ldfcomicsans-font/::1736129840
+info.txt::TextFile::-1::1736129840::0::1::::<><>::
+Ldfcomicsans-jj7l.ttf::FontFile::5455712321289802502::1736129840::1736129840::1::::<><>::
+Ldfcomicsansbold-zgma.ttf::FontFile::1455116053613772833::1736129840::1736129840::1::::<><>::
+Ldfcomicsanshairline-5PmL.ttf::FontFile::809459794058717639::1736129840::1736129840::1::::<><>::
+Ldfcomicsanslight-6dZo.ttf::FontFile::5008688069458907892::1736129840::1736129840::1::::<><>::
+::res://Maps/::1736478335
+hub.tscn::PackedScene::8432443394854468202::1736129840::0::1::::<><>::uid://1rclml3p5d3c::::res://Texture/TX Tileset Grass.png
+Manager.gd::GDScript::-1::1736129840::0::1::::<>Node2D<>::
+Test_map.tscn::PackedScene::669239784417098673::1736478335::0::1::::<><>::res://Maps/Manager.gd<>uid://bqry4a0o2fpul::::res://Characters/RPG_character.tscn<>uid://b2sqgbnkfdh03::::res://Texture/Hub/Tileset_Road.png<>uid://b7opfhs7jg6kc::::res://Characters/npc.tscn<>uid://du2u6x1x3jlx3::::res://Texture/Hub/Tileset_Ground.png<>uid://cgmma0id87dkx::::res://Texture/Hub/Tiles.png<>uid://ckemtjvnh0m3v::::res://Texture/Hub/Water+.png<>uid://bub8aq4yvpxqk::::res://Texture/Hub/Tileset_RockSlope.png<>uid://d0d3ng730bvru::::res://Texture/Hub/Tileset_RockSlope_Simple.png<>uid://c0ey2gccucnk6::::res://Texture/Hub/Props.png<>uid://vh6ygcmwgv3y::::res://Texture/Hub/Trees_Bushes.png<>uid://3to5abwx1736::::res://Texture/Hub/Tileset_Water.png
+::res://Music/::1736637505
+Battle Theme.mp3::AudioStreamMP3::4373630915506727959::1736637505::1736637508::1::::<><>::
+::res://Sfx/::1736553730
+menu-move.ogg::AudioStreamOggVorbis::7174618338064117733::1736553728::1736553730::1::::<><>::
+rpg-text-speech-sound-131477.mp3::AudioStreamMP3::4603006631769053900::1736129840::1736129840::1::::<><>::
+::res://Texture/::1736636522
+TX Plant.png::CompressedTexture2D::8913898180983251626::1736129840::1736129840::1::::<><>::
+TX Player.png::CompressedTexture2D::1292032670716181570::1736129840::1736129840::1::::<><>::
+TX Props.png::CompressedTexture2D::2129109439628924678::1736129840::1736129840::1::::<><>::
+TX Struct.png::CompressedTexture2D::7483525776899174169::1736129840::1736129840::1::::<><>::
+TX Tileset Grass.png::CompressedTexture2D::1860146082692815718::1736129840::1736129840::1::::<><>::
+TX Tileset Stone Ground.png::CompressedTexture2D::7393576846692631850::1736129840::1736129840::1::::<><>::
+TX Tileset Wall.png::CompressedTexture2D::470467829118232596::1736129840::1736129840::1::::<><>::
+::res://Texture/Clouds 1/::1736636522
+1.png::CompressedTexture2D::7628864073983862811::1736636522::1736636522::1::::<><>::
+2.png::CompressedTexture2D::3259176889051158670::1736636522::1736636522::1::::<><>::
+3.png::CompressedTexture2D::705795329924778282::1736636522::1736636522::1::::<><>::
+4.png::CompressedTexture2D::2169684078877755458::1736636522::1736636522::1::::<><>::
+::res://Texture/Combat_icons/::1736543149
+Fire.webp::CompressedTexture2D::6287033004604774493::1736479628::1736479638::1::::<><>::
+healing_potion.png::CompressedTexture2D::7914247959560508514::1736542853::1736542854::1::::<><>::
+Run.png::CompressedTexture2D::6798065048994206891::1736543148::1736543149::1::::<><>::
+Run.svg::CompressedTexture2D::1371507311298406270::1736543096::1736543149::1::::<><>::
+Sword.png::CompressedTexture2D::5904740983059326225::1736479891::1736479892::1::::<><>::
+::res://Texture/Hub/::1736465963
+Props.png::CompressedTexture2D::6537325711962479415::1697419075::1736132990::1::::<><>::
+Tiles.png::CompressedTexture2D::5219476891800167143::1736465598::1736465601::1::::<><>::
+Tileset_Ground.png::CompressedTexture2D::8620048071950713406::1705445634::1736132990::1::::<><>::
+Tileset_Road.png::CompressedTexture2D::4319660521207714546::1697445901::1736132990::1::::<><>::
+Tileset_RockSlope.png::CompressedTexture2D::3794266481261162126::1704737178::1736133593::1::::<><>::
+Tileset_RockSlope_Simple.png::CompressedTexture2D::8921899932290023362::1689258648::1736133593::1::::<><>::
+Tileset_Water.png::CompressedTexture2D::2005414413484099223::1695579970::1736465963::1::::<><>::
+Trees_Bushes.png::CompressedTexture2D::1490341765311171636::1736458097::1736458097::1::::<><>::
+Water+.png::CompressedTexture2D::5483750354532211989::1736129840::1736133547::1::::<><>::
+::res://Texture/Shadows/::1736132590
+TX Shadow Plant.png::CompressedTexture2D::7399369018501893942::1736129840::1736132588::1::::<><>::
+TX Shadow.png::CompressedTexture2D::3603960063265932234::1736129840::1736132590::1::::<><>::

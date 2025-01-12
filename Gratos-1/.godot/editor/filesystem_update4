@@ -1,2 +1,5 @@
-res://Maps/Test_map.tscn
-res://Characters/RPG_character.tscn
+res://Combat/Combat_menu.tscn
+res://Fonts/Combat_menu.tres
+res://Combat/Combat_menu.gd
+res://Combat/Combat maps/Basico_combate.tscn
+res://Characters/npc.gd

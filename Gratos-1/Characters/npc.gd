@@ -1,5 +1,8 @@
 extends CharacterBody2D
 
+func npc(dialogue = false, friendly = true, icon = "res://icon.svg"):
+	pass
+	
 var dialogue = ["Hello, how are you?", "Hey"]
 
 func Show_textbox():

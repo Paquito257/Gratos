@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddokr53muqahi"
-path="res://.godot/imported/TX Shadow Plant.png-4701bc454f75d56554ecf386b0079ac9.ctex"
+uid="uid://bmo1fxjjkup23"
+path="res://.godot/imported/2.png-77fc7eea82debe735cf9c12a27909b79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Texture/TX Shadow Plant.png"
-dest_files=["res://.godot/imported/TX Shadow Plant.png-4701bc454f75d56554ecf386b0079ac9.ctex"]
+source_file="res://Texture/Clouds 1/2.png"
+dest_files=["res://.godot/imported/2.png-77fc7eea82debe735cf9c12a27909b79.ctex"]
 
 [params]
 
