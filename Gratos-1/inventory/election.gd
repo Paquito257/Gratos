@@ -14,10 +14,10 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	# Si el boton esta activo se obtiene los datos del objeto del inventario y son intercambiados por el nuevo
 	if active:
-		var old_id = oldM.get_parent().item['id']
+		var old_id = oldM.get_parent().item
 		var old_img = oldM.icon
 		oldM.icon = newM.image
-		oldM.get_parent().item['id'] = newM.id_item
+		oldM.get_parent().item = newM.item
 		$old.icon = null
 		$new.icon = null
 		newM.image = old_img
@@ -26,6 +26,7 @@ func _process(delta: float) -> void:
 		newM.queue_redraw()
 		visible = false
 		active = false
+		get_parent().get_node("bg").visible = false
 		
 
 

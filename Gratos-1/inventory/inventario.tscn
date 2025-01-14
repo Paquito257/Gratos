@@ -1,7 +1,7 @@
 [gd_scene load_steps=33 format=3 uid="uid://cjfy4ntmnlwtc"]
 
 [ext_resource type="Script" path="res://inventory/inventario.gd" id="1_2aghd"]
-[ext_resource type="PackedScene" uid="uid://bl4dmejgvk7v2" path="res://inventory/items/item1.tscn" id="2_5m3yq"]
+[ext_resource type="PackedScene" uid="uid://bl4dmejgvk7v2" path="res://inventory/items/objetos.tscn" id="2_5m3yq"]
 [ext_resource type="Texture2D" uid="uid://dwlgvfdmcan57" path="res://inventory/inventario.png" id="2_loqg3"]
 [ext_resource type="Script" path="res://inventory/slot.gd" id="4_yllpq"]
 [ext_resource type="Script" path="res://inventory/election.gd" id="5_u1q0c"]
@@ -436,10 +436,10 @@ offset_bottom = 574.0
 theme_override_styles/panel = ExtResource("5_vflil")
 
 [node name="Warning" type="Label" parent="."]
-offset_left = 378.0
-offset_top = 505.0
-offset_right = 767.0
-offset_bottom = 547.0
+offset_left = 8.0
+offset_top = 508.0
+offset_right = 1153.0
+offset_bottom = 550.0
 theme_override_font_sizes/font_size = 30
 label_settings = ExtResource("6_27fg2")
 horizontal_alignment = 1

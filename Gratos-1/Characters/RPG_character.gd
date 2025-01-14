@@ -9,7 +9,7 @@ func _ready():
 	set_multiplayer_authority(name.to_int())
 
 func _physics_process(delta):
-	if is_multiplayer_authority(): 
+	#if is_multiplayer_authority(): 
 		$Stats.visible = true
 		$inventario.visible = true # Esto es para que el inventario solo sea visible por el propietario
 		var directionx = Input.get_axis("ui_left", "ui_right")
@@ -26,7 +26,7 @@ func _physics_process(delta):
 			velocity.y = move_toward(velocity.y, 0, 128)
 		
 		move_and_slide()
-	else: 
-		$Stats.visible = false
-		$inventario.visible = false # Aqui se oculta para que los otros players no lo vean
-		
+	#else: 
+		#$Stats.visible = false
+		#$inventario.visible = false # Aqui se oculta para que los otros players no lo vean
+		#

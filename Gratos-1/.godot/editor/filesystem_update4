@@ -1,7 +1,11 @@
-res://stats/stats.tscn
+res://inventory/items/objetos.tscn
 res://Textbox.tres
 res://font.tres
-res://stats/stats.gd
+res://inventory/items/objetos.gd
 res://Characters/RPG_character.tscn
-res://Characters/RPG_character.gd
+res://stats/stats.tscn
+res://inventory/inventario.tscn
 res://Maps/Test_map.tscn
+res://inventory/inventario.gd
+res://inventory/election.gd
+res://inventory/slot.gd

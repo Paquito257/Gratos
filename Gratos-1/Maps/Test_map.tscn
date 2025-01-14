@@ -12,12 +12,12 @@
 [ext_resource type="Texture2D" uid="uid://brl1xwhwyw26q" path="res://Texture/TX Shadow.png" id="9_td2lu"]
 [ext_resource type="Texture2D" uid="uid://ddokr53muqahi" path="res://Texture/TX Shadow Plant.png" id="10_1c145"]
 [ext_resource type="Texture2D" uid="uid://ckemtjvnh0m3v" path="res://Texture/Water+.png" id="11_anbgm"]
-[ext_resource type="PackedScene" uid="uid://bl4dmejgvk7v2" path="res://inventory/items/item1.tscn" id="13_dyuyn"]
-[ext_resource type="Texture2D" uid="uid://dskrwb3futl8n" path="res://inventory/items/espada2.png" id="14_lvnsq"]
-[ext_resource type="Texture2D" uid="uid://bfwe46ptpumjg" path="res://inventory/items/espada.png" id="15_2jtwm"]
-[ext_resource type="Texture2D" uid="uid://bd06wq7h17hkj" path="res://inventory/items/hacha.png" id="16_88ur2"]
-[ext_resource type="Texture2D" uid="uid://dku1fid8ww8nl" path="res://inventory/items/arco.png" id="17_qa56m"]
-[ext_resource type="Texture2D" uid="uid://q36hipp17qlt" path="res://inventory/items/veneno.png" id="18_ptwoe"]
+[ext_resource type="PackedScene" uid="uid://bl4dmejgvk7v2" path="res://inventory/items/objetos.tscn" id="13_dyuyn"]
+[ext_resource type="Texture2D" uid="uid://bd06wq7h17hkj" path="res://inventory/items/hacha.png" id="14_6thuo"]
+[ext_resource type="Texture2D" uid="uid://dku1fid8ww8nl" path="res://inventory/items/arco.png" id="15_sdqgp"]
+[ext_resource type="Texture2D" uid="uid://bfwe46ptpumjg" path="res://inventory/items/espada.png" id="16_m2o06"]
+[ext_resource type="Texture2D" uid="uid://q36hipp17qlt" path="res://inventory/items/veneno.png" id="17_u6l3n"]
+[ext_resource type="Texture2D" uid="uid://lk215mrwtbwm" path="res://stats/vida.png" id="18_4y6de"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xqnhr"]
 texture = ExtResource("3_5aye5")
@@ -2771,32 +2771,72 @@ position = Vector2(395, 299)
 
 [node name="Item1" parent="." instance=ExtResource("13_dyuyn")]
 position = Vector2(36, 33)
-image = ExtResource("14_lvnsq")
+image = ExtResource("14_6thuo")
+clase_de_item = "barbaro"
+tipo = 1
+
+[node name="Item8" parent="." instance=ExtResource("13_dyuyn")]
+position = Vector2(2, 120)
+image = ExtResource("14_6thuo")
+clase_de_item = "barbaro"
+tipo = 1
+nivel_del_item = "raro"
 
 [node name="Item2" parent="." instance=ExtResource("13_dyuyn")]
 position = Vector2(456, 54)
-image = ExtResource("14_lvnsq")
+image = ExtResource("15_sdqgp")
+clase_de_item = "arquero"
+tipo = 1
+
+[node name="Item9" parent="." instance=ExtResource("13_dyuyn")]
+position = Vector2(374, 120)
+image = ExtResource("15_sdqgp")
+clase_de_item = "arquero"
+tipo = 1
+nivel_del_item = "raro"
 
 [node name="Item3" parent="." instance=ExtResource("13_dyuyn")]
 position = Vector2(268, -47)
-image = ExtResource("15_2jtwm")
+image = ExtResource("16_m2o06")
+clase_de_item = "barbaro"
+
+[node name="Item10" parent="." instance=ExtResource("13_dyuyn")]
+position = Vector2(394, -89)
+image = ExtResource("16_m2o06")
+clase_de_item = "barbaro"
+nivel_del_item = "raro"
 
 [node name="Item4" parent="." instance=ExtResource("13_dyuyn")]
 position = Vector2(252, 94)
-image = ExtResource("16_88ur2")
+image = ExtResource("17_u6l3n")
+clase_de_item = "barbaro"
+
+[node name="Item11" parent="." instance=ExtResource("13_dyuyn")]
+position = Vector2(100, -92)
+image = ExtResource("17_u6l3n")
+clase_de_item = "barbaro"
+nivel_del_item = "raro"
 
 [node name="Item5" parent="." instance=ExtResource("13_dyuyn")]
 position = Vector2(574, -39)
-image = ExtResource("17_qa56m")
+image = ExtResource("18_4y6de")
+clase_de_item = "cualquiera"
+tipo = 2
+tipo_de_consumible = "vida"
+valor = 5
 
 [node name="Item6" parent="." instance=ExtResource("13_dyuyn")]
-position = Vector2(-197, -61)
-image = ExtResource("14_lvnsq")
+position = Vector2(-156, 79)
+image = ExtResource("18_4y6de")
+clase_de_item = "cualquiera"
+tipo = 2
+tipo_de_consumible = "vida"
+valor = 5
 
 [node name="Item7" parent="." instance=ExtResource("13_dyuyn")]
-position = Vector2(-103, 106)
-image = ExtResource("14_lvnsq")
-
-[node name="Item8" parent="." instance=ExtResource("13_dyuyn")]
-position = Vector2(-233, 45)
-image = ExtResource("18_ptwoe")
+position = Vector2(-241, -85)
+image = ExtResource("18_4y6de")
+clase_de_item = "cualquiera"
+tipo = 2
+tipo_de_consumible = "ataque"
+valor = 5

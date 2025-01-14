@@ -17,71 +17,83 @@ func check_stats(stat:String = ""):
 		"velocidad": return $menu/Velocidad/Cantidad.text.to_int()
 		"defensa": return $menu/Defensa/Cantidad.text.to_int()
 		"ataque": return $menu/Ataque/Cantidad.text.to_int()
+		_:
+			var all_stats = {
+							"vida":$vida/ProgressBar.value,
+							"magia":$Magia/ProgressBar.value,
+							"velocidad":$menu/Velocidad/Cantidad.text.to_int(),
+							"defensa": $menu/Defensa/Cantidad.text.to_int(),
+							"ataque": $menu/Ataque/Cantidad.text.to_int()
+							}
+			return all_stats 
+			
 
 # Modifica el valor de las stats según lo especificado
-func add_to(stat:String = "", value:int=0):
-	match stat:
-		"vida": 
-			$vida/ProgressBar.value = $vida/ProgressBar.value + value
-			$vida/ProgressBar/Cantidad.text = str($vida/ProgressBar.value)
-			$"vida/ProgressBar".queue_redraw()
-		"magia": 
-			$Magia/ProgressBar.value = $Magia/ProgressBar.value + value
-			$Magia/ProgressBar/Cantidad.text = str($Magia/ProgressBar.value)
-			$"Magia/ProgressBar".queue_redraw()
-		"velocidad":  
-			if $menu/Velocidad/Cantidad.text.to_int() < 100 and value < 100:
-				$menu/Velocidad/Cantidad.text = str($menu/Velocidad/Cantidad.text.to_int() + value)
-				$"menu/Velocidad/Cantidad".queue_redraw()
-		"defensa":
-			if $menu/Defensa/Cantidad.text.to_int() < 100 and value < 100:
-				$menu/Defensa/Cantidad.text = str($menu/Defensa/Cantidad.text.to_int() + value)
-				$"menu/Defensa/Cantidad".queue_redraw()
-		"ataque": 
-			if $menu/Ataque/Cantidad.text.to_int() < 100 and value < 100:
-				$menu/Ataque/Cantidad.text = str($menu/Ataque/Cantidad.text.to_int() + value)
-				$"menu/Ataque/Cantidad".queue_redraw()
+func add_to(value,stat:String = ""):
+	if value != null:
+		match stat:
+			"vida": 
+				$vida/ProgressBar.value = $vida/ProgressBar.value + value
+				$vida/ProgressBar/Cantidad.text = str($vida/ProgressBar.value)
+				$"vida/ProgressBar".queue_redraw()
+			"magia": 
+				$Magia/ProgressBar.value = $Magia/ProgressBar.value + value
+				$Magia/ProgressBar/Cantidad.text = str($Magia/ProgressBar.value)
+				$"Magia/ProgressBar".queue_redraw()
+			"velocidad":  
+				if $menu/Velocidad/Cantidad.text.to_int() < 100 and value < 100:
+					$menu/Velocidad/Cantidad.text = str($menu/Velocidad/Cantidad.text.to_int() + value)
+					$"menu/Velocidad/Cantidad".queue_redraw()
+			"defensa":
+				if $menu/Defensa/Cantidad.text.to_int() < 100 and value < 100:
+					$menu/Defensa/Cantidad.text = str($menu/Defensa/Cantidad.text.to_int() + value)
+					$"menu/Defensa/Cantidad".queue_redraw()
+			"ataque": 
+				if $menu/Ataque/Cantidad.text.to_int() < 100 and value < 100:
+					$menu/Ataque/Cantidad.text = str($menu/Ataque/Cantidad.text.to_int() + value)
+					$"menu/Ataque/Cantidad".queue_redraw()
 			
 # Establece el valor de la stats eliminando el anterior
-func set_stats(stat:String = "",value:int = 0):
-	match stat:
-		"":
-			$vida/ProgressBar.value = value
-			$vida/ProgressBar.max_value = $vida/ProgressBar.value 
-			$vida/ProgressBar/Cantidad.text = str(value)
-			$"vida/ProgressBar".queue_redraw()
-			
-			$Magia/ProgressBar.value = value
-			$Magia/ProgressBar.max_value = $Magia/ProgressBar.value 
-			$Magia/ProgressBar/Cantidad.text = str(value)
-			$"Magia/ProgressBar".queue_redraw()
-			
-			$menu/Velocidad/Cantidad.text = str(value)
-			$"menu/Velocidad/Cantidad".queue_redraw()
-			
-			$menu/Defensa/Cantidad.text = str(value)
-			$"menu/Defensa/Cantidad".queue_redraw()
-			
-			$menu/Ataque/Cantidad.text = str(value)
-			$"menu/Ataque/Cantidad".queue_redraw()
-			
-		"vida":
-			$vida/ProgressBar.value = value
-			$vida/ProgressBar/Cantidad.text = str(value)
-			$"vida/ProgressBar".queue_redraw()
-		"magia": 
-			$Magia/ProgressBar.value = value
-			$Magia/ProgressBar/Cantidad.text = str(value)
-			$"Magia/ProgressBar".queue_redraw()
-		"velocidad": 
-			$menu/Velocidad/Cantidad.text = str(value)
-			$"menu/Velocidad/Cantidad".queue_redraw()
-		"defensa": 
-			$menu/Defensa/Cantidad.text = str(value)
-			$"menu/Defensa/Cantidad".queue_redraw()
-		"ataque": 
-			$menu/Ataque/Cantidad.text = str(value)
-			$"menu/Ataque/Cantidad".queue_redraw()
+func set_stats(value,stat:String = ""):
+	if value != null:
+		match stat:
+			"":
+				$vida/ProgressBar.value = value
+				$vida/ProgressBar.max_value = $vida/ProgressBar.value 
+				$vida/ProgressBar/Cantidad.text = str(value)
+				$"vida/ProgressBar".queue_redraw()
+				
+				$Magia/ProgressBar.value = value
+				$Magia/ProgressBar.max_value = $Magia/ProgressBar.value 
+				$Magia/ProgressBar/Cantidad.text = str(value)
+				$"Magia/ProgressBar".queue_redraw()
+				
+				$menu/Velocidad/Cantidad.text = str(value)
+				$"menu/Velocidad/Cantidad".queue_redraw()
+				
+				$menu/Defensa/Cantidad.text = str(value)
+				$"menu/Defensa/Cantidad".queue_redraw()
+				
+				$menu/Ataque/Cantidad.text = str(value)
+				$"menu/Ataque/Cantidad".queue_redraw()
+				
+			"vida":
+				$vida/ProgressBar.value = value
+				$vida/ProgressBar/Cantidad.text = str(value)
+				$"vida/ProgressBar".queue_redraw()
+			"magia": 
+				$Magia/ProgressBar.value = value
+				$Magia/ProgressBar/Cantidad.text = str(value)
+				$"Magia/ProgressBar".queue_redraw()
+			"velocidad": 
+				$menu/Velocidad/Cantidad.text = str(value)
+				$"menu/Velocidad/Cantidad".queue_redraw()
+			"defensa": 
+				$menu/Defensa/Cantidad.text = str(value)
+				$"menu/Defensa/Cantidad".queue_redraw()
+			"ataque": 
+				$menu/Ataque/Cantidad.text = str(value)
+				$"menu/Ataque/Cantidad".queue_redraw()
 		
 # Establece las stats según la clase del personaje
 func level_up(clase:String = "",nivel:int = 0):
