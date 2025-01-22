@@ -5,7 +5,7 @@ extends CanvasLayer
 @onready var char_text = $"Container Alpha/Container Beta/HBoxContainer/Text"
 @onready var symbol = $"Container Alpha/Container Beta/HBoxContainer/Label"
 @onready var textbox = $"Container Alpha"
-@onready var tween : Tween
+@onready var tween : Tween 
 var current_step = Step.STARTED
 var text_queue = []
 
@@ -59,6 +59,8 @@ func dialogue(add_text):
 	
 #Muestra el texto en la caja de dialogo
 func show_textbox():
+	
+	char_text.visible_ratio = 0
 	tween = create_tween()
 	current_step = Step.READ
 	char_text.text = text_queue.pop_back()
@@ -69,5 +71,4 @@ func show_textbox():
 	symbol.text = "V"
 	current_step = Step.FINISHED
 	
-
 

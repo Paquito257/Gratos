@@ -1,5 +1,3 @@
-res://Combat/Combat_menu.tscn
-res://Fonts/Combat_menu.tres
-res://Combat/Combat_menu.gd
-res://Combat/Combat maps/Basico_combate.tscn
+res://Maps/Test_map.tscn
+res://Addons/Custom_inspector.gd
 res://Characters/npc.gd

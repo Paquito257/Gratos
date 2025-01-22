@@ -1,4 +1,7 @@
 extends CharacterBody2D
+class_name Char
+
+@onready var shape = $CollisionShape2D
 
 func _ready():
 	set_multiplayer_authority(name.to_int())

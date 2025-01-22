@@ -1,10 +1,13 @@
-res://Characters
 res://Maps
-res://Combat/Combat maps
-res://
-C:/Users/dejam/Desktop/Godot/Projects/Gratos/Gratos-1/Maps
+res://Characters/Battle enemies
+res://Characters
 C:/Users/dejam/Desktop/Godot/Projects/Gratos/Gratos-1
-C:/Users/dejam/Desktop/Godot/Projects/Gratos/Gratos-1/Combat
+res://Addons
+C:/Users/dejam/Desktop/Godot/Projects/Gratos/Gratos-1/Addons
+res://
 res://Combat
+res://Combat/Combat maps
+C:/Users/dejam/Desktop/Godot/Projects/Gratos/Gratos-1/Maps
+C:/Users/dejam/Desktop/Godot/Projects/Gratos/Gratos-1/Combat
 res://Fonts
 C:/Users/dejam/Desktop/Godot/Projects/Gratos/Gratos-1/Characters

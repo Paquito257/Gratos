@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://c78b0ms2d4vqg"]
+
+[ext_resource type="Script" path="res://Addons/Custom_inspector.gd" id="1_sk57j"]
+[ext_resource type="Script" path="res://Manager.gd" id="2_wf0i3"]
+[ext_resource type="Script" path="res://Addons/Area.gd" id="3_ltfsq"]
+
+[sub_resource type="Resource" id="Resource_2ijwo"]
+script = ExtResource("2_wf0i3")
+Name = ""
+Friendly = true
+Dialogue = Array[String]([])
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_sk57j")
+resource = SubResource("Resource_2ijwo")
+
+[node name="Area" type="Node2D" parent="." node_paths=PackedStringArray("parent")]
+script = ExtResource("3_ltfsq")
+parent = NodePath("..")

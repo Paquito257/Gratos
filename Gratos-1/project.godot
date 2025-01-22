@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 PlayerHandle="*res://Player_handle.gd"
 
+[editor_plugins]
+
+enabled=PackedStringArray()
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
