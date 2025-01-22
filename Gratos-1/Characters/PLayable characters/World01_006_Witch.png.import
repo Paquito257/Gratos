@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwqgln27reodu"
-path="res://.godot/imported/finger.png-67b4f500f978d71803e0ca38af7171f4.ctex"
+uid="uid://bjkhg0jk2ij81"
+path="res://.godot/imported/World01_006_Witch.png-55a02fbbbf3d4a5825eece40688bf8bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://finger.png"
-dest_files=["res://.godot/imported/finger.png-67b4f500f978d71803e0ca38af7171f4.ctex"]
+source_file="res://Characters/PLayable characters/World01_006_Witch.png"
+dest_files=["res://.godot/imported/World01_006_Witch.png-55a02fbbbf3d4a5825eece40688bf8bc.ctex"]
 
 [params]
 

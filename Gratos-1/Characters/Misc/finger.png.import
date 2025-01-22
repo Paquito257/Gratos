@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxo0otdv43xv8"
-path="res://.godot/imported/World04_003_ Outlaw.png-babaf3daf4a44750d7b4a3a809995ac4.ctex"
+uid="uid://c2tsa4mu2lfvt"
+path="res://.godot/imported/finger.png-359b02d4ce890e499e332c719634dbc4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/World04_003_ Outlaw.png"
-dest_files=["res://.godot/imported/World04_003_ Outlaw.png-babaf3daf4a44750d7b4a3a809995ac4.ctex"]
+source_file="res://Characters/Misc/finger.png"
+dest_files=["res://.godot/imported/finger.png-359b02d4ce890e499e332c719634dbc4.ctex"]
 
 [params]
 

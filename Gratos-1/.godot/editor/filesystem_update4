@@ -1,3 +1,6 @@
 res://Maps/Test_map.tscn
 res://Addons/Custom_inspector.gd
 res://Characters/npc.gd
+res://Maps/Manager.gd
+res://Menu.gd
+res://selec_personaje.tscn

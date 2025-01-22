@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2tsa4mu2lfvt"
-path="res://.godot/imported/finger.png-64437d2924fb84326b69b4d506e3c467.ctex"
+uid="uid://cq2yjg4g0icol"
+path="res://.godot/imported/World01_004_WailingPrince.png-29c40edc571571fe4f87ec31bb49475e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/finger.png"
-dest_files=["res://.godot/imported/finger.png-64437d2924fb84326b69b4d506e3c467.ctex"]
+source_file="res://Characters/PLayable characters/World01_004_WailingPrince.png"
+dest_files=["res://.godot/imported/World01_004_WailingPrince.png-29c40edc571571fe4f87ec31bb49475e.ctex"]
 
 [params]
 

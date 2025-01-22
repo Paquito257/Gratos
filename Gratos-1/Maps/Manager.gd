@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var RPG_character : PackedScene
+@export var  RPG_character : PackedScene
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -16,6 +16,7 @@ func _ready():
 				print(PlayerHandle.index)
 				print(spawn.global_position)
 				current_player.global_position = spawn.global_position
+				#PlayerHandle.players[i].instance = current_player
 				
 
 				
