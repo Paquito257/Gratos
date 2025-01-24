@@ -28,6 +28,10 @@ func _on_personaje_4_pressed():
 #los personajes seleccionados
 func _on_si_pressed():
 	if animacion.get_current_animation() == "selection1":
+		#for i in PlayerHandle.players:
+			#if get_tree().get_network_unique_id() == PlayerHandle.players[i].id:
+				#PlayerHandle.players[i].character =
+
 		animacion.stop()
 		deshabilitar.rpc(1)
 	elif animacion.get_current_animation() == "selection2":
@@ -39,6 +43,7 @@ func _on_si_pressed():
 	elif animacion.get_current_animation() == "selection4":
 		animacion.stop()
 		deshabilitar.rpc(4)
+		
 
 #Detiene la animación de confirmación para poder seleccionar otro personaje
 func _on_no_pressed():

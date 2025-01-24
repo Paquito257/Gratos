@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://bl4dmejgvk7v2"]
+
+[ext_resource type="Script" path="res://inventory/items/objetos.gd" id="1_j4ulq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mmbou"]
+size = Vector2(65, 64)
+
+[node name="Item1" type="Area2D"]
+z_index = 90
+position = Vector2(-39, -39)
+script = ExtResource("1_j4ulq")
+clase_de_item = ""
+tipo = 0
+nivel_del_item = "comun"
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 44.0
+offset_top = 1.0
+offset_right = 84.0
+offset_bottom = 24.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(39, 38)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(39, 38)
+shape = SubResource("RectangleShape2D_mmbou")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="input_event" from="." to="." method="_on_input_event"]

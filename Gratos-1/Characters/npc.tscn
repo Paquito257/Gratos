@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b7opfhs7jg6kc"]
+[gd_scene load_steps=10 format=3 uid="uid://b7opfhs7jg6kc"]
 
 [ext_resource type="Script" path="res://Characters/npc.gd" id="1_66xf0"]
 [ext_resource type="Texture2D" uid="uid://b1m84sil4okhj" path="res://icon.svg" id="2_7pd6p"]
@@ -16,14 +16,16 @@ Dialogue = Array[String](["Hello, how are you?", "I am testing this text, to see
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x0i35"]
 size = Vector2(56, 56)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_twa3v"]
+radius = 55.7315
+
 [node name="NPC" type="CharacterBody2D"]
-z_index = 6
+z_index = 9
 motion_mode = 1
 script = ExtResource("1_66xf0")
 
 [node name="Textbox" parent="." instance=ExtResource("3_s4kqi")]
 unique_name_in_owner = true
-visible = false
 
 [node name="Textboxsfx" type="AudioStreamPlayer2D" parent="."]
 unique_name_in_owner = true
@@ -40,3 +42,12 @@ texture = ExtResource("2_7pd6p")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_x0i35")
+
+[node name="Event" type="Area2D" parent="."]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Event"]
+shape = SubResource("CircleShape2D_twa3v")
+
+[connection signal="area_entered" from="Event" to="." method="_on_event_area_entered"]
+[connection signal="area_exited" from="Event" to="." method="_on_event_area_exited"]

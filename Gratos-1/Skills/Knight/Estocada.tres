@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Skill" load_steps=2 format=3 uid="uid://d1lfa218hf1ms"]
+
+[ext_resource type="Script" path="res://Addons/Skills.gd" id="1_osgo4"]
+
+[resource]
+script = ExtResource("1_osgo4")
+Skill_name = "Estocada"
+Damage = 3
+Magic = 0
+Success = 1.0

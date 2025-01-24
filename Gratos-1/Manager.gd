@@ -10,7 +10,6 @@ var Friendly : bool:
 		Friendly = value
 		notify_property_list_changed()
 	
-var Event : Shape2D
 
 func _get_property_list() -> Array:
 	var properties: Array = []
@@ -40,11 +39,4 @@ func _get_property_list() -> Array:
 			"hint_string" : "%d:" % [TYPE_STRING]
 
 		})
-	properties.append({
-		"name" : "Event",
-		"type" : TYPE_OBJECT,
-		"usage" : PROPERTY_USAGE_DEFAULT,
-		"hint" : PROPERTY_HINT_RESOURCE_TYPE,
-		"hint_string" : "Shape2D"
-	})
 	return properties

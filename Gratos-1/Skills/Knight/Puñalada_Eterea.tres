@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Skill" load_steps=2 format=3 uid="uid://drwttwu742t22"]
+
+[ext_resource type="Script" path="res://Addons/Skills.gd" id="1_ct7uq"]
+
+[resource]
+script = ExtResource("1_ct7uq")
+Skill_name = "Puñalada Eterea"
+Damage = 5
+Magic = 3
+Success = 1.0

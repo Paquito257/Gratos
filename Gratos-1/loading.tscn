@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://6kd4dvasl6b2"]
 
-[ext_resource type="FontFile" uid="uid://c1r6wut7sljrb" path="res://Fonts/ldfcomicsans-font/Minecraft.ttf" id="1_0y4h3"]
+[ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="1_0y4h3"]
 [ext_resource type="Script" path="res://loading.gd" id="1_yqib8"]
 [ext_resource type="Texture2D" uid="uid://ciqe3fbhyeytl" path="res://Logo_UDO.svg.png" id="2_l35jp"]
 

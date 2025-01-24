@@ -17,7 +17,12 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-PlayerHandle="*res://Player_handle.gd"
+PlayerHandle="*res://Global/Player_handle.gd"
+GameControl="*res://Global/Game_control.gd"
+
+[editor]
+
+movie_writer/movie_file="C:/Users/dejam/Desktop/Godot/Projects/Gratos/Gratos-1/Test.avi"
 
 [editor_plugins]
 

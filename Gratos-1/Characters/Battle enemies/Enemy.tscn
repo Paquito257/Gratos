@@ -1,7 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://cfbqvlfaphdvn"]
+[gd_scene load_steps=13 format=3 uid="uid://cfbqvlfaphdvn"]
 
-[ext_resource type="Script" path="res://Characters/Battle enemies/Orc.gd" id="1_aybwa"]
+[ext_resource type="Script" path="res://Characters/Battle enemies/Scripts/Orc.gd" id="1_s2nts"]
 [ext_resource type="Texture2D" uid="uid://cf7vfeaara47v" path="res://Characters/Battle enemies/Idle-Sheet.png" id="2_4bfp4"]
+[ext_resource type="PackedScene" uid="uid://dscfc6id23ecm" path="res://Addons/Stats_inspector.tscn" id="3_xe8lu"]
+[ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="4_fey0d"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rw5ur"]
 atlas = ExtResource("2_4bfp4")
@@ -39,10 +41,45 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_aybwa")
+[sub_resource type="Theme" id="Theme_8mw5f"]
+default_font = ExtResource("4_fey0d")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sdu1w"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qwqke"]
+bg_color = Color(0.984314, 0.27451, 0.211765, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Orc" type="CharacterBody2D"]
+script = ExtResource("1_s2nts")
 
 [node name="Orc_animated" type="AnimatedSprite2D" parent="."]
-position = Vector2(-2, -2)
+position = Vector2(2, 1.5)
+scale = Vector2(1.25, 1.21875)
 sprite_frames = SubResource("SpriteFrames_3duox")
 frame_progress = 0.446787
+
+[node name="Stats" parent="." instance=ExtResource("3_xe8lu")]
+vida = 12
+magia = 5
+velocidad = 3
+defensa = 2
+ataque = 3
+
+[node name="Life" type="ProgressBar" parent="."]
+offset_left = -19.0
+offset_top = -25.0
+offset_right = 23.0
+offset_bottom = -17.0
+theme = SubResource("Theme_8mw5f")
+theme_override_styles/background = SubResource("StyleBoxFlat_sdu1w")
+theme_override_styles/fill = SubResource("StyleBoxFlat_qwqke")
+show_percentage = false

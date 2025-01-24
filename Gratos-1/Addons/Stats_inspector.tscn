@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dscfc6id23ecm"]
+
+[ext_resource type="Script" path="res://Addons/Enemy_stats.gd" id="1_hlbef"]
+
+[node name="Stats" type="Node2D"]
+script = ExtResource("1_hlbef")
+vida = 0
+magia = 0
+velocidad = 0
+defensa = 0
+ataque = 0

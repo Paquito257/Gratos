@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Skill" load_steps=2 format=3 uid="uid://bilpxc4fxf48o"]
+
+[ext_resource type="Script" path="res://Addons/Skills.gd" id="1_pndqm"]
+
+[resource]
+script = ExtResource("1_pndqm")
+Skill_name = "Magia I"
+Damage = 4
+Magic = 3
+Success = 1.0

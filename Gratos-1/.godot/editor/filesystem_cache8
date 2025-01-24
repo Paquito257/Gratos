@@ -1,98 +1,171 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1737514466
-fondo1.jpeg::CompressedTexture2D::1302363779075723380::1737511881::1737511881::1::::<><>::
+::res://::1737688298
+fondo1.jpeg::CompressedTexture2D::1302363779075723380::1737511881::1737591409::1::::<><>::
 font.tres::LabelSettings::4028788023841613964::1737511880::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
-icon.svg::CompressedTexture2D::4238159558433039039::1733708790::1733709556::1::::<><>::
+Game_control.gd::GDScript::-1::1737676618::0::1::::<>Node<>::
+icon.svg::CompressedTexture2D::4238159558433039039::1733708790::1737591408::1::::<><>::
 loading.gd::GDScript::-1::1737511868::0::1::::<>Control<>::
-loading.tscn::PackedScene::2196732059356608497::1737511868::0::1::::<><>::uid://c1r6wut7sljrb::::res://Fonts/ldfcomicsans-font/Minecraft.ttf<>res://loading.gd<>uid://ciqe3fbhyeytl::::res://Logo_UDO.svg.png
-Logo_UDO.svg.png::CompressedTexture2D::5367675295267681329::1737511863::1737511863::1::::<><>::
-Manager.gd::GDScript::-1::1737506264::0::1::::NPC<>Resource<>::
-Menu.gd::GDScript::-1::1737514387::0::1::::<>Node<>::
-Menu.tscn::PackedScene::5781549948801808367::1737512174::0::1::::<><>::res://Menu.gd<>uid://2ok7st5ep8td::::res://Maps/bg sample.jpg<>uid://c1r6wut7sljrb::::res://Fonts/ldfcomicsans-font/Minecraft.ttf<>uid://bjkhg0jk2ij81::::res://Characters/World01_006_Witch.png<>uid://bk33kldccv5xd::::res://Characters/World01_007_Pirate.png<>uid://cxo0otdv43xv8::::res://Characters/World04_003_ Outlaw.png
+loading.tscn::PackedScene::2196732059356608497::1737593544::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>res://loading.gd<>uid://ciqe3fbhyeytl::::res://Logo_UDO.svg.png
+Logo_UDO.svg.png::CompressedTexture2D::5367675295267681329::1737511863::1737591410::1::::<><>::
+Manager.gd::GDScript::-1::1737600355::0::1::::NPC<>Resource<>::
+Menu.gd::GDScript::-1::1737665859::0::1::::<>Node<>::
+Menu.tscn::PackedScene::5781549948801808367::1737593550::0::1::::<><>::res://Menu.gd<>uid://lc3vjdj412n1::::res://Texture/Misc/Main_Background.jpeg<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://bjkhg0jk2ij81::::res://Characters/PLayable characters/World01_006_Witch.png<>uid://bk33kldccv5xd::::res://Characters/PLayable characters/World01_007_Pirate.png<>uid://cxo0otdv43xv8::::res://Characters/PLayable characters/World04_003_ Outlaw.png
 Node2D.gd::GDScript::-1::1737173775::0::1::::<>Node2D<>::
-Player_handle.gd::GDScript::-1::1737512359::0::1::::<>Node<>::
-sample sprite.jpg::CompressedTexture2D::3950290544105030616::1737511856::1737511856::1::::<><>::
-selec_personaje.gd::GDScript::-1::1737511846::0::1::::<>Control<>::
-selec_personaje.tscn::PackedScene::6086145974188427188::1737512064::0::1::::<><>::res://selec_personaje.gd<>uid://ss40g1xwt757::::res://fondo1.jpeg<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://bjkhg0jk2ij81::::res://Characters/World01_006_Witch.png<>uid://bk33kldccv5xd::::res://Characters/World01_007_Pirate.png<>uid://cq2yjg4g0icol::::res://Characters/World01_004_WailingPrince.png<>uid://cxo0otdv43xv8::::res://Characters/World04_003_ Outlaw.png<>uid://dwqgln27reodu::::res://finger.png
+sample sprite.jpg::CompressedTexture2D::3950290544105030616::1737511856::1737591409::1::::<><>::
+selec_personaje.gd::GDScript::-1::1737660958::0::1::::<>Control<>::
+selec_personaje.tscn::PackedScene::6086145974188427188::1737659553::0::1::::<><>::res://selec_personaje.gd<>uid://ss40g1xwt757::::res://fondo1.jpeg<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://bjkhg0jk2ij81::::res://Characters/PLayable characters/World01_006_Witch.png<>uid://bk33kldccv5xd::::res://Characters/PLayable characters/World01_007_Pirate.png<>uid://cq2yjg4g0icol::::res://Characters/PLayable characters/World01_004_WailingPrince.png<>uid://cxo0otdv43xv8::::res://Characters/PLayable characters/World04_003_ Outlaw.png<>uid://c2tsa4mu2lfvt::::res://Texture/Misc/finger.png
 Textbox.gd::GDScript::-1::1737176880::0::1::::<>CanvasLayer<>::
-Textbox.tscn::PackedScene::4428483535166777274::1737260952::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>res://Textbox.gd
-::res://Addons/::1737512280
-Area.gd::GDScript::-1::1737506264::0::1::::<>Node2D<>::
-Custom_inspector.gd::GDScript::-1::1737512280::0::1::::<>Node2D<>::
+Textbox.tres::StyleBoxFlat::356236914399706217::1737518529::0::1::::<><>::
+Textbox.tscn::PackedScene::4428483535166777274::1737600669::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>res://Textbox.gd
+Transition.tscn::PackedScene::7109273025674359300::1737603079::0::1::::<><>::
+::res://Addons/::1737674817
+Custom_inspector.gd::GDScript::-1::1737580195::0::1::::<>Node2D<>::
 eeee.gd::GDScript::-1::1737261911::0::1::::<>Area2D<>::
-Inspector.tscn::PackedScene::7087114850846211186::1737261968::0::1::::<><>::res://Addons/Custom_inspector.gd<>res://Manager.gd<>res://Addons/Area.gd
-::res://Characters/::1737514601
-npc.gd::GDScript::-1::1737512280::0::1::::<>CharacterBody2D<>::
-npc.tscn::PackedScene::4662285049464158738::1737342754::0::1::::<><>::res://Characters/npc.gd<>uid://b1m84sil4okhj::::res://icon.svg<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
+Enemy_stats.gd::GDScript::-1::1737649758::0::1::::NPC_stats<>Node2D<>::
+Inspector.tscn::PackedScene::7087114850846211186::1737650876::0::1::::<><>::res://Addons/Custom_inspector.gd<>res://Manager.gd
+Skills.gd::GDScript::-1::1737674817::0::1::::Skill<>Resource<>::
+Skills.tscn::PackedScene::3495112615495187664::1737658182::0::1::::<><>::res://Addons/Skills.gd
+Stats_inspector.tscn::PackedScene::8427098789379430096::1737649779::0::1::::<><>::res://Addons/Enemy_stats.gd
+::res://Addons/FirebaseAPI/::1737590837
+firebase.gd::GDScript::-1::1737518545::0::1::::<>Node<>::
+firebase.tscn::PackedScene::5986936762291323338::1737518545::0::1::::<><>::res://addons/FirebaseAPI/firebase.gd<>res://addons/FirebaseAPI/auth/auth.gd<>res://addons/FirebaseAPI/realtime/realtime.gd<>res://addons/FirebaseAPI/dynamiclinks/dynamiclinks.gd<>res://addons/FirebaseAPI/firestore/firestore.gd<>res://addons/FirebaseAPI/functions/functions.gd<>res://addons/FirebaseAPI/storage/storage.gd
+plugin.cfg::TextFile::-1::1737518545::0::1::::<><>::
+plugin.gd::GDScript::-1::1737518545::0::1::::<>EditorPlugin<>::
+::res://Addons/FirebaseAPI/auth/::1737590837
+auth.gd::GDScript::-1::1737518546::0::1::::FirebaseAuth<>HTTPRequest<>::
+user_data.gd::GDScript::-1::1737518546::0::1::::FirebaseUserData<>RefCounted<>::
+::res://Addons/FirebaseAPI/dynamiclinks/::1737590837
+dynamiclinks.gd::GDScript::-1::1737518546::0::1::::FirebaseDynamicLinks<>Node<>::
+::res://Addons/FirebaseAPI/firestore/::1737590837
+firestore.gd::GDScript::-1::1737518546::0::1::::FirebaseFirestore<>Node<>::
+firestore_collection.gd::GDScript::-1::1737518546::0::1::::FirestoreCollection<>RefCounted<>::
+firestore_document.gd::GDScript::-1::1737518546::0::1::::FirestoreDocument<>RefCounted<>::
+firestore_query.gd::GDScript::-1::1737518546::0::1::::FirestoreQuery<>RefCounted<>::
+firestore_task.gd::GDScript::-1::1737518546::0::1::::FirestoreTask<>RefCounted<>::
+::res://Addons/FirebaseAPI/functions/::1737590837
+functions.gd::GDScript::-1::1737518546::0::1::::FirebaseFunctions<>Node<>::
+function_task.gd::GDScript::-1::1737518546::0::1::::FunctionTask<>RefCounted<>::
+::res://Addons/FirebaseAPI/realtime/::1737590837
+HTTPSSEClient.gd::GDScript::-1::1737518546::0::1::::HTTPSSEClient<>Node<>::
+realtime.gd::GDScript::-1::1737518546::0::1::::FirebaseRealtime<>Node<>::
+reference.gd::GDScript::-1::1737518546::0::1::::RealtimeReference<>Node<>::
+::res://Addons/FirebaseAPI/storage/::1737590837
+storage.gd::GDScript::-1::1737518546::0::1::::FirebaseStorage<>Node<>::
+storage_reference.gd::GDScript::-1::1737518546::0::1::::StorageReference<>RefCounted<>::
+storage_task.gd::GDScript::-1::1737518547::0::1::::FirebaseStorageTask<>RefCounted<>::
+::res://Characters/::1737677051
+npc.gd::GDScript::-1::1737676809::0::1::::<>CharacterBody2D<>::
+npc.tscn::PackedScene::4662285049464158738::1737650876::0::1::::<><>::res://Characters/npc.gd<>uid://b1m84sil4okhj::::res://icon.svg<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
 NPC_Class.gd::GDScript::-1::1736129840::0::1::::<>Node<>::
-RPG_character.gd::GDScript::-1::1737174699::0::1::::Char<>CharacterBody2D<>::
-RPG_character.tscn::PackedScene::3546045638862774471::1737174061::0::1::::<><>::res://Characters/RPG_character.gd<>uid://b1m84sil4okhj::::res://icon.svg
-::res://Characters/Battle enemies/::1737506275
-Enemy.tscn::PackedScene::5126859522387888075::1737506275::0::1::::<><>::res://Characters/Battle enemies/Orc.gd<>uid://cf7vfeaara47v::::res://Characters/Battle enemies/Idle-Sheet.png
-Idle-Sheet.png::CompressedTexture2D::5191129869640050009::1737431689::1737431725::1::::<><>::
-Orc.gd::GDScript::-1::1737432217::0::1::::<>CharacterBody2D<>::
-::res://Characters/Misc/::1737514604
-finger.png::CompressedTexture2D::6708257771470044153::1737511786::1737514604::1::::<><>::
-::res://Characters/PLayable characters/::1737514366
-World01_004_WailingPrince.png::CompressedTexture2D::5953074705171640511::1737511778::1737514366::1::::<><>::
-World01_006_Witch.png::CompressedTexture2D::3039201115166539536::1737511778::1737514366::1::::<><>::
-World01_007_Pirate.png::CompressedTexture2D::3147830213409277777::1737511778::1737514366::1::::<><>::
-World04_003_ Outlaw.png::CompressedTexture2D::6417629989123705431::1737511778::1737514366::1::::<><>::
-::res://Combat/::1736663708
-Attacks.gd::GDScript::-1::1736651037::0::1::::<>Node<>::
-Combat_menu.gd::GDScript::-1::1736651037::0::1::::<>CanvasLayer<>::
-Combat_menu.tscn::PackedScene::2401171033394759451::1736663708::0::1::::<><>::res://Combat/Combat_menu.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://cqekhr244iaxt::::res://Texture/Combat_icons/Sword.png<>uid://cvtqrrnc6kio8::::res://Texture/Combat_icons/Fire.webp<>uid://cvgypcfh7xnur::::res://Fonts/Combat_menu.tres<>uid://dk0yri2awrr8u::::res://Texture/Combat_icons/healing_potion.png<>uid://c34bexx0cwasx::::res://Texture/Combat_icons/Run.png<>uid://daho6ewyuivpt::::res://Sfx/menu-move.ogg
-::res://Combat/Combat maps/::1736663708
-Basico_combate.tscn::PackedScene::1607698883855270164::1736663708::0::1::::<><>::uid://dgxqjn4yhw4jv::::res://Texture/Clouds 1/1.png<>uid://devctucr0iukf::::res://Texture/TX Struct.png<>uid://bmo1fxjjkup23::::res://Texture/Clouds 1/2.png<>uid://1rclml3p5d3c::::res://Texture/TX Tileset Grass.png<>uid://56am6bbo7j4e::::res://Texture/Clouds 1/4.png<>uid://gx5sidbfbjfo::::res://Texture/TX Tileset Wall.png<>uid://bahe63ewgm2mx::::res://Combat/Combat_menu.tscn<>uid://5lmeelwn7rhe::::res://Texture/TX Props.png<>uid://b3kvcd5bjosmx::::res://Music/Battle Theme.mp3
+RPG_character.gd::GDScript::-1::1737677003::0::1::::<>CharacterBody2D<>::
+RPG_character.tscn::PackedScene::3546045638862774471::1737677051::0::1::::<><>::res://Characters/RPG_character.gd<>uid://b1m84sil4okhj::::res://icon.svg<>uid://de4l0h6xhowsa::::res://Skills/Knight/Corte.tres<>uid://cjfy4ntmnlwtc::::res://inventory/inventario.tscn<>uid://d1lfa218hf1ms::::res://Skills/Knight/Estocada.tres<>uid://dov57pita5uig::::res://stats/stats.tscn
+::res://Characters/Battle enemies/::1737665961
+Enemy.tscn::PackedScene::5126859522387888075::1737665961::0::1::::<><>::res://Characters/Battle enemies/Scripts/Orc.gd<>uid://cf7vfeaara47v::::res://Characters/Battle enemies/Idle-Sheet.png<>uid://dscfc6id23ecm::::res://Addons/Stats_inspector.tscn<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
+Enemy_battle_script.gd::GDScript::-1::1737652400::0::1::::<>CharacterBody2D<>::
+Idle-Sheet.png::CompressedTexture2D::5191129869640050009::1737431689::1737591408::1::::<><>::
+::res://Characters/Battle enemies/Scripts/::1737665455
+Orc.gd::GDScript::-1::1737665455::0::1::::<>CharacterBody2D<>::
+::res://Characters/Misc/::1737591409
+finger.png::CompressedTexture2D::6708257771470044153::1737511786::1737591408::1::::<><>::
+::res://Characters/Overworld enemies/::1737677049
+npc.tscn::PackedScene::8075017545487163790::1737677049::0::1::::<><>::res://Characters/npc.gd<>uid://cf7vfeaara47v::::res://Characters/Battle enemies/Idle-Sheet.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
+::res://Characters/PLayable characters/::1737655916
+World01_004_WailingPrince.png::CompressedTexture2D::5953074705171640511::1737511778::1737591408::1::::<><>::
+World01_006_Witch.png::CompressedTexture2D::3039201115166539536::1737511778::1737591409::1::::<><>::
+World01_007_Pirate.png::CompressedTexture2D::3147830213409277777::1737511778::1737591409::1::::<><>::
+World04_003_ Outlaw.png::CompressedTexture2D::6417629989123705431::1737511778::1737591409::1::::<><>::
+::res://Combat/::1737665960
+Combat_menu.gd::GDScript::-1::1737665960::0::1::::<>CanvasLayer<>::
+Combat_menu.tscn::PackedScene::2401171033394759451::1737661345::0::1::::<><>::res://Combat/Combat_menu.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://cqekhr244iaxt::::res://Texture/Combat_icons/Sword.png<>uid://cvtqrrnc6kio8::::res://Texture/Combat_icons/Fire.webp<>uid://cvgypcfh7xnur::::res://Fonts/Combat_menu.tres<>uid://dk0yri2awrr8u::::res://Texture/Combat_icons/healing_potion.png<>uid://c34bexx0cwasx::::res://Texture/Combat_icons/Run.png<>uid://daho6ewyuivpt::::res://Sfx/menu-move.ogg
+::res://Combat/Combat maps/::1737677049
+Basico_combate.tscn::PackedScene::1607698883855270164::1737677049::0::1::::<><>::res://Combat/Combat maps/Combate.gd<>uid://dgxqjn4yhw4jv::::res://Texture/Clouds 1/1.png<>uid://devctucr0iukf::::res://Texture/TX Struct.png<>uid://bmo1fxjjkup23::::res://Texture/Clouds 1/2.png<>uid://1rclml3p5d3c::::res://Texture/TX Tileset Grass.png<>uid://56am6bbo7j4e::::res://Texture/Clouds 1/4.png<>uid://gx5sidbfbjfo::::res://Texture/TX Tileset Wall.png<>uid://bahe63ewgm2mx::::res://Combat/Combat_menu.tscn<>uid://5lmeelwn7rhe::::res://Texture/TX Props.png<>uid://b3kvcd5bjosmx::::res://Music/Battle Theme.mp3<>uid://cfbqvlfaphdvn::::res://Characters/Battle enemies/Enemy.tscn
+Combate.gd::GDScript::-1::1737667661::0::1::::<>Node2D<>::
 ::res://Fonts/::1736664350
 Combat_menu.tres::Theme::6260677458176662213::1736664350::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
-::res://Fonts/ldfcomicsans-font/::1736651037
+::res://Fonts/ldfcomicsans-font/::1737591407
 info.txt::TextFile::-1::1736129840::0::1::::<><>::
-Ldfcomicsans-jj7l.ttf::FontFile::5455712321289802502::1736129840::1736651037::1::::<><>::
-Ldfcomicsansbold-zgma.ttf::FontFile::1455116053613772833::1736129840::1736651037::1::::<><>::
-Ldfcomicsanshairline-5PmL.ttf::FontFile::809459794058717639::1736129840::1736651037::1::::<><>::
-Ldfcomicsanslight-6dZo.ttf::FontFile::5008688069458907892::1736129840::1736651037::1::::<><>::
-::res://Maps/::1737514469
+Ldfcomicsans-jj7l.ttf::FontFile::5455712321289802502::1736129840::1737591407::1::::<><>::
+Ldfcomicsansbold-zgma.ttf::FontFile::1455116053613772833::1736129840::1737591407::1::::<><>::
+Ldfcomicsanshairline-5PmL.ttf::FontFile::809459794058717639::1736129840::1737591407::1::::<><>::
+Ldfcomicsanslight-6dZo.ttf::FontFile::5008688069458907892::1736129840::1737591407::1::::<><>::
+::res://Global/::1737676618
+Game_control.gd::GDScript::-1::1737676618::0::1::::<>Node<>::
+Player_handle.gd::GDScript::-1::1737667562::0::1::::<>Node<>::
+::res://inventory/::1737595278
+election.gd::GDScript::-1::1737518547::0::1::::<>HBoxContainer<>::
+inventario.gd::GDScript::-1::1737518547::0::1::::<>CanvasLayer<>::
+inventario.png::CompressedTexture2D::8726526837838352560::1737518547::1737591409::1::::<><>::
+inventario.tscn::PackedScene::5416372557466321224::1737595278::0::1::::<><>::res://inventory/inventario.gd<>uid://bl4dmejgvk7v2::::res://inventory/items/objetos.tscn<>uid://dwlgvfdmcan57::::res://inventory/inventario.png<>res://inventory/slot.gd<>res://inventory/election.gd<>uid://fctf1pb8qdsj::::res://Textbox.tres<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://bxntsx7xb0kfc::::res://font.tres<>uid://dku1fid8ww8nl::::res://inventory/items/arco.png<>uid://bd06wq7h17hkj::::res://inventory/items/hacha.png
+slot.gd::GDScript::-1::1737518547::0::1::::<>Panel<>::
+::res://inventory/items/::1737591409
+arco.png::CompressedTexture2D::7904026039673161145::1737518547::1737591409::1::::<><>::
+espada2.png::CompressedTexture2D::8444376586479959699::1737518547::1737591409::1::::<><>::
+espada.png::CompressedTexture2D::2783077520746924952::1737518547::1737591409::1::::<><>::
+hacha.png::CompressedTexture2D::2650519062861763193::1737518547::1737591409::1::::<><>::
+objetos.gd::GDScript::-1::1737518547::0::1::::<>Area2D<>::
+objetos.tscn::PackedScene::3218568723382095621::1737518725::0::1::::<><>::res://inventory/items/objetos.gd
+veneno.png::CompressedTexture2D::1182719246731706633::1737518547::1737591409::1::::<><>::
+::res://Maps/::1737677050
 hub.tscn::PackedScene::8432443394854468202::1736129840::0::1::::<><>::uid://1rclml3p5d3c::::res://Texture/TX Tileset Grass.png
-Manager.gd::GDScript::-1::1737514386::0::1::::<>Node2D<>::
-Test_map.tscn::PackedScene::669239784417098673::1737514469::0::1::::<><>::res://Maps/Manager.gd<>uid://bqry4a0o2fpul::::res://Characters/RPG_character.tscn<>uid://b2sqgbnkfdh03::::res://Texture/Hub/Tileset_Road.png<>uid://b7opfhs7jg6kc::::res://Characters/npc.tscn<>uid://du2u6x1x3jlx3::::res://Texture/Hub/Tileset_Ground.png<>uid://cgmma0id87dkx::::res://Texture/Hub/Tiles.png<>uid://ckemtjvnh0m3v::::res://Texture/Hub/Water+.png<>uid://bub8aq4yvpxqk::::res://Texture/Hub/Tileset_RockSlope.png<>uid://d0d3ng730bvru::::res://Texture/Hub/Tileset_RockSlope_Simple.png<>uid://c0ey2gccucnk6::::res://Texture/Hub/Props.png<>uid://vh6ygcmwgv3y::::res://Texture/Hub/Trees_Bushes.png<>uid://3to5abwx1736::::res://Texture/Hub/Tileset_Water.png<>uid://c5lducn6wfwf6::::res://Texture/Hub/Props2.png
-::res://Music/::1736651037
-Battle Theme.mp3::AudioStreamMP3::4373630915506727959::1736651037::1736651037::1::::<><>::
-::res://Sfx/::1736651037
-menu-move.ogg::AudioStreamOggVorbis::7174618338064117733::1736651037::1736651037::1::::<><>::
-rpg-text-speech-sound-131477.mp3::AudioStreamMP3::4603006631769053900::1736129840::1736129840::1::::<><>::
-::res://Texture/::1737514631
-TX Plant.png::CompressedTexture2D::8913898180983251626::1736129840::1736129840::1::::<><>::
-TX Player.png::CompressedTexture2D::1292032670716181570::1736129840::1736129840::1::::<><>::
-TX Props.png::CompressedTexture2D::2129109439628924678::1736129840::1736129840::1::::<><>::
-TX Struct.png::CompressedTexture2D::7483525776899174169::1736129840::1736129840::1::::<><>::
-TX Tileset Grass.png::CompressedTexture2D::1860146082692815718::1736129840::1736129840::1::::<><>::
-TX Tileset Stone Ground.png::CompressedTexture2D::7393576846692631850::1736129840::1736129840::1::::<><>::
-TX Tileset Wall.png::CompressedTexture2D::470467829118232596::1736129840::1736129840::1::::<><>::
-::res://Texture/Clouds 1/::1736651037
-1.png::CompressedTexture2D::7628864073983862811::1736651037::1736651037::1::::<><>::
-2.png::CompressedTexture2D::3259176889051158670::1736651037::1736651037::1::::<><>::
-3.png::CompressedTexture2D::705795329924778282::1736651037::1736651037::1::::<><>::
-4.png::CompressedTexture2D::2169684078877755458::1736651037::1736651037::1::::<><>::
-::res://Texture/Combat_icons/::1736651951
-Fire.webp::CompressedTexture2D::6287033004604774493::1736651037::1736651037::1::::<><>::
-healing_potion.png::CompressedTexture2D::7914247959560508514::1736651037::1736651037::1::::<><>::
-Run.png::CompressedTexture2D::6798065048994206891::1736651037::1736651037::1::::<><>::
-Run.svg::CompressedTexture2D::1371507311298406270::1736651037::1736651951::1::::<><>::
-Sword.png::CompressedTexture2D::5904740983059326225::1736651037::1736651037::1::::<><>::
-::res://Texture/Hub/::1737431725
-Props2.png::CompressedTexture2D::6901432825245505865::1737415882::1737415882::1::::<><>::
-Props.png::CompressedTexture2D::6537325711962479415::1736651037::1736651037::1::::<><>::
-Tiles.png::CompressedTexture2D::5219476891800167143::1736651037::1736651037::1::::<><>::
-Tileset_Ground.png::CompressedTexture2D::8620048071950713406::1736651037::1736651037::1::::<><>::
-Tileset_Road.png::CompressedTexture2D::4319660521207714546::1736651037::1736651037::1::::<><>::
-Tileset_RockSlope.png::CompressedTexture2D::3794266481261162126::1736651037::1736651037::1::::<><>::
-Tileset_RockSlope_Simple.png::CompressedTexture2D::8921899932290023362::1736651037::1736651037::1::::<><>::
-Tileset_Water.png::CompressedTexture2D::2005414413484099223::1736651037::1736651037::1::::<><>::
-Trees_Bushes.png::CompressedTexture2D::1490341765311171636::1736651037::1736651037::1::::<><>::
-Water+.png::CompressedTexture2D::5483750354532211989::1736651037::1736651037::1::::<><>::
-::res://Texture/Misc/::1737514657
-finger.png::CompressedTexture2D::6708257771470044153::1737511786::1737514660::1::::<><>::
-::res://Texture/Shadows/::1736651037
-TX Shadow Plant.png::CompressedTexture2D::7399369018501893942::1736651037::1736651037::1::::<><>::
-TX Shadow.png::CompressedTexture2D::3603960063265932234::1736651037::1736651037::1::::<><>::
+Manager.gd::GDScript::-1::1737672609::0::1::::<>Node2D<>::
+Test_map.tscn::PackedScene::669239784417098673::1737677050::0::1::::<><>::res://Maps/Manager.gd<>uid://bqry4a0o2fpul::::res://Characters/RPG_character.tscn<>uid://b2sqgbnkfdh03::::res://Texture/Hub/Tileset_Road.png<>uid://b7opfhs7jg6kc::::res://Characters/npc.tscn<>uid://du2u6x1x3jlx3::::res://Texture/Hub/Tileset_Ground.png<>uid://cgmma0id87dkx::::res://Texture/Hub/Tiles.png<>uid://ckemtjvnh0m3v::::res://Texture/Hub/Water+.png<>uid://bub8aq4yvpxqk::::res://Texture/Hub/Tileset_RockSlope.png<>uid://d0d3ng730bvru::::res://Texture/Hub/Tileset_RockSlope_Simple.png<>uid://c0ey2gccucnk6::::res://Texture/Hub/Props.png<>uid://vh6ygcmwgv3y::::res://Texture/Hub/Trees_Bushes.png<>uid://3to5abwx1736::::res://Texture/Hub/Tileset_Water.png<>uid://c5lducn6wfwf6::::res://Texture/Hub/Props2.png<>uid://dnbumhh8as36q::::res://Characters/Overworld enemies/npc.tscn
+::res://Music/::1737591408
+Battle Theme.mp3::AudioStreamMP3::4373630915506727959::1736651037::1737591408::1::::<><>::
+::res://Sfx/::1737591408
+menu-move.ogg::AudioStreamOggVorbis::7174618338064117733::1736651037::1737591408::1::::<><>::
+rpg-text-speech-sound-131477.mp3::AudioStreamMP3::4603006631769053900::1736129840::1737591408::1::::<><>::
+::res://Skills/::1737657067
+::res://Skills/Archer/::1737656552
+::res://Skills/Barbarian/::1737656537
+::res://Skills/Enemies/::1737658182
+Golpe.tres::Resource/Resource::5340712246740372842::1737658182::0::1::::<><>::res://Addons/Skills.gd
+Magia_I.tres::Resource/Resource::2971591566347499612::1737658182::0::1::::<><>::res://Addons/Skills.gd
+::res://Skills/Knight/::1737657042
+Corte.tres::Resource/Resource::7500597328874553020::1737657042::0::1::::<><>::res://Addons/Skills.gd
+Estocada.tres::Resource/Resource::9007185185730954058::1737656793::0::1::::<><>::res://Addons/Skills.gd
+Puñalada_Eterea.tres::Resource/Resource::8399077444365487525::1737657041::0::1::::<><>::res://Addons/Skills.gd
+::res://Skills/Wizard/::1737656533
+::res://stats/::1737654438
+ataque.png::CompressedTexture2D::7377143336051651430::1737518548::1737591409::1::::<><>::
+defensa.png::CompressedTexture2D::110466871415839432::1737518548::1737591409::1::::<><>::
+magia.png::CompressedTexture2D::626117767910579172::1737518548::1737591409::1::::<><>::
+stats.gd::GDScript::-1::1737518548::0::1::::<>CanvasLayer<>::
+stats.tscn::PackedScene::8187137251108125494::1737654438::0::1::::<><>::res://stats/stats.gd<>uid://dddsqcycif3ly::::res://stats/ataque.png<>uid://i6kck18m42i7::::res://stats/magia.png<>uid://bxntsx7xb0kfc::::res://font.tres<>uid://btrmxpso3ocm::::res://stats/defensa.png<>uid://dyhhble6v6hoe::::res://stats/velocidad.png<>uid://lk215mrwtbwm::::res://stats/vida.png<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://fctf1pb8qdsj::::res://Textbox.tres<>uid://b1m84sil4okhj::::res://icon.svg
+velocidad.png::CompressedTexture2D::8858672332787626404::1737518548::1737591409::1::::<><>::
+vida.png::CompressedTexture2D::794408442045883412::1737518548::1737591409::1::::<><>::
+::res://Texture/::1737591408
+TX Plant.png::CompressedTexture2D::8913898180983251626::1736129840::1737591408::1::::<><>::
+TX Player.png::CompressedTexture2D::1292032670716181570::1736129840::1737591408::1::::<><>::
+TX Props.png::CompressedTexture2D::2129109439628924678::1736129840::1737591408::1::::<><>::
+TX Struct.png::CompressedTexture2D::7483525776899174169::1736129840::1737591408::1::::<><>::
+TX Tileset Grass.png::CompressedTexture2D::1860146082692815718::1736129840::1737591408::1::::<><>::
+TX Tileset Stone Ground.png::CompressedTexture2D::7393576846692631850::1736129840::1737591408::1::::<><>::
+TX Tileset Wall.png::CompressedTexture2D::470467829118232596::1736129840::1737591408::1::::<><>::
+::res://Texture/Clouds 1/::1737591409
+1.png::CompressedTexture2D::7628864073983862811::1736651037::1737591409::1::::<><>::
+2.png::CompressedTexture2D::3259176889051158670::1736651037::1737591409::1::::<><>::
+3.png::CompressedTexture2D::705795329924778282::1736651037::1737591409::1::::<><>::
+4.png::CompressedTexture2D::2169684078877755458::1736651037::1737591409::1::::<><>::
+::res://Texture/Combat_icons/::1737591409
+Fire.webp::CompressedTexture2D::6287033004604774493::1736651037::1737591409::1::::<><>::
+healing_potion.png::CompressedTexture2D::7914247959560508514::1736651037::1737591409::1::::<><>::
+Run.png::CompressedTexture2D::6798065048994206891::1736651037::1737591409::1::::<><>::
+Run.svg::CompressedTexture2D::1371507311298406270::1736651037::1737591409::1::::<><>::
+Sword.png::CompressedTexture2D::5904740983059326225::1736651037::1737591408::1::::<><>::
+::res://Texture/Hub/::1737591408
+Props2.png::CompressedTexture2D::6901432825245505865::1737415882::1737591408::1::::<><>::
+Props.png::CompressedTexture2D::6537325711962479415::1736651037::1737591408::1::::<><>::
+Tiles.png::CompressedTexture2D::5219476891800167143::1736651037::1737591408::1::::<><>::
+Tileset_Ground.png::CompressedTexture2D::8620048071950713406::1736651037::1737591408::1::::<><>::
+Tileset_Road.png::CompressedTexture2D::4319660521207714546::1736651037::1737591408::1::::<><>::
+Tileset_RockSlope.png::CompressedTexture2D::3794266481261162126::1736651037::1737591408::1::::<><>::
+Tileset_RockSlope_Simple.png::CompressedTexture2D::8921899932290023362::1736651037::1737591408::1::::<><>::
+Tileset_Water.png::CompressedTexture2D::2005414413484099223::1736651037::1737591408::1::::<><>::
+Trees_Bushes.png::CompressedTexture2D::1490341765311171636::1736651037::1737591408::1::::<><>::
+Water+.png::CompressedTexture2D::5483750354532211989::1736651037::1737591408::1::::<><>::
+::res://Texture/Misc/::1737591807
+finger.png::CompressedTexture2D::6708257771470044153::1737511786::1737591408::1::::<><>::
+Main_Background.jpeg::CompressedTexture2D::777944090789230272::1737591805::1737591807::1::::<><>::
+::res://Texture/Shadows/::1737591408
+TX Shadow Plant.png::CompressedTexture2D::7399369018501893942::1736651037::1737591408::1::::<><>::
+TX Shadow.png::CompressedTexture2D::3603960063265932234::1736651037::1737591408::1::::<><>::

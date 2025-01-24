@@ -1,6 +1,6 @@
 res://Maps/Test_map.tscn
-res://Addons/Custom_inspector.gd
+res://Addons/Skills.gd
+res://Combat/Combat maps/Basico_combate.tscn
+res://Characters/Overworld enemies/npc.tscn
+res://Characters/RPG_character.tscn
 res://Characters/npc.gd
-res://Maps/Manager.gd
-res://Menu.gd
-res://selec_personaje.tscn

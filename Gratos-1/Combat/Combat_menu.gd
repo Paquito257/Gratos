@@ -16,16 +16,15 @@ func menup():
 				node.visible = false
 	
 func _ready():
-	for i in len(hypothetical_skills):
-		combat.add_item(hypothetical_skills[i])
-		item.add_item(hypothetical_skills[i])
-		special.add_item(hypothetical_skills[i])
+	for i in len(PlayerHandle.players[1].skills):
+		combat.add_item(PlayerHandle.players[1].skills[i].Skill_name)
+		item.add_item(PlayerHandle.players[1].skills[i].Skill_name)
+		special.add_item(PlayerHandle.players[1].skills[i].Skill_name)
 
 
 
 func _process(delta):
 	menup()
-	
 
 
 func _on_basic_menu_item_clicked(index, at_position, mouse_button_index):
@@ -45,6 +44,20 @@ func _on_basic_menu_item_clicked(index, at_position, mouse_button_index):
 				special.visible = true
 			3:
 				pass
-				
-		
-		
+
+
+func _on_combat_item_clicked(index, at_position, mouse_button_index):
+	if mouse_button_index == MOUSE_BUTTON_LEFT:	
+		match index:
+			0:
+				%Sfx.play()
+				pass
+			1:
+				%Sfx.play()
+				pass
+			2:
+				%Sfx.play()
+				pass
+			3:
+				pass
+

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Skill" load_steps=2 format=3 uid="uid://de4l0h6xhowsa"]
+
+[ext_resource type="Script" path="res://Addons/Skills.gd" id="1_qfg4n"]
+
+[resource]
+script = ExtResource("1_qfg4n")
+Skill_name = "Corte"
+Damage = 4
+Magic = 0
+Success = 0.8

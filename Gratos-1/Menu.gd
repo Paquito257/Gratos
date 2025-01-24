@@ -40,6 +40,8 @@ func player_info(name,id):
 		PlayerHandle.players[id] = {
 			"name" : name,
 			"id" : id,
+			"character" : null,
+			"skills" : null,
 		}
 	
 	if multiplayer.is_server():

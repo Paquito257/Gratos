@@ -131,3 +131,4 @@ unique_name_in_owner = true
 stream = ExtResource("8_mxrey")
 
 [connection signal="item_clicked" from="Container Alpha/Container Beta/Basic_menu" to="." method="_on_basic_menu_item_clicked"]
+[connection signal="item_clicked" from="Container Alpha/Container Beta/Combat" to="." method="_on_combat_item_clicked"]
