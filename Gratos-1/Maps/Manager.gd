@@ -2,12 +2,17 @@ extends Node2D
 
 @export var  RPG_character : PackedScene
 var camera_pos 
-# Called when the node enters the scene tree for the first time.
+
+#Crea instancias de los personajes jugables correspondiente al 
+#numero de jugadores
 func _ready():
 	
 	for i in PlayerHandle.players:
 		var current_player = RPG_character.instantiate()
 		current_player.name = str(PlayerHandle.players[i].id)
+		
+		#Esta linea añade las skills al personaje
+		#TODO: Personalizarlo para cada clase/jugador
 		PlayerHandle.players[i].skills = current_player.attacks.duplicate()
 		add_child(current_player)
 		

@@ -3,9 +3,9 @@
 [ext_resource type="Script" path="res://Menu.gd" id="1_r2thv"]
 [ext_resource type="Texture2D" uid="uid://lc3vjdj412n1" path="res://Texture/Misc/Main_Background.jpeg" id="2_7gmeb"]
 [ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="3_83hpy"]
-[ext_resource type="Texture2D" uid="uid://bjkhg0jk2ij81" path="res://Characters/PLayable characters/World01_006_Witch.png" id="4_5lo87"]
-[ext_resource type="Texture2D" uid="uid://bk33kldccv5xd" path="res://Characters/PLayable characters/World01_007_Pirate.png" id="5_6wseu"]
-[ext_resource type="Texture2D" uid="uid://cxo0otdv43xv8" path="res://Characters/PLayable characters/World04_003_ Outlaw.png" id="6_omai6"]
+[ext_resource type="Texture2D" uid="uid://bjkhg0jk2ij81" path="res://Texture/Playable Characters/World01_006_Witch.png" id="4_5lo87"]
+[ext_resource type="Texture2D" uid="uid://bk33kldccv5xd" path="res://Texture/Playable Characters/World01_007_Pirate.png" id="5_6wseu"]
+[ext_resource type="Texture2D" uid="uid://cxo0otdv43xv8" path="res://Texture/Playable Characters/World04_003_ Outlaw.png" id="6_omai6"]
 
 [sub_resource type="Theme" id="Theme_yr5g7"]
 default_font_size = 50

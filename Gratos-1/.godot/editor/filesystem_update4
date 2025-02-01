@@ -1,6 +1,4 @@
+res://Menu.tscn
+res://Characters/PLayable characters/RPG_character.gd
+res://Characters/PLayable characters/RPG_character.tscn
 res://Maps/Test_map.tscn
-res://Addons/Skills.gd
-res://Combat/Combat maps/Basico_combate.tscn
-res://Characters/Overworld enemies/npc.tscn
-res://Characters/RPG_character.tscn
-res://Characters/npc.gd

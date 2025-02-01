@@ -1,0 +1,87 @@
+[gd_scene load_steps=15 format=3 uid="uid://d332iai14ac4w"]
+
+[ext_resource type="Script" path="res://Characters/Overworld/npc.gd" id="1_66xf0"]
+[ext_resource type="Texture2D" uid="uid://cf7vfeaara47v" path="res://Texture/NPC/Orc/Idle-Sheet.png" id="2_6earh"]
+[ext_resource type="PackedScene" uid="uid://b4dgqhgyuawxu" path="res://Textbox.tscn" id="3_s4kqi"]
+[ext_resource type="AudioStream" uid="uid://b6ty312ne64fw" path="res://Sfx/rpg-text-speech-sound-131477.mp3" id="4_10u7b"]
+[ext_resource type="PackedScene" uid="uid://c78b0ms2d4vqg" path="res://Addons/Inspector.tscn" id="4_kvw5h"]
+[ext_resource type="Script" path="res://Manager.gd" id="6_cgb8f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nulbu"]
+atlas = ExtResource("2_6earh")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7r4p4"]
+atlas = ExtResource("2_6earh")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gwgio"]
+atlas = ExtResource("2_6earh")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ymdly"]
+atlas = ExtResource("2_6earh")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ccods"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nulbu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7r4p4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gwgio")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ymdly")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Resource" id="Resource_h6wxn"]
+script = ExtResource("6_cgb8f")
+Name = ""
+Friendly = false
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x0i35"]
+size = Vector2(23, 41)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_twa3v"]
+radius = 30.0
+
+[node name="NPC" type="CharacterBody2D"]
+z_index = 9
+motion_mode = 1
+script = ExtResource("1_66xf0")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ccods")
+
+[node name="Textbox" parent="." instance=ExtResource("3_s4kqi")]
+unique_name_in_owner = true
+
+[node name="Textboxsfx" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("4_10u7b")
+
+[node name="Node2D" parent="." instance=ExtResource("4_kvw5h")]
+unique_name_in_owner = true
+resource = SubResource("Resource_h6wxn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 1.5)
+shape = SubResource("RectangleShape2D_x0i35")
+
+[node name="Event" type="Area2D" parent="."]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Event"]
+shape = SubResource("CircleShape2D_twa3v")
+
+[connection signal="area_entered" from="Event" to="." method="_on_event_area_entered"]
+[connection signal="area_exited" from="Event" to="." method="_on_event_area_exited"]
