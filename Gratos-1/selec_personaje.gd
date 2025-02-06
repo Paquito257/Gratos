@@ -33,16 +33,29 @@ func _on_si_pressed():
 				#PlayerHandle.players[i].character =
 
 		animacion.stop()
+		PlayerHandle.players[multiplayer.get_unique_id()].character = "caballero"		
 		deshabilitar.rpc(1)
+		
+
+		print(PlayerHandle.players[multiplayer.get_unique_id()])
+				
 	elif animacion.get_current_animation() == "selection2":
 		animacion.stop()
+		PlayerHandle.players[multiplayer.get_unique_id()].character = "barbaro"
 		deshabilitar.rpc(2)
+
+				
 	elif animacion.get_current_animation() == "selection3":
 		animacion.stop()
+		PlayerHandle.players[multiplayer.get_unique_id()].character = "arquero"
 		deshabilitar.rpc(3)
+
+				
 	elif animacion.get_current_animation() == "selection4":
 		animacion.stop()
+		PlayerHandle.players[multiplayer.get_unique_id()].character = "mago"
 		deshabilitar.rpc(4)
+
 		
 
 #Detiene la animación de confirmación para poder seleccionar otro personaje
@@ -54,8 +67,6 @@ func _on_no_pressed():
 #añade a una lista los personajes seleccionados
 @rpc("any_peer", "call_local")
 func deshabilitar(nro):
-	print("1343435254sda")
-	print(personajes)
 	if nro == 1:
 		$Personaje1.disabled = true
 		personajes.append("Personaje1")

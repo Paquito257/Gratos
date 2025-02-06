@@ -1,4 +1,10 @@
-res://Menu.tscn
-res://Characters/PLayable characters/RPG_character.gd
+res://Characters/PLayable characters/Scenes/Knight.tscn
+res://Characters/PLayable characters/Scenes/Wizard.tscn
+res://Characters/PLayable characters/Scenes/Barbarian.tscn
+res://Characters/PLayable characters/Scenes/Archer.tscn
 res://Characters/PLayable characters/RPG_character.tscn
+res://Characters/PLayable characters/RPG_character.gd
+res://selec_personaje.gd
+res://selec_personaje.tscn
+res://Menu.tscn
 res://Maps/Test_map.tscn

@@ -1,28 +1,48 @@
-[gd_scene load_steps=10 format=3 uid="uid://b7opfhs7jg6kc"]
+[gd_scene load_steps=12 format=3 uid="uid://b7opfhs7jg6kc"]
 
 [ext_resource type="Script" path="res://Characters/Overworld/npc.gd" id="1_66xf0"]
-[ext_resource type="Texture2D" uid="uid://b1m84sil4okhj" path="res://icon.svg" id="2_7pd6p"]
+[ext_resource type="Texture2D" uid="uid://dp4fswgbd2pjg" path="res://Texture/NPC/Friendly/uncle_fisherman.png" id="2_plxcu"]
 [ext_resource type="PackedScene" uid="uid://b4dgqhgyuawxu" path="res://Textbox.tscn" id="3_s4kqi"]
 [ext_resource type="AudioStream" uid="uid://b6ty312ne64fw" path="res://Sfx/rpg-text-speech-sound-131477.mp3" id="4_10u7b"]
 [ext_resource type="PackedScene" uid="uid://c78b0ms2d4vqg" path="res://Addons/Inspector.tscn" id="4_kvw5h"]
 [ext_resource type="Script" path="res://Manager.gd" id="6_cgb8f"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_i6xky"]
+atlas = ExtResource("2_plxcu")
+region = Rect2(100, 0, 100, 115)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_43qqo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i6xky")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [sub_resource type="Resource" id="Resource_h6wxn"]
 script = ExtResource("6_cgb8f")
 Name = ""
 Friendly = true
-Dialogue = Array[String](["Hola, buenos dias", "Como está, profesor Dorta?"])
+Dialogue = Array[String](["¡Hoy el clima se ve genial para un partido!", "¿No estás de acuerdo?"])
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x0i35"]
-size = Vector2(56, 56)
+size = Vector2(18, 26)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_twa3v"]
-radius = 55.7315
+radius = 24.0208
 
 [node name="NPC" type="CharacterBody2D"]
 z_index = 9
 motion_mode = 1
 script = ExtResource("1_66xf0")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2, 0)
+scale = Vector2(0.22, 0.217391)
+sprite_frames = SubResource("SpriteFrames_43qqo")
 
 [node name="Textbox" parent="." instance=ExtResource("3_s4kqi")]
 unique_name_in_owner = true
@@ -35,18 +55,15 @@ stream = ExtResource("4_10u7b")
 unique_name_in_owner = true
 resource = SubResource("Resource_h6wxn")
 
-[node name="Sprite" type="Sprite2D" parent="."]
-scale = Vector2(0.445313, 0.421875)
-texture = ExtResource("2_7pd6p")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 1)
+position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_x0i35")
 
 [node name="Event" type="Area2D" parent="."]
 unique_name_in_owner = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Event"]
+position = Vector2(-2, 0)
 shape = SubResource("CircleShape2D_twa3v")
 
 [connection signal="area_entered" from="Event" to="." method="_on_event_area_entered"]
