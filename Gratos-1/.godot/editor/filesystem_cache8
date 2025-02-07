@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1738786506
+::res://::1738885921
 fondo1.jpeg::CompressedTexture2D::1302363779075723380::1737511881::1738378534::1::::<><>::
 font.tres::LabelSettings::4028788023841613964::1737511880::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
 Game_control.gd::GDScript::-1::1738298019::0::1::::<>Node<>::
@@ -9,14 +9,14 @@ loading.tscn::PackedScene::2196732059356608497::1737593544::0::1::::<><>::uid://
 Logo_UDO.svg.png::CompressedTexture2D::5367675295267681329::1737511863::1738378534::1::::<><>::
 Manager.gd::GDScript::-1::1737600355::0::1::::NPC<>Resource<>::
 Menu.gd::GDScript::-1::1737665859::0::1::::<>Node<>::
-Menu.tscn::PackedScene::5781549948801808367::1738378897::0::1::::<><>::res://Menu.gd<>uid://lc3vjdj412n1::::res://Texture/Misc/Main_Background.jpeg<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://bjkhg0jk2ij81::::res://Texture/Playable Characters/World01_006_Witch.png<>uid://bk33kldccv5xd::::res://Texture/Playable Characters/World01_007_Pirate.png<>uid://cxo0otdv43xv8::::res://Texture/Playable Characters/World04_003_ Outlaw.png
+Menu.tscn::PackedScene::5781549948801808367::1738794623::0::1::::<><>::res://Menu.gd<>uid://lc3vjdj412n1::::res://Texture/Misc/Main_Background.jpeg<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://bjkhg0jk2ij81::::res://Texture/Playable Characters/World01_006_Witch.png<>uid://bk33kldccv5xd::::res://Texture/Playable Characters/World01_007_Pirate.png<>uid://cxo0otdv43xv8::::res://Texture/Playable Characters/World04_003_ Outlaw.png
 Node2D.gd::GDScript::-1::1737173775::0::1::::<>Node2D<>::
 sample sprite.jpg::CompressedTexture2D::3950290544105030616::1737511856::1738378533::1::::<><>::
-selec_personaje.gd::GDScript::-1::1737660958::0::1::::<>Control<>::
-selec_personaje.tscn::PackedScene::6086145974188427188::1737659553::0::1::::<><>::res://selec_personaje.gd<>uid://ss40g1xwt757::::res://fondo1.jpeg<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://bjkhg0jk2ij81::::res://Characters/PLayable characters/World01_006_Witch.png<>uid://bk33kldccv5xd::::res://Characters/PLayable characters/World01_007_Pirate.png<>uid://cq2yjg4g0icol::::res://Characters/PLayable characters/World01_004_WailingPrince.png<>uid://cxo0otdv43xv8::::res://Characters/PLayable characters/World04_003_ Outlaw.png<>uid://c2tsa4mu2lfvt::::res://Texture/Misc/finger.png
+selec_personaje.gd::GDScript::-1::1738798134::0::1::::<>Control<>::
+selec_personaje.tscn::PackedScene::6086145974188427188::1738883932::0::1::::<><>::res://selec_personaje.gd<>uid://ss40g1xwt757::::res://fondo1.jpeg<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://bjkhg0jk2ij81::::res://Texture/Playable Characters/World01_006_Witch.png<>uid://bk33kldccv5xd::::res://Texture/Playable Characters/World01_007_Pirate.png<>uid://cq2yjg4g0icol::::res://Texture/Playable Characters/World01_004_WailingPrince.png<>uid://cxo0otdv43xv8::::res://Texture/Playable Characters/World04_003_ Outlaw.png<>uid://c2tsa4mu2lfvt::::res://Texture/Misc/finger.png
 Textbox.gd::GDScript::-1::1737176880::0::1::::<>CanvasLayer<>::
 Textbox.tres::StyleBoxFlat::356236914399706217::1737518529::0::1::::<><>::
-Textbox.tscn::PackedScene::4428483535166777274::1737600669::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>res://Textbox.gd
+Textbox.tscn::PackedScene::4428483535166777274::1738885542::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>res://Textbox.gd
 ::res://Addons/::1738782456
 Custom_inspector.gd::GDScript::-1::1737580195::0::1::::<>Node2D<>::
 eeee.gd::GDScript::-1::1737261911::0::1::::<>Area2D<>::
@@ -64,19 +64,21 @@ finger.png::CompressedTexture2D::6708257771470044153::1737511786::1738378533::1:
 npc.gd::GDScript::-1::1738350760::0::1::::<>CharacterBody2D<>::
 ::res://Characters/Overworld/Enemies/::1738378367
 Orc_overworld.tscn::PackedScene::9184005908792330760::1738352277::0::1::::<><>::res://Characters/Overworld/npc.gd<>uid://cf7vfeaara47v::::res://Texture/NPC/Orc/Idle-Sheet.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
-::res://Characters/Overworld/Friendly/::1738721857
-Guy2.tscn::PackedScene::83873096832253603::1738383486::0::1::::<><>::res://Characters/Overworld/npc.gd<>uid://bla5wrqmea4gf::::res://Texture/NPC/Friendly/village_head.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
-Guy3.tscn::PackedScene::4478300075916224602::1738721857::0::1::::<><>::res://Characters/Overworld/npc.gd<>uid://djyreqp4tdrib::::res://Texture/NPC/Friendly/chinese_woman.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
-Guy (no dialogue).tscn::PackedScene::5549890749013968808::1738721857::0::1::::<><>::res://Characters/Overworld/npc.gd<>uid://dp4fswgbd2pjg::::res://Texture/NPC/Friendly/uncle_fisherman.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
-Guy.tscn::PackedScene::4662285049464158738::1738721857::0::1::::<><>::res://Characters/Overworld/npc.gd<>uid://dp4fswgbd2pjg::::res://Texture/NPC/Friendly/uncle_fisherman.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
-::res://Characters/PLayable characters/::1738786431
-RPG_character.gd::GDScript::-1::1738785618::0::1::::<>CharacterBody2D<>::
-RPG_character.tscn::PackedScene::3546045638862774471::1738786431::0::1::::<><>::res://Characters/PLayable characters/RPG_character.gd<>uid://de4l0h6xhowsa::::res://Skills/Knight/Corte.tres<>uid://vbgpc8ntuntf::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Idle.png<>uid://cjfy4ntmnlwtc::::res://inventory/inventario.tscn<>uid://dq00nbal7vmmg::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Walk.png<>uid://d1lfa218hf1ms::::res://Skills/Knight/Estocada.tres<>uid://dov57pita5uig::::res://stats/stats.tscn
-::res://Characters/PLayable characters/Scenes/::1738786496
-Archer.tscn::PackedScene::8653875733251786171::1738786421::0::1::::<><>::uid://vbgpc8ntuntf::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Idle.png<>uid://dq00nbal7vmmg::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Walk.png
-Barbarian.tscn::PackedScene::8653875733251786171::1738786421::0::1::::<><>::uid://vbgpc8ntuntf::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Idle.png<>uid://dq00nbal7vmmg::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Walk.png
-Knight.tscn::PackedScene::8653875733251786171::1738786421::0::1::::<><>::uid://vbgpc8ntuntf::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Idle.png<>uid://dq00nbal7vmmg::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Walk.png
-Wizard.tscn::PackedScene::8653875733251786171::1738786421::0::1::::<><>::uid://vbgpc8ntuntf::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Idle.png<>uid://dq00nbal7vmmg::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Walk.png
+::res://Characters/Overworld/Friendly/::1738885726
+Guy2.tscn::PackedScene::-1::1738881772::0::1::::<><>::
+Guy3.tscn::PackedScene::8588491705675127122::1738885726::0::1::::<><>::res://Characters/Overworld/npc.gd<>uid://hmn5nxbmslbs::::res://Texture/NPC/Friendly/Swordsman-Idle.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
+Guy4.tscn::PackedScene::-1::1738881772::0::1::::<><>::
+Guy.tscn::PackedScene::4662285049464158738::1738883933::0::1::::<><>::res://Characters/Overworld/npc.gd<>uid://hmn5nxbmslbs::::res://Texture/NPC/Friendly/Swordsman-Idle.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
+Merchant.tscn::PackedScene::2343659142518594185::1738883933::0::1::::<><>::res://Characters/Overworld/npc.gd<>uid://5oeyjr0f1h7a::::res://Texture/NPC/Friendly/Soldier-Idle.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
+::res://Characters/Overworld/Friendly/Hub/::1738881915
+::res://Characters/PLayable characters/::1738883933
+RPG_character.gd::GDScript::-1::1738809125::0::1::::<>CharacterBody2D<>::
+RPG_character.tscn::PackedScene::3546045638862774471::1738883933::0::1::::<><>::res://Characters/PLayable characters/RPG_character.gd<>uid://de4l0h6xhowsa::::res://Skills/Knight/Corte.tres<>uid://cjfy4ntmnlwtc::::res://inventory/inventario.tscn<>uid://d1lfa218hf1ms::::res://Skills/Knight/Estocada.tres
+::res://Characters/PLayable characters/Scenes/::1738789009
+Archer.tscn::PackedScene::8653875733251786171::1738788980::0::1::::<><>::uid://c73ymqivr0hrj::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Idle.png<>uid://b3isk0q4e5v1f::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Walk.png
+Barbarian.tscn::PackedScene::8653875733251786171::1738788987::0::1::::<><>::uid://dpynry271fibe::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Idle.png<>uid://65jtucyr84ki::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Walk.png
+Knight.tscn::PackedScene::8653875733251786171::1738788999::0::1::::<><>::uid://vbgpc8ntuntf::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Idle.png<>uid://dq00nbal7vmmg::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Walk.png
+Wizard.tscn::PackedScene::8653875733251786171::1738789008::0::1::::<><>::uid://dkj3kmaaw02pm::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Idle.png<>uid://car6d7bpnky3c::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Walk.png
 ::res://Combat/::1738378367
 Combat_menu.gd::GDScript::-1::1737665960::0::1::::<>CanvasLayer<>::
 Combat_menu.tscn::PackedScene::2401171033394759451::1737661345::0::1::::<><>::res://Combat/Combat_menu.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://cqekhr244iaxt::::res://Texture/Combat_icons/Sword.png<>uid://cvtqrrnc6kio8::::res://Texture/Combat_icons/Fire.webp<>uid://cvgypcfh7xnur::::res://Fonts/Combat_menu.tres<>uid://dk0yri2awrr8u::::res://Texture/Combat_icons/healing_potion.png<>uid://c34bexx0cwasx::::res://Texture/Combat_icons/Run.png<>uid://daho6ewyuivpt::::res://Sfx/menu-move.ogg
@@ -108,10 +110,10 @@ hacha.png::CompressedTexture2D::2650519062861763193::1737518547::1738378533::1::
 objetos.gd::GDScript::-1::1737518547::0::1::::<>Area2D<>::
 objetos.tscn::PackedScene::3218568723382095621::1737518725::0::1::::<><>::res://inventory/items/objetos.gd
 veneno.png::CompressedTexture2D::1182719246731706633::1737518547::1738378533::1::::<><>::
-::res://Maps/::1738723528
+::res://Maps/::1738883933
 hub.tscn::PackedScene::8432443394854468202::1736129840::0::1::::<><>::uid://1rclml3p5d3c::::res://Texture/TX Tileset Grass.png
 Manager.gd::GDScript::-1::1738199902::0::1::::<>Node2D<>::
-Test_map.tscn::PackedScene::669239784417098673::1738723528::0::1::::<><>::res://Maps/Manager.gd<>uid://bqry4a0o2fpul::::res://Characters/PLayable characters/Scenes/Knight.tscn<>uid://b2sqgbnkfdh03::::res://Texture/Hub/Tileset_Road.png<>uid://b7opfhs7jg6kc::::res://Characters/Overworld/Friendly/Guy.tscn<>uid://du2u6x1x3jlx3::::res://Texture/Hub/Tileset_Ground.png<>uid://cgmma0id87dkx::::res://Texture/Hub/Tiles.png<>uid://ckemtjvnh0m3v::::res://Texture/Hub/Water+.png<>uid://bub8aq4yvpxqk::::res://Texture/Hub/Tileset_RockSlope.png<>uid://d0d3ng730bvru::::res://Texture/Hub/Tileset_RockSlope_Simple.png<>uid://c0ey2gccucnk6::::res://Texture/Hub/Props.png<>uid://vh6ygcmwgv3y::::res://Texture/Hub/Trees_Bushes.png<>uid://3to5abwx1736::::res://Texture/Hub/Tileset_Water.png<>uid://c5lducn6wfwf6::::res://Texture/Hub/Props2.png<>uid://d332iai14ac4w::::res://Characters/Overworld/Enemies/Orc_overworld.tscn<>uid://bgvm3tgm42pr::::res://Characters/Overworld/Friendly/Guy2.tscn<>uid://b42k7h3you0ss::::res://Characters/Overworld/Friendly/Guy3.tscn<>uid://clcn5iugq78v1::::res://Characters/Overworld/Friendly/Guy (no dialogue).tscn
+Test_map.tscn::PackedScene::669239784417098673::1738883933::0::1::::<><>::res://Maps/Manager.gd<>uid://bqry4a0o2fpul::::res://Characters/PLayable characters/RPG_character.tscn<>uid://b2sqgbnkfdh03::::res://Texture/Hub/Tileset_Road.png<>uid://b7opfhs7jg6kc::::res://Characters/Overworld/Friendly/Guy.tscn<>uid://du2u6x1x3jlx3::::res://Texture/Hub/Tileset_Ground.png<>uid://cgmma0id87dkx::::res://Texture/Hub/Tiles.png<>uid://ckemtjvnh0m3v::::res://Texture/Hub/Water+.png<>uid://bub8aq4yvpxqk::::res://Texture/Hub/Tileset_RockSlope.png<>uid://d0d3ng730bvru::::res://Texture/Hub/Tileset_RockSlope_Simple.png<>uid://c0ey2gccucnk6::::res://Texture/Hub/Props.png<>uid://vh6ygcmwgv3y::::res://Texture/Hub/Trees_Bushes.png<>uid://3to5abwx1736::::res://Texture/Hub/Tileset_Water.png<>uid://c5lducn6wfwf6::::res://Texture/Hub/Props2.png<>uid://d332iai14ac4w::::res://Characters/Overworld/Enemies/Orc_overworld.tscn<>uid://8njyus51vpf2::::res://Characters/Overworld/Friendly/Merchant.tscn<>res://Characters/Overworld/Friendly/Guy2.tscn
 ::res://Misc/::1738724272
 Transition.gd::GDScript::-1::1738724221::0::1::::<>CanvasLayer<>::
 Transition.tscn::PackedScene::7109273025674359300::1738724272::0::1::::<><>::res://Misc/Transition.gd
@@ -139,7 +141,7 @@ stats.gd::GDScript::-1::1737518548::0::1::::<>CanvasLayer<>::
 stats.tscn::PackedScene::8187137251108125494::1737654438::0::1::::<><>::res://stats/stats.gd<>uid://dddsqcycif3ly::::res://stats/ataque.png<>uid://i6kck18m42i7::::res://stats/magia.png<>uid://bxntsx7xb0kfc::::res://font.tres<>uid://btrmxpso3ocm::::res://stats/defensa.png<>uid://dyhhble6v6hoe::::res://stats/velocidad.png<>uid://lk215mrwtbwm::::res://stats/vida.png<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://fctf1pb8qdsj::::res://Textbox.tres<>uid://b1m84sil4okhj::::res://icon.svg
 velocidad.png::CompressedTexture2D::8858672332787626404::1737518548::1738378533::1::::<><>::
 vida.png::CompressedTexture2D::794408442045883412::1737518548::1738378533::1::::<><>::
-::res://Texture/::1738378533
+::res://Texture/::1738885920
 TX Plant.png::CompressedTexture2D::8913898180983251626::1736129840::1738378533::1::::<><>::
 TX Player.png::CompressedTexture2D::1292032670716181570::1736129840::1738378532::1::::<><>::
 TX Props.png::CompressedTexture2D::2129109439628924678::1736129840::1738378533::1::::<><>::
@@ -169,15 +171,18 @@ Tileset_RockSlope_Simple.png::CompressedTexture2D::8921899932290023362::17366510
 Tileset_Water.png::CompressedTexture2D::2005414413484099223::1736651037::1738378532::1::::<><>::
 Trees_Bushes.png::CompressedTexture2D::1490341765311171636::1736651037::1738378532::1::::<><>::
 Water+.png::CompressedTexture2D::5483750354532211989::1736651037::1738378532::1::::<><>::
-::res://Texture/Misc/::1738378533
+::res://Texture/Misc/::1738885920
 finger.png::CompressedTexture2D::6708257771470044153::1737511786::1738378532::1::::<><>::
+Food.png::CompressedTexture2D::4681249770448080287::1738885917::1738885921::1::::<><>::
 Main_Background.jpeg::CompressedTexture2D::777944090789230272::1737591805::1738378533::1::::<><>::
 ::res://Texture/NPC/::1738382148
-::res://Texture/NPC/Friendly/::1738382165
+::res://Texture/NPC/Friendly/::1738881897
 atok.png::CompressedTexture2D::2832127476902033802::1738382163::1738382165::1::::<><>::
 chinese_woman.png::CompressedTexture2D::7841546906860502781::1738382163::1738382165::1::::<><>::
 indian_woman.png::CompressedTexture2D::6101619752975801201::1738382163::1738382165::1::::<><>::
 malay_woman.png::CompressedTexture2D::7410149462898319905::1738382163::1738382165::1::::<><>::
+Soldier-Idle.png::CompressedTexture2D::2134852824838016476::1738720400::1738881897::1::::<><>::
+Swordsman-Idle.png::CompressedTexture2D::516938051634300048::1738720401::1738881108::1::::<><>::
 uncle_fisherman.png::CompressedTexture2D::8272298554604695836::1738382163::1738382165::1::::<><>::
 village_head.png::CompressedTexture2D::3160359679124786181::1738382163::1738382165::1::::<><>::
 ::res://Texture/NPC/Orc/::1738378532

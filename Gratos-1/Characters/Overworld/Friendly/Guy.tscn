@@ -1,21 +1,56 @@
-[gd_scene load_steps=12 format=3 uid="uid://b7opfhs7jg6kc"]
+[gd_scene load_steps=17 format=3 uid="uid://b7opfhs7jg6kc"]
 
 [ext_resource type="Script" path="res://Characters/Overworld/npc.gd" id="1_66xf0"]
-[ext_resource type="Texture2D" uid="uid://dp4fswgbd2pjg" path="res://Texture/NPC/Friendly/uncle_fisherman.png" id="2_plxcu"]
+[ext_resource type="Texture2D" uid="uid://hmn5nxbmslbs" path="res://Texture/NPC/Friendly/Swordsman-Idle.png" id="2_dc0f1"]
 [ext_resource type="PackedScene" uid="uid://b4dgqhgyuawxu" path="res://Textbox.tscn" id="3_s4kqi"]
 [ext_resource type="AudioStream" uid="uid://b6ty312ne64fw" path="res://Sfx/rpg-text-speech-sound-131477.mp3" id="4_10u7b"]
 [ext_resource type="PackedScene" uid="uid://c78b0ms2d4vqg" path="res://Addons/Inspector.tscn" id="4_kvw5h"]
 [ext_resource type="Script" path="res://Manager.gd" id="6_cgb8f"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_i6xky"]
-atlas = ExtResource("2_plxcu")
-region = Rect2(100, 0, 100, 115)
+[sub_resource type="AtlasTexture" id="AtlasTexture_kejlt"]
+atlas = ExtResource("2_dc0f1")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2gu6b"]
+atlas = ExtResource("2_dc0f1")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yuvga"]
+atlas = ExtResource("2_dc0f1")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qilrm"]
+atlas = ExtResource("2_dc0f1")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bjwri"]
+atlas = ExtResource("2_dc0f1")
+region = Rect2(400, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e3w1a"]
+atlas = ExtResource("2_dc0f1")
+region = Rect2(500, 0, 100, 100)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_43qqo"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_i6xky")
+"texture": SubResource("AtlasTexture_kejlt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2gu6b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yuvga")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qilrm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bjwri")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e3w1a")
 }],
 "loop": true,
 "name": &"default",
@@ -26,10 +61,10 @@ animations = [{
 script = ExtResource("6_cgb8f")
 Name = ""
 Friendly = true
-Dialogue = Array[String](["¡Hoy el clima se ve genial para un partido!", "¿No estás de acuerdo?"])
+Dialogue = Array[String](["Buenos días, ¡Bienvenido a la UDO!...", "...¿Que qué hace ese sujeto flotando en el agua?", "Ni idea, estoy tan perdido como tu"])
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x0i35"]
-size = Vector2(18, 26)
+size = Vector2(19, 24)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_twa3v"]
 radius = 24.0208
@@ -41,8 +76,8 @@ script = ExtResource("1_66xf0")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 position = Vector2(-2, 0)
-scale = Vector2(0.22, 0.217391)
 sprite_frames = SubResource("SpriteFrames_43qqo")
+flip_h = true
 
 [node name="Textbox" parent="." instance=ExtResource("3_s4kqi")]
 unique_name_in_owner = true
@@ -56,7 +91,7 @@ unique_name_in_owner = true
 resource = SubResource("Resource_h6wxn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -1)
+position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_x0i35")
 
 [node name="Event" type="Area2D" parent="."]
