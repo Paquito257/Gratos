@@ -43,7 +43,8 @@ func player_info(name,id):
 			"character" : null,
 			"skills" : null,
 		}
-	
+		PlayerHandle.ids.append(id)
+		print(PlayerHandle.ids)
 	if multiplayer.is_server():
 		for i in PlayerHandle.players:
 			player_info.rpc(PlayerHandle.players[i].name, i)
