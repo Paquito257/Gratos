@@ -3,10 +3,10 @@
 [ext_resource type="Script" path="res://selec_personaje.gd" id="1_6tvf1"]
 [ext_resource type="Texture2D" uid="uid://ss40g1xwt757" path="res://fondo1.jpeg" id="1_s23wk"]
 [ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="4_l8r70"]
-[ext_resource type="Texture2D" uid="uid://bjkhg0jk2ij81" path="res://Texture/Playable Characters/World01_006_Witch.png" id="5_fkpaw"]
-[ext_resource type="Texture2D" uid="uid://bk33kldccv5xd" path="res://Texture/Playable Characters/World01_007_Pirate.png" id="6_l2fwe"]
-[ext_resource type="Texture2D" uid="uid://cq2yjg4g0icol" path="res://Texture/Playable Characters/World01_004_WailingPrince.png" id="7_34nie"]
-[ext_resource type="Texture2D" uid="uid://cxo0otdv43xv8" path="res://Texture/Playable Characters/World04_003_ Outlaw.png" id="7_bs6ow"]
+[ext_resource type="Texture2D" uid="uid://vbgpc8ntuntf" path="res://Texture/Playable Characters/Character sprite/Knight/Knight-Idle.png" id="4_wew3n"]
+[ext_resource type="Texture2D" uid="uid://dpynry271fibe" path="res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Idle.png" id="5_vnd7b"]
+[ext_resource type="Texture2D" uid="uid://c73ymqivr0hrj" path="res://Texture/Playable Characters/Character sprite/Archer/Archer-Idle.png" id="6_tjsw6"]
+[ext_resource type="Texture2D" uid="uid://dkj3kmaaw02pm" path="res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Idle.png" id="7_r1l1w"]
 [ext_resource type="Texture2D" uid="uid://c2tsa4mu2lfvt" path="res://Texture/Misc/finger.png" id="8_ylugc"]
 
 [sub_resource type="Animation" id="Animation_qdv7c"]
@@ -434,7 +434,6 @@ offset_left = 104.0
 offset_top = 233.0
 offset_right = 269.0
 offset_bottom = 467.0
-icon = ExtResource("5_fkpaw")
 expand_icon = true
 
 [node name="linea" type="Line2D" parent="Personaje1"]
@@ -443,13 +442,18 @@ scale = Vector2(1.22891, 1)
 points = PackedVector2Array(92, 228, 164.046, 228, 238, 228, 238, 462, 207.8, 462, 162.418, 462, 96, 462, 96, 229)
 default_color = Color(0, 0, 0, 1)
 
+[node name="Knight" type="Sprite2D" parent="Personaje1"]
+position = Vector2(123, 121)
+scale = Vector2(5.92083, 6.485)
+texture = ExtResource("4_wew3n")
+hframes = 5
+
 [node name="Personaje2" type="Button" parent="."]
 layout_mode = 0
 offset_left = 379.0
 offset_top = 234.0
 offset_right = 544.0
 offset_bottom = 468.0
-icon = ExtResource("6_l2fwe")
 expand_icon = true
 
 [node name="linea2" type="Line2D" parent="Personaje2"]
@@ -458,13 +462,18 @@ scale = Vector2(1.22891, 1)
 points = PackedVector2Array(92, 228, 164.046, 228, 238, 228, 238, 462, 207.8, 462, 162.418, 462, 96, 462, 96, 229)
 default_color = Color(0, 0, 0, 1)
 
+[node name="Barbarian" type="Sprite2D" parent="Personaje2"]
+position = Vector2(131, 132)
+scale = Vector2(5.92083, 6.485)
+texture = ExtResource("5_vnd7b")
+hframes = 5
+
 [node name="Personaje3" type="Button" parent="."]
 layout_mode = 0
 offset_left = 644.0
 offset_top = 233.0
 offset_right = 809.0
 offset_bottom = 467.0
-icon = ExtResource("7_bs6ow")
 expand_icon = true
 
 [node name="linea3" type="Line2D" parent="Personaje3"]
@@ -473,13 +482,18 @@ scale = Vector2(1.22891, 1)
 points = PackedVector2Array(92, 228, 164.046, 228, 238, 228, 238, 462, 207.8, 462, 162.418, 462, 96, 462, 96, 229)
 default_color = Color(0, 0, 0, 1)
 
+[node name="Archer" type="Sprite2D" parent="Personaje3"]
+position = Vector2(131, 132)
+scale = Vector2(5.92083, 6.485)
+texture = ExtResource("6_tjsw6")
+hframes = 5
+
 [node name="Personaje4" type="Button" parent="."]
 layout_mode = 0
 offset_left = 921.0
 offset_top = 225.0
 offset_right = 1086.0
 offset_bottom = 459.0
-icon = ExtResource("7_34nie")
 expand_icon = true
 
 [node name="linea4" type="Line2D" parent="Personaje4"]
@@ -487,6 +501,12 @@ position = Vector2(-123, -230)
 scale = Vector2(1.22891, 1)
 points = PackedVector2Array(92, 228, 164.046, 228, 238, 228, 238, 462, 207.8, 462, 162.418, 462, 96, 462, 96, 229)
 default_color = Color(0, 0, 0, 1)
+
+[node name="Wizard" type="Sprite2D" parent="Personaje4"]
+position = Vector2(131, 132)
+scale = Vector2(5.92083, 6.485)
+texture = ExtResource("7_r1l1w")
+hframes = 5
 
 [node name="finger" type="Sprite2D" parent="."]
 visible = false

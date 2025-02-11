@@ -4,7 +4,8 @@ extends Control
 @onready var texto = $Label
 var personajes = PlayerHandle.characters
 var tamaño = PlayerHandle.players.size()
-var posibilidades = [["Personaje1", "Personaje2"], ["Personaje1", "Personaje3"], ["Personaje1", "Personaje4"], ["Personaje2", "Personaje3"], ["Personaje2", "Personaje4"], ["Personaje3", "Personaje4"]]
+var posibilidades = [["caballero", "barbaro"], ["caballero", "arquero"], ["caballero", "mago"], ["barbaro", "arquero"], ["barbaro", "mago"], ["arquero", "mago"]]
+var contador = 0
 
 #Si se presiona el personaje se oculta el texto previo
 #e inicia la animación para confirmar la selección
@@ -35,7 +36,7 @@ func _on_si_pressed():
 		animacion.stop()
 		PlayerHandle.players[multiplayer.get_unique_id()].character = "caballero"		
 		deshabilitar.rpc(1)
-		
+
 
 		print(PlayerHandle.players[multiplayer.get_unique_id()])
 				
@@ -61,7 +62,8 @@ func _on_si_pressed():
 #Detiene la animación de confirmación para poder seleccionar otro personaje
 func _on_no_pressed():
 	animacion.stop()
-
+#COLOCAR QUE SE AÑADAN LOS PERSONAJES EN BASE A LA LISTA
+#A VER SI ASI LOS AÑADE BIEN
 
 #deshabilita los personajes seleccionados y
 #añade a una lista los personajes seleccionados
@@ -69,19 +71,23 @@ func _on_no_pressed():
 func deshabilitar(nro):
 	if nro == 1:
 		$Personaje1.disabled = true
-		personajes.append("Personaje1")
+		personajes.append("caballero")
+		$Personaje1/Knight.show_behind_parent = true
 		revision()
 	elif nro == 2:
 		$Personaje2.disabled = true
-		personajes.append("Personaje2")
+		personajes.append("barbaro")
+		$Personaje2/Barbarian.show_behind_parent = true
 		revision()
 	elif nro == 3:
 		$Personaje3.disabled = true
-		personajes.append("Personaje3")
+		personajes.append("arquero")
+		$Personaje3/Archer.show_behind_parent = true
 		revision()
 	elif nro == 4:
 		$Personaje4.disabled = true
-		personajes.append("Personaje4")
+		personajes.append("mago")
+		$Personaje4/Wizard.show_behind_parent = true
 		revision()
 		
 
@@ -102,6 +108,11 @@ func revision():
 			$".".visible = false
 
 func comprobar(grupo, posibilidades):
+	for i in PlayerHandle.ids:
+		if PlayerHandle.players[i].character != null:
+			contador += 1
+		elif PlayerHandle.players[i].character == null:
+			PlayerHandle.players[i].character = personajes[contador]
 	for i in posibilidades:
 		if i[0] in grupo and i[1] in grupo:
 			return true
