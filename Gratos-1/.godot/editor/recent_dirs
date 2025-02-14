@@ -1,13 +1,15 @@
-res://stats
-res://Maps/Warp
-res://Texture/NPC/Orc
-res://Characters/Battle enemies
-res://Characters/PLayable characters
 res://Combat/Combat maps
+res://Texture/NPC/Skeleton
+res://Characters/Battle enemies/Scripts
+res://Characters/PLayable characters
+res://Maps
+res://Maps/Warp
+res://Characters/Battle enemies
+res://Texture/NPC/Orc
+res://stats
 res://Combat
 res://Global
 res://Misc
-res://Maps
 C:/Users/dejam/Desktop/Godot/Projects/Gratos/Gratos-1/Maps/Warp
 res://Characters/Overworld/Enemies
 res://
@@ -18,5 +20,3 @@ res://Characters/Overworld/Friendly
 res://Texture/Playable Characters/Character sprite/Knight
 res://Texture/NPC/Friendly
 C:/Users/dejam/Desktop/Godot/Projects/Gratos/Gratos-1
-res://Texture/Playable Characters/Character sprite/Archer
-res://Texture/Playable Characters/Character sprite/Barbarian

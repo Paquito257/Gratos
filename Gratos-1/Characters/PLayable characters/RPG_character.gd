@@ -19,7 +19,7 @@ var step_pixel : float = 0.0:
 	set(value):
 		step_pixel = value
 		var step = step_pixel/distance_traveled
-		print(step)
+
 		if step >= Manager.encounter:
 			set_physics_process(false)
 			Manager.save_data(self)
@@ -45,7 +45,7 @@ func _ready():
 
 func _physics_process(delta):
 	var initial = position
-	print(is_physics_processing())
+
 	if is_multiplayer_authority() and is_physics_processing():
 		$Stats.visible = true
 		$inventario.visible = true # Esto es para que el inventario solo sea visible por el propietario

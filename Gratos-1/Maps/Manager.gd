@@ -20,10 +20,9 @@ func _ready():
 		
 				
 		for spawn in get_tree().get_nodes_in_group("Spawnpoint"):
-			if spawn.name == str(PlayerHandle.index):
-				print(spawn.name)
+			if spawn.name == str(PlayerHandle.index):	
 				print(PlayerHandle.index)
-				print(spawn.global_position)
+
 				current_player.global_position = spawn.global_position
 				#PlayerHandle.players[i].instance = current_player
 				

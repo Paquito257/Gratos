@@ -1,7 +1,11 @@
 res://Combat/Combat maps/Basico_combate.tscn
-res://Maps/Warp/Global.gd
+res://Characters/Battle enemies/Scripts/000.tscn
+res://Characters/Battle enemies/Scripts/001.tscn
+res://Characters/Battle enemies/Enemy_battle_script.gd
 res://Combat/Combat maps/Combate.gd
+res://Maps/Warp/Global.gd
+res://Maps/Manager.gd
+res://Maps/Warp/manager.tscn
+res://Maps/Test_map.tscn
+res://Characters/PLayable characters/RPG_character.gd
 res://Characters/PLayable characters/RPG_character.tscn
-res://Characters/Battle enemies/Enemy.tscn
-res://Addons/Enemy_stats.gd
-res://Characters/Battle enemies/Scripts/Orc.gd

@@ -1,3 +1,4 @@
+Sprite2D
 Node2D
 AnimatedSprite2D
 CollisionShape2D
@@ -6,4 +7,3 @@ Node
 AudioStreamPlayer2D
 AnimationPlayer
 ColorRect
-Sprite2D
