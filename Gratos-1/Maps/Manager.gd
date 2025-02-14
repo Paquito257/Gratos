@@ -6,7 +6,9 @@ var camera_pos
 #Crea instancias de los personajes jugables correspondiente al 
 #numero de jugadores
 func _ready():
-	
+
+	Music.hub.play()
+
 	for i in PlayerHandle.players:
 		var current_player = RPG_character.instantiate()
 		current_player.name = str(PlayerHandle.players[i].id)
@@ -30,8 +32,7 @@ func _ready():
 		PlayerHandle.index += 1
 	
 	
-	
-	pass # Replace with function body.
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

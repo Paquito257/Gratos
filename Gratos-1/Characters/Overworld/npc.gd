@@ -22,10 +22,10 @@ func Show_textbox():
 func fight():
 	#TODO: crear variable global que almacene el escenario de combate
 	#correspondiente al nivel, para que se elija el respectivo escenario
-	get_tree().change_scene_to_file("res://Combat/Combat maps/Basico_combate.tscn")
+	Manager.battle_scene = true
+	Manager.change_to_battle()
+
 	
-	$"..".visible = false
-	get_tree().paused = true
 
 	
 func _process(delta):

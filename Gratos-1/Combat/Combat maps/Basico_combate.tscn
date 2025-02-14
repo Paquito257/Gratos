@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://w51th8oq40rg"]
+[gd_scene load_steps=16 format=3 uid="uid://w51th8oq40rg"]
 
 [ext_resource type="Script" path="res://Combat/Combat maps/Combate.gd" id="1_78inm"]
 [ext_resource type="Texture2D" uid="uid://dgxqjn4yhw4jv" path="res://Texture/Clouds 1/1.png" id="1_elf1a"]
@@ -9,7 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://gx5sidbfbjfo" path="res://Texture/TX Tileset Wall.png" id="3_qg7gj"]
 [ext_resource type="PackedScene" uid="uid://bahe63ewgm2mx" path="res://Combat/Combat_menu.tscn" id="4_q0kg2"]
 [ext_resource type="Texture2D" uid="uid://5lmeelwn7rhe" path="res://Texture/TX Props.png" id="7_yj2qq"]
-[ext_resource type="AudioStream" uid="uid://b3kvcd5bjosmx" path="res://Music/Battle Theme.mp3" id="9_rkh5u"]
 [ext_resource type="PackedScene" uid="uid://cfbqvlfaphdvn" path="res://Characters/Battle enemies/Enemy.tscn" id="11_j3a4c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qs50u"]
@@ -1033,6 +1032,7 @@ sources/4 = SubResource("TileSetAtlasSource_b3ont")
 
 [node name="Basico" type="Node2D"]
 process_mode = 3
+z_index = 15
 script = ExtResource("1_78inm")
 
 [node name="Sky" type="Sprite2D" parent="."]
@@ -1066,9 +1066,19 @@ zoom = Vector2(2, 2)
 
 [node name="CanvasLayer" parent="." instance=ExtResource("4_q0kg2")]
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("9_rkh5u")
-autoplay = true
-
 [node name="Enemy" parent="." instance=ExtResource("11_j3a4c")]
 position = Vector2(485, 182)
+
+[node name="Players" type="Node2D" parent="."]
+
+[node name="1" type="Node2D" parent="Players" groups=["Spawn"]]
+position = Vector2(103, 167)
+
+[node name="2" type="Node2D" parent="Players" groups=["Spawn"]]
+position = Vector2(102, 197)
+
+[node name="3" type="Node2D" parent="Players" groups=["Spawn"]]
+position = Vector2(64, 151)
+
+[node name="4" type="Node2D" parent="Players" groups=["Spawn"]]
+position = Vector2(66, 226)

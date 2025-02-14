@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bahe63ewgm2mx"]
+[gd_scene load_steps=18 format=3 uid="uid://bahe63ewgm2mx"]
 
 [ext_resource type="Script" path="res://Combat/Combat_menu.gd" id="1_1m7nu"]
 [ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="1_by7rl"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dk0yri2awrr8u" path="res://Texture/Combat_icons/healing_potion.png" id="3_vcpkd"]
 [ext_resource type="Texture2D" uid="uid://c34bexx0cwasx" path="res://Texture/Combat_icons/Run.png" id="5_d4ieg"]
 [ext_resource type="AudioStream" uid="uid://daho6ewyuivpt" path="res://Sfx/menu-move.ogg" id="8_mxrey"]
+[ext_resource type="PackedScene" uid="uid://b4dgqhgyuawxu" path="res://Textbox.tscn" id="9_6npqt"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_0fddq"]
 
@@ -41,6 +42,9 @@ content_margin_left = 20.0
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_1m7nu")
+world = "<null>"
+
+[node name="Textbox" parent="." instance=ExtResource("9_6npqt")]
 
 [node name="Container Alpha" type="MarginContainer" parent="."]
 anchors_preset = 15

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://b7opfhs7jg6kc"]
+[gd_scene load_steps=17 format=3 uid="uid://daaywk0my6qsw"]
 
 [ext_resource type="Script" path="res://Characters/Overworld/npc.gd" id="1_66xf0"]
 [ext_resource type="Texture2D" uid="uid://hmn5nxbmslbs" path="res://Texture/NPC/Friendly/Swordsman-Idle.png" id="2_dc0f1"]

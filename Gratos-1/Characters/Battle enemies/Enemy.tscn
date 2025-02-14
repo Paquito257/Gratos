@@ -1,45 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://cfbqvlfaphdvn"]
+[gd_scene load_steps=10 format=3 uid="uid://cfbqvlfaphdvn"]
 
 [ext_resource type="Script" path="res://Characters/Battle enemies/Scripts/Orc.gd" id="1_s2nts"]
-[ext_resource type="Texture2D" uid="uid://cf7vfeaara47v" path="res://Characters/Battle enemies/Idle-Sheet.png" id="2_4bfp4"]
 [ext_resource type="PackedScene" uid="uid://dscfc6id23ecm" path="res://Addons/Stats_inspector.tscn" id="3_xe8lu"]
 [ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="4_fey0d"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rw5ur"]
-atlas = ExtResource("2_4bfp4")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_u5ekf"]
-atlas = ExtResource("2_4bfp4")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wwuyy"]
-atlas = ExtResource("2_4bfp4")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_in1p1"]
-atlas = ExtResource("2_4bfp4")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_3duox"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rw5ur")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_u5ekf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wwuyy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_in1p1")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+[ext_resource type="PackedScene" uid="uid://cvr8wxkfmitbe" path="res://Characters/PLayable characters/Attack_list.tscn" id="5_dgsy6"]
+[ext_resource type="Resource" uid="uid://cidc0rql5wigo" path="res://Skills/Enemies/Golpe.tres" id="6_f8ns0"]
+[ext_resource type="Resource" uid="uid://bilpxc4fxf48o" path="res://Skills/Enemies/Magia_I.tres" id="7_k0ywk"]
 
 [sub_resource type="Theme" id="Theme_8mw5f"]
 default_font = ExtResource("4_fey0d")
@@ -58,14 +24,9 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[node name="Orc" type="CharacterBody2D"]
+[node name="Enemy" type="CharacterBody2D"]
 script = ExtResource("1_s2nts")
-
-[node name="Orc_animated" type="AnimatedSprite2D" parent="."]
-position = Vector2(2, 1.5)
-scale = Vector2(1.25, 1.21875)
-sprite_frames = SubResource("SpriteFrames_3duox")
-frame_progress = 0.446787
+animation = NodePath("")
 
 [node name="Stats" parent="." instance=ExtResource("3_xe8lu")]
 vida = 12
@@ -73,6 +34,7 @@ magia = 5
 velocidad = 3
 defensa = 2
 ataque = 3
+exp = 5
 
 [node name="Life" type="ProgressBar" parent="."]
 offset_left = -19.0
@@ -83,3 +45,6 @@ theme = SubResource("Theme_8mw5f")
 theme_override_styles/background = SubResource("StyleBoxFlat_sdu1w")
 theme_override_styles/fill = SubResource("StyleBoxFlat_qwqke")
 show_percentage = false
+
+[node name="Node2D" parent="." instance=ExtResource("5_dgsy6")]
+attacks = Array[Resource]([ExtResource("6_f8ns0"), ExtResource("7_k0ywk")])

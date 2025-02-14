@@ -1,7 +1,36 @@
-[gd_scene load_steps=18 format=3 uid="uid://dvkacl0f54w3d"]
+[gd_scene load_steps=26 format=3 uid="uid://dvkacl0f54w3d"]
 
 [ext_resource type="Texture2D" uid="uid://vbgpc8ntuntf" path="res://Texture/Playable Characters/Character sprite/Knight/Knight-Idle.png" id="1_238u5"]
+[ext_resource type="Texture2D" uid="uid://wa2n26frfmnj" path="res://Texture/Playable Characters/Character sprite/Knight/Knight-Attack01.png" id="1_p61vl"]
 [ext_resource type="Texture2D" uid="uid://dq00nbal7vmmg" path="res://Texture/Playable Characters/Character sprite/Knight/Knight-Walk.png" id="2_f2ylb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sj4af"]
+atlas = ExtResource("1_p61vl")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_asxe4"]
+atlas = ExtResource("1_p61vl")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_om80n"]
+atlas = ExtResource("1_p61vl")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6s8t"]
+atlas = ExtResource("1_p61vl")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8c10"]
+atlas = ExtResource("1_p61vl")
+region = Rect2(400, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fswxr"]
+atlas = ExtResource("1_p61vl")
+region = Rect2(500, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fv3iu"]
+atlas = ExtResource("1_p61vl")
+region = Rect2(600, 0, 100, 100)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_50yd4"]
 atlas = ExtResource("1_238u5")
@@ -63,6 +92,32 @@ region = Rect2(700, 0, 100, 100)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_sj4af")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_asxe4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_om80n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u6s8t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n8c10")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fswxr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fv3iu")
+}],
+"loop": true,
+"name": &"Attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_50yd4")
 }, {
 "duration": 1.0,
@@ -117,4 +172,5 @@ animations = [{
 [node name="Knight" type="AnimatedSprite2D"]
 z_index = 9
 sprite_frames = SubResource("SpriteFrames_ji0m7")
-animation = &"Idle"
+animation = &"Attack"
+frame_progress = 0.161393

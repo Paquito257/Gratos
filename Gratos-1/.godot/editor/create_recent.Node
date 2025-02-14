@@ -1,6 +1,9 @@
+Node2D
 AnimatedSprite2D
-AnimationPlayer
-ColorRect
 CollisionShape2D
 Area2D
+Node
+AudioStreamPlayer2D
+AnimationPlayer
+ColorRect
 Sprite2D

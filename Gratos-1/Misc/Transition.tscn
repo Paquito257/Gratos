@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://c8j1xnnk01n4w"]
+[gd_scene load_steps=6 format=3 uid="uid://c8j1xnnk01n4w"]
 
 [ext_resource type="Script" path="res://Misc/Transition.gd" id="1_r6wuv"]
 
@@ -15,6 +15,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_bow4b"]
+resource_name = "Black_unfill"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_r16de"]
@@ -35,6 +50,7 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5htku"]
 _data = {
 "Black_fill": SubResource("Animation_j4h63"),
+"Black_unfill": SubResource("Animation_bow4b"),
 "RESET": SubResource("Animation_r16de")
 }
 

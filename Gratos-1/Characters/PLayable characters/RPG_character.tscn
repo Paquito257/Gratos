@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://bqry4a0o2fpul"]
+[gd_scene load_steps=9 format=3 uid="uid://bqry4a0o2fpul"]
 
 [ext_resource type="Script" path="res://Characters/PLayable characters/RPG_character.gd" id="1_2nv67"]
 [ext_resource type="Resource" uid="uid://de4l0h6xhowsa" path="res://Skills/Knight/Corte.tres" id="2_3htjf"]
 [ext_resource type="PackedScene" uid="uid://cjfy4ntmnlwtc" path="res://inventory/inventario.tscn" id="3_3pyy7"]
 [ext_resource type="Resource" uid="uid://d1lfa218hf1ms" path="res://Skills/Knight/Estocada.tres" id="3_idxyg"]
+[ext_resource type="Resource" uid="uid://drwttwu742t22" path="res://Skills/Knight/Puñalada_Eterea.tres" id="4_cnoem"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yvfyn"]
 
@@ -19,7 +20,7 @@ radius = 19.0263
 position = Vector2(587, 484)
 motion_mode = 1
 script = ExtResource("1_2nv67")
-attacks = Array[Resource]([ExtResource("2_3htjf"), ExtResource("3_idxyg")])
+attacks = Array[Resource]([ExtResource("2_3htjf"), ExtResource("3_idxyg"), ExtResource("4_cnoem")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -1)

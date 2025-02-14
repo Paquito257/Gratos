@@ -1,16 +1,22 @@
-res://Characters/Overworld/Friendly
-res://
-res://Texture/NPC/Friendly
+res://stats
+res://Maps/Warp
+res://Texture/NPC/Orc
+res://Characters/Battle enemies
 res://Characters/PLayable characters
+res://Combat/Combat maps
+res://Combat
+res://Global
+res://Misc
 res://Maps
+C:/Users/dejam/Desktop/Godot/Projects/Gratos/Gratos-1/Maps/Warp
 res://Characters/Overworld/Enemies
+res://
 C:/Users/dejam/Desktop/Godot/Projects/Gratos/Gratos-1/Global
-C:/Users/dejam/Desktop/Godot/Projects/Gratos/Gratos-1
+C:/Users/dejam/Desktop/Godot/Projects/Gratos/Gratos-1/Characters/PLayable characters
 res://Characters/PLayable characters/Scenes
+res://Characters/Overworld/Friendly
+res://Texture/Playable Characters/Character sprite/Knight
+res://Texture/NPC/Friendly
+C:/Users/dejam/Desktop/Godot/Projects/Gratos/Gratos-1
 res://Texture/Playable Characters/Character sprite/Archer
 res://Texture/Playable Characters/Character sprite/Barbarian
-res://Texture/Playable Characters/Character sprite/Wizard
-res://Texture/Playable Characters/Character sprite/Knight
-res://Addons
-C:/Users/dejam/Desktop/Godot/Projects/Gratos/Gratos-1/Addons
-res://Misc

@@ -1,8 +1,7 @@
-res://Maps/Test_map.tscn
-res://selec_personaje.tscn
+res://Combat/Combat maps/Basico_combate.tscn
+res://Maps/Warp/Global.gd
+res://Combat/Combat maps/Combate.gd
 res://Characters/PLayable characters/RPG_character.tscn
-res://Characters/Overworld/Friendly/Guy.tscn
-res://Characters/Overworld/Friendly/Merchant.tscn
-res://Textbox.tscn
-res://Characters/Overworld/Friendly/Guy3.tscn
-res://Characters/Overworld/Friendly/Guy4.tscn
+res://Characters/Battle enemies/Enemy.tscn
+res://Addons/Enemy_stats.gd
+res://Characters/Battle enemies/Scripts/Orc.gd

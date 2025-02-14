@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://3e0vklijnea1"]
+
+[ext_resource type="Script" path="res://Maps/Warp/Global.gd" id="1_x1fud"]
+
+[node name="Manager" type="Node2D"]
+script = ExtResource("1_x1fud")
+arena = "res://Combat/Combat maps/Basico_combate.tscn"

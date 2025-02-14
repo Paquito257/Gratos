@@ -8,6 +8,7 @@ var magia : int
 var velocidad : int
 var ataque : int
 var defensa : int
+var exp : int
 
 func _get_property_list() -> Array:
 	var properties: Array = []
@@ -40,6 +41,11 @@ func _get_property_list() -> Array:
 	})
 	properties.append({
 		"name" : "ataque",
+		"type" : TYPE_INT,
+		"usage" : PROPERTY_USAGE_DEFAULT,
+	})
+	properties.append({
+		"name" : "exp",
 		"type" : TYPE_INT,
 		"usage" : PROPERTY_USAGE_DEFAULT,
 	})
