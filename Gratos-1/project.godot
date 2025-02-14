@@ -12,14 +12,13 @@ config_version=5
 
 config/name="RPG_Gratos"
 run/main_scene="res://Menu.tscn"
-config/features=PackedStringArray("4.2")
+config/features=PackedStringArray("4.3")
 config/icon="res://icon.svg"
 
 [autoload]
 
 PlayerHandle="*res://Global/Player_handle.gd"
-Music="*res://Global/Music.tscn"
-Manager="*res://Maps/Warp/manager.tscn"
+GameControl="*res://Global/Game_control.gd"
 
 [editor]
 
@@ -32,3 +31,4 @@ enabled=PackedStringArray()
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
