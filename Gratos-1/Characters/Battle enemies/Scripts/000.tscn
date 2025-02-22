@@ -94,6 +94,7 @@ animations = [{
 [node name="Enemy" type="CharacterBody2D"]
 z_index = 13
 script = ExtResource("1_s2nts")
+flipped = true
 enemy_name = "Orc"
 
 [node name="Stats" parent="." instance=ExtResource("3_xe8lu")]

@@ -1,11 +1,3 @@
-res://Combat/Combat maps/Basico_combate.tscn
 res://Characters/Battle enemies/Scripts/000.tscn
 res://Characters/Battle enemies/Scripts/001.tscn
-res://Characters/Battle enemies/Enemy_battle_script.gd
-res://Combat/Combat maps/Combate.gd
-res://Maps/Warp/Global.gd
-res://Maps/Manager.gd
-res://Maps/Warp/manager.tscn
-res://Maps/Test_map.tscn
-res://Characters/PLayable characters/RPG_character.gd
-res://Characters/PLayable characters/RPG_character.tscn
+res://Combat/Combat maps/Basico_combate.tscn
