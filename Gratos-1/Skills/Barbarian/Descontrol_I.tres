@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Skill" load_steps=2 format=3 uid="uid://qbtnf7vwj8ue"]
+
+[ext_resource type="Script" path="res://Addons/Skills.gd" id="1_4nw02"]
+
+[resource]
+script = ExtResource("1_4nw02")
+Skill_name = ""
+Damage = 0
+Magic = 0
+Success = 0.0
+Global = false

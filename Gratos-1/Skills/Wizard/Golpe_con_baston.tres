@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Skill" load_steps=2 format=3 uid="uid://qnxgd3gnaqyi"]
+
+[ext_resource type="Script" path="res://Addons/Skills.gd" id="1_1vsw0"]
+
+[resource]
+script = ExtResource("1_1vsw0")
+Skill_name = "Golpe con Bastón"
+Damage = 2
+Magic = 0
+Success = 1.0

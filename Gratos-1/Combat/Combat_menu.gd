@@ -1,9 +1,11 @@
 extends CanvasLayer
 
+
 @onready var menu = %Basic_menu
 @onready var combat = %Combat
 @onready var special = %Item
 @onready var item = %Special
+#var player = PlayerHandle.players[multiplayer.get_unique_id()]
 @export_file("*.tscn") var world 
 
 var hypothetical_skills = ["Golpe","Patada","Estocada","Corte"]
@@ -56,19 +58,17 @@ func _on_basic_menu_item_clicked(index, at_position, mouse_button_index):
 					
 
 
-
+#Permite seleccionar los ataques normales
+#(y que estos tengan efecto en el combate)
 func _on_combat_item_clicked(index, at_position, mouse_button_index):
-	if mouse_button_index == MOUSE_BUTTON_LEFT:	
-		match index:
-			0:
-				%Sfx.play()
-				pass
-			1:
-				%Sfx.play()
-				pass
-			2:
-				%Sfx.play()
-				pass
-			3:
-				pass
+	for skill in PlayerHandle.players[multiplayer.get_unique_id()].skills:
+		if combat.get_item_text(index) == skill.Skill_name:
+			%Sfx.play()
+	
+			
 
+
+#Permite seleccionar los items
+#(y que estos tengan efecto en el combate)
+func _on_item_item_clicked(index, at_position, mouse_button_index):
+	pass # Replace with function body.

@@ -1,6 +1,10 @@
 extends Node2D
 
 @onready var menu = $CanvasLayer
+@onready var selection = $Enemy_select
+var index: int = 0
+
+
  #Accede a la carpeta donde se encuentran los enemigos
 var files_in_directory = DirAccess.get_files_at("res://Characters/Battle enemies/Scripts/")
 
@@ -27,7 +31,6 @@ func character_spawn():
 	match PlayerHandle.players[multiplayer.get_unique_id()].character:
 		"caballero":
 			player = load("res://Characters/PLayable characters/Scenes/Knight.tscn").instantiate()
-			
 
 		"arquero":
 			player = load("res://Characters/PLayable characters/Scenes/Archer.tscn").instantiate()
@@ -52,7 +55,6 @@ func spawn_enemies():
 	print(random)
 	for i in random:
 		
-		print(i)
 		random_enemy = files_in_directory[randi() % files_in_directory.size()]
 		print(random_enemy)
 		enemy = load("res://Characters/Battle enemies/Scripts/" + random_enemy).instantiate()
@@ -60,17 +62,22 @@ func spawn_enemies():
 		add_child(enemies[i])
 		match i:
 			0:
-				enemies[i].position = $"Enemies/1".position
+				enemies[i].position = $"Enemies/0".position 
 				enemies[i].animation.play()
 			1:
-				enemies[i].position = $"Enemies/2".position
+				enemies[i].position = $"Enemies/1".position
 				enemies[i].animation.play()
 			2:
-				enemies[i].position = $"Enemies/3".position
+				enemies[i].position = $"Enemies/2".position
 				enemies[i].animation.play()
 
-func focus(global):
-	pass
+#Selecciona a un enemigo/aliado (o a todos, si es un ataque multiple)
+func focus(all: bool = false):
+	if all:
+		pass
+	else:
+		selection.show()
+		
 
-func switch_focus():
+func switch_focus(x,y):
 	pass

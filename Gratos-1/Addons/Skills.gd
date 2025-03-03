@@ -7,3 +7,4 @@ class_name Skill
 @export var Damage : int
 @export var Magic : int
 @export_range(0,1,0.05) var Success : float
+@export var Global : bool = false

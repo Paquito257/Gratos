@@ -1,7 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://dvkacl0f54w3d"]
+[gd_scene load_steps=19 format=3 uid="uid://dvkacl0f54w3d"]
 
 [ext_resource type="Texture2D" uid="uid://dkj3kmaaw02pm" path="res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Idle.png" id="1_kqrs4"]
 [ext_resource type="Texture2D" uid="uid://car6d7bpnky3c" path="res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Walk.png" id="2_5qwct"]
+[ext_resource type="Script" path="res://Characters/PLayable characters/Scenes/Classes.gd" id="3_x4th4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jdj0q"]
 atlas = ExtResource("1_kqrs4")
@@ -118,3 +119,4 @@ animations = [{
 z_index = 9
 sprite_frames = SubResource("SpriteFrames_ji0m7")
 animation = &"Walk"
+script = ExtResource("3_x4th4")

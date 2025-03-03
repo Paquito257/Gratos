@@ -196,6 +196,7 @@ animations = [{
 z_index = 13
 script = ExtResource("1_s2nts")
 flipped = true
+enemy_name = "Skeleton"
 
 [node name="Stats" parent="." instance=ExtResource("3_xe8lu")]
 vida = 10

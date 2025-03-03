@@ -189,11 +189,12 @@ func _process(delta: float):
 	pass
 
 # Logica para posicionar el item en el inventario
-func _on_body_entered(body: Node2D) -> void: 
-	var inventario = body.get_node("inventario")
-	if inventario.find_similar_object($"."):
-		pass
-	else:
-		inventario.add($".")
+func _on_body_entered(body: Node2D) -> void:
+	if body is CharacterBody2D:
+		var inventario = body.get_node("inventario")
+		if inventario.find_similar_object($"."):
+			pass
+		else:
+			inventario.add($".")
 					
 		

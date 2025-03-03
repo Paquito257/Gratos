@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Skill" load_steps=2 format=3 uid="uid://doprx0c65nn5h"]
+
+[ext_resource type="Script" path="res://Addons/Skills.gd" id="1_3ijx1"]
+
+[resource]
+script = ExtResource("1_3ijx1")
+Skill_name = "Bola de Fuego"
+Damage = 6
+Magic = 4
+Success = 1.0
+Global = false
