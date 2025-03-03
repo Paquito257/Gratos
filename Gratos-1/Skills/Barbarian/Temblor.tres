@@ -4,8 +4,9 @@
 
 [resource]
 script = ExtResource("1_je6mo")
-Skill_name = ""
-Damage = 0
+Skill_name = "Temblor"
+Damage = 1
 Magic = 0
-Success = 0.0
-Global = false
+Success = 1.0
+Global = true
+Level_unlock = 1

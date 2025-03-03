@@ -17,7 +17,7 @@ func _ready():
 		
 		#Esta linea añade las skills al personaje
 		#TODO: Personalizarlo para cada clase/jugador
-		PlayerHandle.players[i].skills = current_player.attacks.duplicate()
+		#PlayerHandle.players[i].skills = current_player.character.attacks
 		add_child(current_player)
 		
 				

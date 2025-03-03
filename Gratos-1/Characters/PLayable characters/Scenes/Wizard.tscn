@@ -1,8 +1,11 @@
-[gd_scene load_steps=19 format=3 uid="uid://dvkacl0f54w3d"]
+[gd_scene load_steps=22 format=3 uid="uid://dvkacl0f54w3d"]
 
 [ext_resource type="Texture2D" uid="uid://dkj3kmaaw02pm" path="res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Idle.png" id="1_kqrs4"]
 [ext_resource type="Texture2D" uid="uid://car6d7bpnky3c" path="res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Walk.png" id="2_5qwct"]
 [ext_resource type="Script" path="res://Characters/PLayable characters/Scenes/Classes.gd" id="3_x4th4"]
+[ext_resource type="Resource" uid="uid://qnxgd3gnaqyi" path="res://Skills/Wizard/Golpe_con_baston.tres" id="4_ie2ng"]
+[ext_resource type="Resource" uid="uid://doprx0c65nn5h" path="res://Skills/Wizard/Bola_de_fuego_I.tres" id="5_m07tv"]
+[ext_resource type="Resource" uid="uid://bdtgee6wx7p44" path="res://Skills/Wizard/Rafaga_magica_I.tres" id="6_7s65t"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jdj0q"]
 atlas = ExtResource("1_kqrs4")
@@ -115,8 +118,9 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Knight" type="AnimatedSprite2D"]
+[node name="RPG_class" type="AnimatedSprite2D"]
 z_index = 9
 sprite_frames = SubResource("SpriteFrames_ji0m7")
 animation = &"Walk"
 script = ExtResource("3_x4th4")
+attacks = Array[Resource]([ExtResource("4_ie2ng"), ExtResource("5_m07tv"), ExtResource("6_7s65t")])

@@ -4,8 +4,9 @@
 
 [resource]
 script = ExtResource("1_3ijx1")
-Skill_name = "Bola de Fuego"
+Skill_name = "Bola de Fuego I"
 Damage = 6
 Magic = 4
 Success = 1.0
 Global = false
+Level_unlock = 1

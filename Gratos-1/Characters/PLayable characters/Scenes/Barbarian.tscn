@@ -1,7 +1,11 @@
-[gd_scene load_steps=18 format=3 uid="uid://dvkacl0f54w3d"]
+[gd_scene load_steps=22 format=3 uid="uid://dvkacl0f54w3d"]
 
 [ext_resource type="Texture2D" uid="uid://dpynry271fibe" path="res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Idle.png" id="1_fb6rn"]
 [ext_resource type="Texture2D" uid="uid://65jtucyr84ki" path="res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Walk.png" id="2_c1hm5"]
+[ext_resource type="Script" path="res://Characters/PLayable characters/Scenes/Classes.gd" id="3_upil0"]
+[ext_resource type="Resource" uid="uid://dxfichbgg1s5y" path="res://Skills/Barbarian/Hachazo.tres" id="4_jfe8f"]
+[ext_resource type="Resource" uid="uid://djjpmbfv46q0o" path="res://Skills/Barbarian/Temblor.tres" id="5_esk2f"]
+[ext_resource type="Resource" uid="uid://qbtnf7vwj8ue" path="res://Skills/Barbarian/Descontrol_I.tres" id="6_u2sa4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kq1uk"]
 atlas = ExtResource("1_fb6rn")
@@ -114,7 +118,10 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Knight" type="AnimatedSprite2D"]
+[node name="RPG_class" type="AnimatedSprite2D"]
 z_index = 9
 sprite_frames = SubResource("SpriteFrames_ji0m7")
 animation = &"Walk"
+script = ExtResource("3_upil0")
+clase = "barbaro"
+attacks = Array[Resource]([ExtResource("4_jfe8f"), ExtResource("5_esk2f"), ExtResource("6_u2sa4")])

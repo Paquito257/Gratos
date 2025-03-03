@@ -4,8 +4,9 @@
 
 [resource]
 script = ExtResource("1_0tkxg")
-Skill_name = ""
-Damage = 0
+Skill_name = "Hachazo"
+Damage = 7
 Magic = 0
-Success = 0.0
+Success = 0.5
 Global = false
+Level_unlock = 1

@@ -181,10 +181,10 @@ func level_up(clase:String = "",nivel:int = 0):
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	clase = get_parent().clase
+	clase = get_parent().character.clase
 	if clase == "barbaro": $Magia.visible = false
 	else: $Magia.visible = true
-	level_up(clase,get_parent().nivel)
+	level_up(clase,get_parent().character.nivel)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

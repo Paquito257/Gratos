@@ -4,8 +4,9 @@
 
 [resource]
 script = ExtResource("1_8f4h8")
-Skill_name = ""
-Damage = 0
-Magic = 0
+Skill_name = "Rafaga Mágica I"
+Damage = 2
+Magic = 3
 Success = 0.0
-Global = false
+Global = true
+Level_unlock = 1

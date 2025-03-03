@@ -2,16 +2,17 @@ extends CharacterBody2D
 
 #Variables que se mostraran en el inspector del nodo correspondiente
 #al personaje
-@export_category("Player settings")
-@export_enum("caballero","mago", "arquero","barbaro") var clase = "mago"
-@export var nivel:int = 1
-@export var attacks : Array[Resource] 
+#@export_category("Player settings")
+#@export_enum("caballero","mago", "arquero","barbaro") var clase = "mago"
+#@export var nivel:int = 1
+#@export var attacks : Array[Resource] 
 
 @onready var camera = $Camera2D
 
 var mov_speed = 150
 var distance_traveled = mov_speed/2 
-var animation = Resource
+var character = Resource
+var stats = Resource
 
 #Con esta variable, se calcula el movimiento total en pixeles
 #y en el mapa, para la aparicion de enemigos
@@ -35,11 +36,12 @@ func _ready():
 	
 	character_sprite()
 	position = Manager.player_last_position
-	add_child(animation)
-	var stats = load("res://stats/stats.tscn").instantiate()
+	add_child(character)
+	stats = load("res://stats/stats.tscn").instantiate()
 	add_child(stats)
+	character.play("Idle")
 	
-	animation.play("Idle")
+	PlayerHandle.players[multiplayer.get_unique_id()].skills = character.attacks.duplicate()
 	set_multiplayer_authority(name.to_int())
 
 
@@ -52,16 +54,16 @@ func _physics_process(delta):
 
 		var direction = Input.get_vector("ui_left","ui_right", "ui_up", "ui_down")
 		if direction:
-			animation.play("Walk")
+			character.play("Walk")
 			
 			if direction.x > 0:
-				animation.flip_h = false
+				character.flip_h = false
 					
 			elif direction.x < 0:
-				animation.flip_h = true
+				character.flip_h = true
 		
 		else:
-			animation.play("Idle")
+			character.play("Idle")
 			
 		velocity = direction * mov_speed
 		
@@ -77,15 +79,15 @@ func _physics_process(delta):
 func character_sprite():
 	match PlayerHandle.players[multiplayer.get_unique_id()].character:
 		"caballero":
-			animation = load("res://Characters/PLayable characters/Scenes/Knight.tscn").instantiate()
-			clase = "caballero"
+			character = load("res://Characters/PLayable characters/Scenes/Knight.tscn").instantiate()
+			
 		"arquero":
-			animation = load("res://Characters/PLayable characters/Scenes/Archer.tscn").instantiate()
-			clase = "arquero"
+			character = load("res://Characters/PLayable characters/Scenes/Archer.tscn").instantiate()
+			
 		"barbaro":
-			animation = load("res://Characters/PLayable characters/Scenes/Barbarian.tscn").instantiate()
-			clase = "barbaro"
+			character = load("res://Characters/PLayable characters/Scenes/Barbarian.tscn").instantiate()
+			
 		"mago":
-			animation = load("res://Characters/PLayable characters/Scenes/Wizard.tscn").instantiate()
-			clase = "mago"
+			character = load("res://Characters/PLayable characters/Scenes/Wizard.tscn").instantiate()
+
 		

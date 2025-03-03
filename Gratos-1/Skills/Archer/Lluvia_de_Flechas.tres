@@ -4,9 +4,9 @@
 
 [resource]
 script = ExtResource("1_bcryu")
-Skill_name = ""
-Damage = 0
+Skill_name = "Lluvia de Flechas"
+Damage = 2
 Magic = 0
-Success = 0.0
+Success = 0.75
 Global = false
 Level_unlock = 1

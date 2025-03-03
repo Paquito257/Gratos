@@ -4,8 +4,9 @@
 
 [resource]
 script = ExtResource("1_4nw02")
-Skill_name = ""
-Damage = 0
+Skill_name = "Descontrol_I"
+Damage = 2
 Magic = 0
-Success = 0.0
+Success = 0.8
 Global = false
+Level_unlock = 1

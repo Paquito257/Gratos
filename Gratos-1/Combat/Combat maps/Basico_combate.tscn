@@ -1092,6 +1092,7 @@ position = Vector2(480, 152)
 position = Vector2(481, 220)
 
 [node name="Enemy_select" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(391, 182)
 scale = Vector2(0.0822222, 0.0911111)
 texture = ExtResource("10_ecjn2")

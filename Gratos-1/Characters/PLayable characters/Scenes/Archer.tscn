@@ -1,7 +1,11 @@
-[gd_scene load_steps=18 format=3 uid="uid://dvkacl0f54w3d"]
+[gd_scene load_steps=22 format=3 uid="uid://dvkacl0f54w3d"]
 
 [ext_resource type="Texture2D" uid="uid://c73ymqivr0hrj" path="res://Texture/Playable Characters/Character sprite/Archer/Archer-Idle.png" id="1_qhp17"]
 [ext_resource type="Texture2D" uid="uid://b3isk0q4e5v1f" path="res://Texture/Playable Characters/Character sprite/Archer/Archer-Walk.png" id="2_ppaf7"]
+[ext_resource type="Script" path="res://Characters/PLayable characters/Scenes/Classes.gd" id="3_2ts1l"]
+[ext_resource type="Resource" uid="uid://p3kgdrmdad18" path="res://Skills/Archer/Lanzamiento_de_Flecha.tres" id="4_3cr1p"]
+[ext_resource type="Resource" uid="uid://decm2x340wet5" path="res://Skills/Archer/Lluvia_de_Flechas.tres" id="5_na4e5"]
+[ext_resource type="Resource" uid="uid://bhjd8chy7x7ms" path="res://Skills/Archer/Flecha_Ignea.tres" id="6_yloud"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_me2ud"]
 atlas = ExtResource("1_qhp17")
@@ -114,7 +118,10 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Knight" type="AnimatedSprite2D"]
+[node name="RPG_class" type="AnimatedSprite2D"]
 z_index = 9
 sprite_frames = SubResource("SpriteFrames_ji0m7")
 animation = &"Walk"
+script = ExtResource("3_2ts1l")
+clase = "arquero"
+attacks = Array[Resource]([ExtResource("4_3cr1p"), ExtResource("5_na4e5"), ExtResource("6_yloud")])

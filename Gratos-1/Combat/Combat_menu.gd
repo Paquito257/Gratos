@@ -61,9 +61,10 @@ func _on_basic_menu_item_clicked(index, at_position, mouse_button_index):
 #Permite seleccionar los ataques normales
 #(y que estos tengan efecto en el combate)
 func _on_combat_item_clicked(index, at_position, mouse_button_index):
-	for skill in PlayerHandle.players[multiplayer.get_unique_id()].skills:
-		if combat.get_item_text(index) == skill.Skill_name:
-			%Sfx.play()
+	if mouse_button_index == MOUSE_BUTTON_LEFT:
+		for skill in PlayerHandle.players[multiplayer.get_unique_id()].skills:
+			if combat.get_item_text(index) == skill.Skill_name:
+				%Sfx.play()
 	
 			
 
