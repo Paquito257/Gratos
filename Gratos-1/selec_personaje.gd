@@ -38,6 +38,7 @@ func _on_si_pressed():
 		deshabilitar.rpc(1)
 
 
+		print(PlayerHandle.players[multiplayer.get_unique_id()])
 				
 	elif animacion.get_current_animation() == "selection2":
 		animacion.stop()
@@ -61,7 +62,8 @@ func _on_si_pressed():
 #Detiene la animación de confirmación para poder seleccionar otro personaje
 func _on_no_pressed():
 	animacion.stop()
-
+#COLOCAR QUE SE AÑADAN LOS PERSONAJES EN BASE A LA LISTA
+#A VER SI ASI LOS AÑADE BIEN
 
 #deshabilita los personajes seleccionados y
 #añade a una lista los personajes seleccionados
@@ -116,3 +118,8 @@ func comprobar(grupo, posibilidades):
 			return true
 	return false
 	
+
+
+
+func _on_ready() -> void:
+	$Transtion._on_play()

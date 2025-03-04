@@ -1,34 +1,85 @@
-[gd_scene load_steps=8 format=3 uid="uid://6kd4dvasl6b2"]
+[gd_scene load_steps=11 format=3 uid="uid://6kd4dvasl6b2"]
 
 [ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="1_0y4h3"]
 [ext_resource type="Script" path="res://loading.gd" id="1_yqib8"]
-[ext_resource type="Texture2D" uid="uid://ciqe3fbhyeytl" path="res://Logo_UDO.svg.png" id="2_l35jp"]
+[ext_resource type="Texture2D" uid="uid://caq452jc63xbx" path="res://Texture/fondoUDO.png" id="2_sr2oe"]
+[ext_resource type="Texture2D" uid="uid://drbv3t5dckmtn" path="res://Texture/Logo.png" id="5_rnrpl"]
+[ext_resource type="AudioStream" uid="uid://bu0qll011fmuv" path="res://Music/LoadTheme.mp3" id="6_v4obu"]
+[ext_resource type="PackedScene" uid="uid://cylangw0sb7mt" path="res://transitions/transtion.tscn" id="7_d1ltk"]
 
 [sub_resource type="Animation" id="Animation_g7hfp"]
-length = 5.0
+length = 8.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Label:text")
+tracks/0/path = NodePath("WorldEnvironment:environment:glow_bloom")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.333333, 0.633333, 0.9, 1.2, 1.5, 1.8, 2.1, 2.4, 2.7, 3, 3.3, 3.6, 3.9, 4.2, 4.5, 4.8),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": ["", "C", "C A", "C A R", "C A R G ", "C A R G A", "C A R G A N", "C A R G A N D", "C A R G A N D O", "C", "C A", "C A R", "C A R G ", "C A R G A", "C A R G A N", "C A R G A N D", "C A R G A N D O"]
+"times": PackedFloat32Array(0, 5, 8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.3, 0.0]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("WorldEnvironment:environment:glow_bloom")
+tracks/1/path = NodePath("Bluer:color")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.4, 1.4, 2, 3, 3.96667, 5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.4, 0.8, 1.2, 1.6, 2, 2.4, 2.8, 3.2, 3.6, 4, 4.4, 4.8, 6.2, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [0.0, 0.02, 0.32, 0.41, 0.5, 0.65, 0.8]
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0.968627), Color(0, 0, 0, 0.933333), Color(0, 0, 0, 0.901961), Color(0, 0, 0, 0.866667), Color(0, 0, 0, 0.835294), Color(0, 0, 0, 0.803922), Color(0, 0, 0, 0.768627), Color(0, 0, 0, 0.737255), Color(0, 0, 0, 0.701961), Color(0, 0, 0, 0.670588), Color(0, 0, 0, 0.639216), Color(0, 0, 0, 0.603922), Color(0, 0, 0, 0.603922), Color(0, 0, 0, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8, 1.2, 1.6, 2, 2.4, 2.8, 3.2, 3.6, 4, 4.4, 4.8, 5.2, 5.6, 6, 6.4, 6.8, 7.2, 7.6, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.349066, 0.698132, 1.0472, 1.39626, 1.74533, 2.0944, 2.44346, 2.79253, 3.14159, 3.49066, 3.83972, 4.18879, 4.53786, 4.88692, 5.23599, 5.58505, 5.93412, 6.28319, 6.63225, 6.98132]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Label:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(6.2, 8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Sprite2D:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(6.2, 8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AudioStreamPlayer2D:volume_db")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 6.2, 8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-25.0, -25.0, -80.0]
 }
 
 [sub_resource type="Animation" id="Animation_4qcw1"]
@@ -44,56 +95,60 @@ _data = {
 background_mode = 3
 glow_enabled = true
 glow_intensity = 1.0
+glow_blend_mode = 1
+adjustment_enabled = true
 
 [node name="loading" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_yqib8")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="Img" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 644.0
-color = Color(0.0903288, 0.0273134, 0.175104, 1)
+offset_left = -26.0
+offset_top = -6.0
+offset_right = 1174.0
+offset_bottom = 714.0
+texture = ExtResource("2_sr2oe")
 
-[node name="ProgressBar" type="ProgressBar" parent="."]
+[node name="Bluer" type="ColorRect" parent="."]
 layout_mode = 0
-offset_left = 321.0
-offset_top = 176.0
-offset_right = 872.0
-offset_bottom = 266.0
-
-[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
-layout_mode = 0
-offset_left = 458.0
-offset_top = 318.0
-offset_right = 2506.0
-offset_bottom = 2366.0
-scale = Vector2(0.12364, 0.112091)
-texture_under = ExtResource("2_l35jp")
-texture_progress = ExtResource("2_l35jp")
-
-[node name="Timer" type="Timer" parent="."]
-wait_time = 0.2
-autostart = true
+offset_left = -27.0
+offset_top = -11.0
+offset_right = 1176.0
+offset_bottom = 692.0
+color = Color(0, 0, 0, 1)
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 316.0
-offset_top = 23.0
-offset_right = 872.0
-offset_bottom = 94.0
+offset_left = 321.0
+offset_top = 306.0
+offset_right = 877.0
+offset_bottom = 388.0
 theme_override_fonts/font = ExtResource("1_0y4h3")
 theme_override_font_sizes/font_size = 70
+text = "G R A T    S"
+horizontal_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_xrlg8")
 }
-autoplay = "RESET"
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_dtvoa")
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(700, 344)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("5_rnrpl")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_v4obu")
+volume_db = -25.0
+autoplay = true
+
+[node name="Transtion" parent="." instance=ExtResource("7_d1ltk")]
+tipo_de_animacion = "Fade out"
+
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

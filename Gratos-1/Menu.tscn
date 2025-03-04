@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://comvjvdr77f48"]
+[gd_scene load_steps=15 format=3 uid="uid://comvjvdr77f48"]
 
 [ext_resource type="Script" path="res://Menu.gd" id="1_r2thv"]
 [ext_resource type="Texture2D" uid="uid://lc3vjdj412n1" path="res://Texture/Misc/Main_Background.jpeg" id="2_7gmeb"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dpynry271fibe" path="res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Idle.png" id="5_ucfed"]
 [ext_resource type="Texture2D" uid="uid://c73ymqivr0hrj" path="res://Texture/Playable Characters/Character sprite/Archer/Archer-Idle.png" id="6_0ewyf"]
 [ext_resource type="Texture2D" uid="uid://dkj3kmaaw02pm" path="res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Idle.png" id="7_pdf8u"]
+[ext_resource type="PackedScene" uid="uid://cylangw0sb7mt" path="res://transitions/transtion.tscn" id="8_y21xq"]
 
 [sub_resource type="Theme" id="Theme_yr5g7"]
 default_font_size = 50
@@ -110,6 +111,34 @@ tracks/7/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath(".:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_iq6sh"]
+resource_name = "hide"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_c3pvu"]
@@ -216,6 +245,7 @@ tracks/7/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_p71j1"]
 _data = {
 "RESET": SubResource("Animation_jrbsh"),
+"hide": SubResource("Animation_iq6sh"),
 "movement": SubResource("Animation_c3pvu")
 }
 
@@ -388,6 +418,19 @@ libraries = {
 }
 autoplay = "movement"
 
+[node name="Transtion" parent="." instance=ExtResource("8_y21xq")]
+tipo_de_animacion = "Fade in"
+
+[node name="Transtion2" parent="." instance=ExtResource("8_y21xq")]
+visible = true
+tipo_de_animacion = "Fade out"
+
+[node name="cleaner" type="Timer" parent="."]
+wait_time = 2.3
+one_shot = true
+
+[node name="cleaner2" type="Timer" parent="."]
+
 [connection signal="button_down" from="Control/Pcontainer/Play" to="." method="_on_play_button_down"]
 [connection signal="text_submitted" from="Control/HBoxContainer/IP_owner" to="." method="_on_ip_text_submitted"]
 [connection signal="pressed" from="Control/HBoxContainer/Join" to="." method="_on_join_pressed"]
@@ -396,3 +439,6 @@ autoplay = "movement"
 [connection signal="pressed" from="Control/Sprite2/Sprite_button2" to="." method="_on_sprite_button_pressed"]
 [connection signal="pressed" from="Control/Sprite3/Sprite_button3" to="." method="_on_sprite_button_pressed"]
 [connection signal="pressed" from="Control/Sprite4/Sprite_button2" to="." method="_on_sprite_button_pressed"]
+[connection signal="play" from="Transtion" to="." method="_on_transtion_play"]
+[connection signal="timeout" from="cleaner" to="." method="_on_cleaner_timeout"]
+[connection signal="timeout" from="cleaner2" to="." method="_on_cleaner_2_timeout"]

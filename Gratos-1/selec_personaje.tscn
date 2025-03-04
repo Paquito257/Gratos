@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://csyf614fi1bwu"]
+[gd_scene load_steps=16 format=3 uid="uid://csyf614fi1bwu"]
 
 [ext_resource type="Script" path="res://selec_personaje.gd" id="1_6tvf1"]
 [ext_resource type="Texture2D" uid="uid://ss40g1xwt757" path="res://fondo1.jpeg" id="1_s23wk"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://c73ymqivr0hrj" path="res://Texture/Playable Characters/Character sprite/Archer/Archer-Idle.png" id="6_tjsw6"]
 [ext_resource type="Texture2D" uid="uid://dkj3kmaaw02pm" path="res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Idle.png" id="7_r1l1w"]
 [ext_resource type="Texture2D" uid="uid://c2tsa4mu2lfvt" path="res://Texture/Misc/finger.png" id="8_ylugc"]
+[ext_resource type="PackedScene" uid="uid://cylangw0sb7mt" path="res://transitions/transtion.tscn" id="9_njgpy"]
 
 [sub_resource type="Animation" id="Animation_qdv7c"]
 length = 0.001
@@ -558,6 +559,11 @@ libraries = {
 "": SubResource("AnimationLibrary_1j2he")
 }
 
+[node name="Transtion" parent="." instance=ExtResource("9_njgpy")]
+visible = false
+tipo_de_animacion = "Fade out"
+
+[connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="Personaje1" to="." method="_on_personaje_1_pressed"]
 [connection signal="pressed" from="Personaje2" to="." method="_on_personaje_2_pressed"]
 [connection signal="pressed" from="Personaje3" to="." method="_on_personaje_3_pressed"]

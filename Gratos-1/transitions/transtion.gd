@@ -19,7 +19,6 @@ func _get_property_list() -> Array:
 	return properties
 
 signal play
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
@@ -37,7 +36,7 @@ func _on_play() -> void:
 
 
 func _on_animation_player_animation_finished(anim_name: StringName):
-	$".".visible = false
+	$hide.start()
 
 func _physics_process(delta: float) -> void:
 	match tipo_de_animacion:
@@ -47,3 +46,9 @@ func _physics_process(delta: float) -> void:
 			_on_animation_player_animation_finished("zoom out")
 		" Fade in":
 			_on_animation_player_animation_finished("Fade in")
+			
+			
+
+
+func _on_hide_timeout() -> void:
+	$".".visible = false
