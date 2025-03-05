@@ -121,13 +121,13 @@ func comprobar(grupo, lista):
 
 
 
-#func _on_ready() -> void:
-	#$Transtion._on_play()
-	#$cleaner.start()
-	#
+func _on_ready() -> void:
+	$Transtion._on_play()
+	$cleaner.start()
+	
 #
 #
 #
-#func _on_cleaner_timeout() -> void:
-	#$Transtion.layer = -1
+func _on_cleaner_timeout() -> void:
+	$Transtion.visible = false
 	

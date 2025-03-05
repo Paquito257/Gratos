@@ -1,13 +1,6 @@
 res://selec_personaje.tscn
-res://selec_personaje.gd
 res://loading.gd
 res://Menu.tscn
 res://loading.tscn
-res://transitions/transtion.gd
-res://Global/Player_handle.gd
-res://Menu.gd
-res://Maps/Warp/Global.gd
-res://inventory/inventario.tscn
-res://inventory/inventario.gd
-res://inventory/items/objetos.gd
-res://inventory/slot.gd
+res://selec_personaje1.tscn
+res://selec_personaje.gd

@@ -12,3 +12,4 @@ func _on_animation_player_animation_finished(_anim_name: StringName="RESET"):
 	$".".visible = false
 	print(get_tree())
 	get_tree().root.add_child(listo)
+	$".".queue_free()
