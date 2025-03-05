@@ -411,6 +411,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_6tvf1")
 
+[node name="Transtion" parent="." instance=ExtResource("9_njgpy")]
+tipo_de_animacion = "Fade out"
+
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 1148.0
@@ -559,14 +562,16 @@ libraries = {
 "": SubResource("AnimationLibrary_1j2he")
 }
 
-[node name="Transtion" parent="." instance=ExtResource("9_njgpy")]
-visible = false
-tipo_de_animacion = "Fade out"
+[node name="cleaner" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
 
 [connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="button_down" from="Personaje1" to="." method="_on_personaje_1_button_down"]
 [connection signal="pressed" from="Personaje1" to="." method="_on_personaje_1_pressed"]
 [connection signal="pressed" from="Personaje2" to="." method="_on_personaje_2_pressed"]
 [connection signal="pressed" from="Personaje3" to="." method="_on_personaje_3_pressed"]
 [connection signal="pressed" from="Personaje4" to="." method="_on_personaje_4_pressed"]
 [connection signal="pressed" from="Si" to="." method="_on_si_pressed"]
 [connection signal="pressed" from="No" to="." method="_on_no_pressed"]
+[connection signal="timeout" from="cleaner" to="." method="_on_cleaner_timeout"]

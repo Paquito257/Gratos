@@ -1,5 +1,12 @@
 extends Panel
-var item:Dictionary
+var item:Dictionary = {
+	"nameObj":null,
+	"clase": null, # Es la clase la cual puede iteracturar con este objeto
+	"nivel": null, # El nivel de poder del objeto 
+	"tipo": null, # Determina como se guardara el item en el inventario
+	"bonus": null,
+	"img": null
+}
 var active = false
 #var slot = ""
 ## Called when the node enters the scene tree for the first time.
@@ -12,13 +19,9 @@ func _process(delta: float) -> void:
 		var map = get_tree().get_root().get_node("/root/Map") # obtenemos al mapa ( si se puede hacer mejoralo)
 		
 		# Si el usuario desea vaciar un slot debe seleccionar uno, esto activara al botón y si presiona backspace se botara el objeto al mapa
-		if active and Input.is_action_just_pressed("delete") and item != {}: # por supuesto el slot debe estar lleno
+		if active and Input.is_action_just_pressed("delete") and item != null: # por supuesto el slot debe estar lleno
 			var dropitem = path.instantiate() # se instancia un item nuevo para vacial el slot
-			dropitem.image = $Button.icon # se le coloca la misma imagen 
-			dropitem.clase_de_item = item['clase'] # Y también el mismo ID y sus caracteristicas
-			dropitem.tipo = item['tipo']
-			dropitem.bonus = item['bonus']
-			if item.has("nivel"): dropitem.nivel_del_item = item['nivel']
+			dropitem.set_item(item)
 			dropitem.get_child(0).text = $Button.get_child(0).text # le colocamos la misma cantidad de items que tenga en el inventario
 			dropitem.position = Vector2(player.position[0] + 10, player.position[1] + 10) # se ubica a la esquina derecha del player
 			map.add_child(dropitem) # se añade el item al mapa
@@ -33,11 +36,7 @@ func _process(delta: float) -> void:
 		# Si el usuario solo desea soltar un objeto solo debe presionar q con el boton activado	
 		elif active and Input.is_action_just_pressed("soltar") and item != {}:
 			var dropitem = path.instantiate()
-			dropitem.image = $Button.icon 
-			dropitem.clase_de_item = item['clase'] # Y también el mismo ID y sus caracteristicas
-			dropitem.tipo = item['tipo']
-			dropitem.bonus = item['bonus']
-			if item.has("nivel"): dropitem.nivel_del_item = item['nivel']
+			dropitem.set_item(item)
 			dropitem.get_child(0).text = ""
 			dropitem.position = Vector2(player.position[0] + 10, player.position[1] + 10)
 			map.add_child(dropitem)
@@ -62,7 +61,7 @@ func _process(delta: float) -> void:
 				for i in item["bonus"]:
 					if item["bonus"][i] != null:
 						player.get_node("Stats").add_to(item["bonus"][i],i)
-						print(player.get_node("Stats").check_stats())
+						#print(player.get_node("Stats").check_stats())
 				if $Button.get_child(0).text.to_int() - 1 == 1:
 					$Button.get_child(0).text = ""
 					$Button.queue_redraw()
