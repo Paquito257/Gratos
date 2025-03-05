@@ -18,6 +18,8 @@ var tipo: int:
 	set(value):
 		tipo = value
 		notify_property_list_changed()
+var nameObj: String
+
 var tipo_de_item_keys: Array = tipo_de_item_clases.keys()
 var tipo_de_item_list: String = ",".join(tipo_de_item_keys)
 enum tipo_de_item_clases{
@@ -38,7 +40,12 @@ func _get_property_list() -> Array:
 		"hint_string": "arquero,barbaro,caballero,mago,cualquiera",
 		"usage": PROPERTY_USAGE_DEFAULT,
 	})
-		
+	
+	properties.append({
+		"name": "nameObj",
+		"type": TYPE_STRING,
+		"usage": PROPERTY_USAGE_DEFAULT,
+	})	
 	# Propiedad: tipo de item
 	properties.append({
 		"name": "tipo",
@@ -77,10 +84,12 @@ var path
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	item = {
+	"nameObj":nameObj.to_lower(),
 	"clase": clase_de_item, # Es la clase la cual puede iteracturar con este objeto
 	"nivel": nivel_del_item, # El nivel de poder del objeto 
 	"tipo": tipo, # Determina como se guardara el item en el inventario
 	"bonus": bonus,
+	"icon":image,
 	}
 	$Sprite2D.texture = image
 	match item['clase']:
@@ -118,7 +127,7 @@ func _ready() -> void:
 							item["bonus"]["magia"] = 15
 						"epico":
 							item["bonus"]["magia"] = 30
-							item["bonus"]["ataque"] = -15
+							item["bonus"]["ataque"] = 15 * (-1)
 							item["bonus"]["velocidad"] = 10
 						"legendario":
 							item["bonus"]["ataque"] = 25
@@ -140,7 +149,7 @@ func _ready() -> void:
 						"raro":
 							item["bonus"]["ataque"] = 25
 							item["bonus"]["defensa"] = 15
-							item["bonus"]["velocidad"] = -5
+							item["bonus"]["velocidad"] = 5 * (-1)
 						"epico":
 							item["bonus"]["ataque"] = 15
 							item["bonus"]["velocidad"] = 15
@@ -164,9 +173,9 @@ func _ready() -> void:
 							item["bonus"]["ataque"] = 25
 						"epico":
 							item["bonus"]["ataque"] = 50
-							item["bonus"]["vida"] = -50
+							item["bonus"]["vida"] = 50 * (-1)
 						"legendario":
-							item["bonus"]["ataque"] = -15
+							item["bonus"]["ataque"] = 15 * (-1)
 							item["bonus"]["defensa"] = 20
 							item["bonus"]["vida"] = 30
 				2: # Consumibles
@@ -197,4 +206,12 @@ func _on_body_entered(body: Node2D) -> void:
 		else:
 			inventario.add($".")
 					
-		
+	
+# Establece todos los datos del objeto con un diccionario
+func set_item(data):
+	nameObj = data.nameObj.to_lower()
+	clase_de_item = data.clase # Es la clase la cual puede iteracturar con este objeto
+	nivel_del_item = data.nivel # El nivel de poder del objeto 
+	tipo = data.tipo # Determina como se guardara el item en el inventario
+	bonus = data.bonus
+	image = data.image

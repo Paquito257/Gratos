@@ -16,7 +16,7 @@ func _ready():
 	$Transtion2._on_play()
 	$cleaner2.start()
 	
-func peer_connected(id):
+func peer_connected(_id):
 	print("Player connected " + %Player_name.text)
 	
 func peer_disconnected(id):
@@ -38,13 +38,15 @@ func connection_failed():
 
 #Todos los jugadores llaman a la funcion (guarda informacion de los mismos)
 @rpc("any_peer")
-func player_info(name,id):
+func player_info(nameP,id):
 	if !PlayerHandle.players.has(id):
 		PlayerHandle.players[id] = {
-			"name" : name,
+			"name" : nameP,
 			"id" : id,
 			"character" : null,
 			"skills" : null,
+			"level":1,
+			"stats":null
 		}
 
 
@@ -71,7 +73,7 @@ func _on_play_button_down():
 	player_info(%Player_name.text, host_id)
 
 
-func _on_ip_text_submitted(new_string: String):
+func _on_ip_text_submitted(_new_string: String):
 	_on_join_pressed()
 
 

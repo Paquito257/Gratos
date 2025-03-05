@@ -25,5 +25,5 @@ func change_to_battle():
 func save_data(player):
 	player_last_position = player.position
 	
-func load_enemies(ene):
+func load_enemies(_ene):
 	pass

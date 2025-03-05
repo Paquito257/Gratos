@@ -35,10 +35,10 @@ func _on_play() -> void:
 			animation_player.play("Fade in")
 
 
-func _on_animation_player_animation_finished(anim_name: StringName):
+func _on_animation_player_animation_finished(_anim_name: StringName):
 	$hide.start()
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	match tipo_de_animacion:
 		"Fade out":
 			_on_animation_player_animation_finished("fade")
