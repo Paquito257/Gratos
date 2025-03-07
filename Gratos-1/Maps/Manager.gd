@@ -15,7 +15,11 @@ func _ready():
 		var current_player = RPG_character.instantiate()
 		current_player.name = str(PlayerHandle.players[i].id)
 		
+		#Esta linea añade las skills al personaje
+		#TODO: Personalizarlo para cada clase/jugador
+		#PlayerHandle.players[i].skills = current_player.character.attacks
 		add_child(current_player)
+		
 				
 		for spawn in get_tree().get_nodes_in_group("Spawnpoint"):
 			if spawn.name == str(PlayerHandle.index):	

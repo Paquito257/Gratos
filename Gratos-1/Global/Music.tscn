@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dygssy3bg6she"]
+[gd_scene load_steps=4 format=3 uid="uid://dygssy3bg6she"]
 
 [ext_resource type="Script" path="res://Global/Music.gd" id="1_g7ti3"]
 [ext_resource type="AudioStream" uid="uid://d3ws552xemq3t" path="res://Music/Hub theme.mp3" id="2_mylxp"]
 [ext_resource type="AudioStream" uid="uid://b3kvcd5bjosmx" path="res://Music/Battle Theme.mp3" id="3_eotdu"]
-[ext_resource type="AudioStream" uid="uid://daho6ewyuivpt" path="res://Sfx/menu-move.ogg" id="4_kfnmj"]
 
 [node name="Node" type="Node"]
 script = ExtResource("1_g7ti3")
@@ -18,8 +17,3 @@ stream = ExtResource("2_mylxp")
 
 [node name="Combate_comun" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_eotdu")
-
-[node name="SFX" type="Node" parent="."]
-
-[node name="Seleccion" type="AudioStreamPlayer2D" parent="SFX"]
-stream = ExtResource("4_kfnmj")

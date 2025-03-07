@@ -1,7 +1,6 @@
-[gd_scene load_steps=36 format=3 uid="uid://cfbqvlfaphdvn"]
+[gd_scene load_steps=35 format=3 uid="uid://cfbqvlfaphdvn"]
 
 [ext_resource type="Script" path="res://Characters/Battle enemies/Enemy_battle_script.gd" id="1_s2nts"]
-[ext_resource type="Resource" uid="uid://d1lfa218hf1ms" path="res://Skills/Knight/Estocada.tres" id="2_cbtg7"]
 [ext_resource type="PackedScene" uid="uid://dscfc6id23ecm" path="res://Addons/Stats_inspector.tscn" id="3_xe8lu"]
 [ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="4_fey0d"]
 [ext_resource type="PackedScene" uid="uid://cvr8wxkfmitbe" path="res://Characters/PLayable characters/Attack_list.tscn" id="5_dgsy6"]
@@ -198,7 +197,6 @@ z_index = 13
 script = ExtResource("1_s2nts")
 flipped = true
 enemy_name = "Skeleton"
-attacks = Array[Resource("res://Addons/Skills.gd")]([ExtResource("2_cbtg7")])
 
 [node name="Stats" parent="." instance=ExtResource("3_xe8lu")]
 vida = 10

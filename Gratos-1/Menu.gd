@@ -45,8 +45,8 @@ func player_info(nameP,id):
 			"id" : id,
 			"character" : null,
 			"skills" : null,
-			"level": 1,
-			"stats": null,
+			"level":1,
+			"stats":null
 		}
 
 

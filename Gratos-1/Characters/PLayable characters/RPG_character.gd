@@ -11,8 +11,8 @@ extends CharacterBody2D
 
 var mov_speed = 150
 var distance_traveled = mov_speed/2 
-var character = Resource #Referencia al nodo correspondiente al nivel, clase y ataques del personaje
-var stats = Resource #Referencia al nodo correspondiente a lso stats
+var character = Resource
+var stats = Resource
 
 #Con esta variable, se calcula el movimiento total en pixeles
 #y en el mapa, para la aparicion de enemigos
@@ -34,8 +34,6 @@ var step_pixel : float = 0.0:
 		
 func _ready():
 	
-	#Añade el sprite correspondiente a la clase, y coloca al
-	#jugador en la posición correspondiente (e instancia los stats)
 	character_sprite()
 	position = Manager.player_last_position
 	add_child(character)
@@ -43,7 +41,6 @@ func _ready():
 	add_child(stats)
 	character.play("Idle")
 	
-	#Se guardan las skills en un script global
 	PlayerHandle.players[multiplayer.get_unique_id()].skills = character.attacks.duplicate()
 	set_multiplayer_authority(name.to_int())
 
@@ -79,8 +76,6 @@ func _physics_process(delta):
 		camera.enabled = false
 
 
-#Coloca en personaje en el mapa, correspondiente al seleccionado
-#en el menú de selección (guarda toda la información en un script global)
 func character_sprite():
 	match PlayerHandle.players[multiplayer.get_unique_id()].character:
 		"caballero":

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://w51th8oq40rg"]
+[gd_scene load_steps=16 format=3 uid="uid://w51th8oq40rg"]
 
 [ext_resource type="Script" path="res://Combat/Combat maps/Combate.gd" id="1_78inm"]
 [ext_resource type="Texture2D" uid="uid://dgxqjn4yhw4jv" path="res://Texture/Clouds 1/1.png" id="1_elf1a"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://gx5sidbfbjfo" path="res://Texture/TX Tileset Wall.png" id="3_qg7gj"]
 [ext_resource type="PackedScene" uid="uid://bahe63ewgm2mx" path="res://Combat/Combat_menu.tscn" id="4_q0kg2"]
 [ext_resource type="Texture2D" uid="uid://5lmeelwn7rhe" path="res://Texture/TX Props.png" id="7_yj2qq"]
+[ext_resource type="Texture2D" uid="uid://c2tsa4mu2lfvt" path="res://Texture/Misc/finger.png" id="10_ecjn2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qs50u"]
 texture = ExtResource("1_ew1eh")
@@ -1044,7 +1045,7 @@ position = Vector2(287, -4)
 texture = ExtResource("2_pm82q")
 
 [node name="4" type="Sprite2D" parent="."]
-position = Vector2(288, 17)
+position = Vector2(288, -31)
 texture = ExtResource("3_obesf")
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -1082,10 +1083,16 @@ position = Vector2(66, 226)
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="0" type="Node2D" parent="Enemies" groups=["Enemy_spawn"]]
-position = Vector2(478, 151)
+position = Vector2(420, 180)
 
 [node name="1" type="Node2D" parent="Enemies" groups=["Enemy_spawn"]]
-position = Vector2(422, 181)
+position = Vector2(480, 152)
 
 [node name="2" type="Node2D" parent="Enemies" groups=["Enemy_spawn"]]
 position = Vector2(481, 220)
+
+[node name="Enemy_select" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(391, 182)
+scale = Vector2(0.0822222, 0.0911111)
+texture = ExtResource("10_ecjn2")

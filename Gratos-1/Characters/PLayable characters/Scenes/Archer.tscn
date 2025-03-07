@@ -124,4 +124,4 @@ sprite_frames = SubResource("SpriteFrames_ji0m7")
 animation = &"Walk"
 script = ExtResource("3_2ts1l")
 clase = "arquero"
-attacks = Array[Resource("res://Addons/Skills.gd")]([ExtResource("4_3cr1p"), ExtResource("5_na4e5"), ExtResource("6_yloud")])
+attacks = Array[Resource]([ExtResource("4_3cr1p"), ExtResource("5_na4e5"), ExtResource("6_yloud")])

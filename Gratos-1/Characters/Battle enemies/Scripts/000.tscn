@@ -1,8 +1,9 @@
-[gd_scene load_steps=17 format=3 uid="uid://cfbqvlfaphdvn"]
+[gd_scene load_steps=18 format=3 uid="uid://cfbqvlfaphdvn"]
 
 [ext_resource type="Script" path="res://Characters/Battle enemies/Enemy_battle_script.gd" id="1_s2nts"]
 [ext_resource type="PackedScene" uid="uid://dscfc6id23ecm" path="res://Addons/Stats_inspector.tscn" id="3_xe8lu"]
 [ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="4_fey0d"]
+[ext_resource type="PackedScene" uid="uid://cvr8wxkfmitbe" path="res://Characters/PLayable characters/Attack_list.tscn" id="5_dgsy6"]
 [ext_resource type="Resource" uid="uid://cidc0rql5wigo" path="res://Skills/Enemies/Golpe.tres" id="6_f8ns0"]
 [ext_resource type="Resource" uid="uid://bilpxc4fxf48o" path="res://Skills/Enemies/Magia_I.tres" id="7_k0ywk"]
 [ext_resource type="Texture2D" uid="uid://dpe77h70iaubg" path="res://Texture/NPC/Orc/Orc-Idle.png" id="7_wyolm"]
@@ -95,7 +96,6 @@ z_index = 13
 script = ExtResource("1_s2nts")
 flipped = true
 enemy_name = "Orc"
-attacks = Array[Resource("res://Addons/Skills.gd")]([ExtResource("6_f8ns0"), ExtResource("7_k0ywk")])
 
 [node name="Stats" parent="." instance=ExtResource("3_xe8lu")]
 vida = 12
@@ -113,6 +113,9 @@ offset_bottom = -17.0
 theme = SubResource("Theme_8mw5f")
 theme_override_styles/background = SubResource("StyleBoxFlat_sdu1w")
 theme_override_styles/fill = SubResource("StyleBoxFlat_qwqke")
+
+[node name="Node2D" parent="." instance=ExtResource("5_dgsy6")]
+attacks = Array[Resource]([ExtResource("6_f8ns0"), ExtResource("7_k0ywk")])
 
 [node name="animation" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_oprq2")
