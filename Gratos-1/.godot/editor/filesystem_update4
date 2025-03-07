@@ -1,25 +1,2 @@
-res://Combat/Combat maps/Basico_combate.tscn
-res://Combat/Combat_menu.gd
-res://Combat/Combat_menu.tscn
-res://Characters/PLayable characters/RPG_character.tscn
-res://Characters/PLayable characters/Scenes/Wizard.tscn
-res://Characters/PLayable characters/Scenes/Classes.gd
-res://Skills/Wizard/Golpe_con_baston.tres
-res://Addons/Skills.tscn
-res://Skills/Wizard/Bola_de_fuego_I.tres
-res://Addons/Skills.gd
-res://Maps/Test_map.tscn
-res://Skills/Wizard/Rafaga_magica_I.tres
-res://Skills/Barbarian/Hachazo.tres
-res://Skills/Barbarian/Temblor.tres
-res://Skills/Barbarian/Descontrol_I.tres
-res://Skills/Archer/Lanzamiento_de_Flecha.tres
-res://Skills/Archer/Flecha_Ignea.tres
-res://Skills/Archer/Lluvia_de_Flechas.tres
-res://Characters/PLayable characters/Scenes/Archer.tscn
-res://Characters/PLayable characters/Scenes/Barbarian.tscn
-res://Characters/PLayable characters/Scenes/Knight.tscn
-res://Characters/PLayable characters/RPG_character.gd
-res://stats/stats.gd
-res://Maps/Manager.gd
-res://stats/stats.tscn
+res://Combat/Combat maps/Decanato_combate.tscn
+res://Combat/Combat maps/Debe_combate.tscn
