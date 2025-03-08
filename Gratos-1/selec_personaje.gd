@@ -97,28 +97,16 @@ func deshabilitar(nro):
 #si se cumple, avanza y muestra el juego
 func revision():
 	var cantidad = personajes.size()
-	if tamaño == 1:
+	if cantidad == 1:
 		var game = load("res://Maps/Test_map2.tscn").instantiate()
 		get_tree().root.add_child(game)
 		$".".visible = false
-	else:
-		if cantidad >= 2 and comprobar(personajes, posibilidades):
+	'''else:
+		if cantidad >= 2:
 			var game = load("res://Maps/Test_map2.tscn").instantiate()
 			get_tree().root.add_child(game)
-			$".".visible = false
-
-func comprobar(grupo, lista):
-	for i in PlayerHandle.ids:
-		if PlayerHandle.players[i].character != null:
-			contador += 1
-		elif PlayerHandle.players[i].character == null:
-			PlayerHandle.players[i].character = personajes[contador]
-	for i in lista:
-		if i[0] in grupo and i[1] in grupo:
-			return true
-	return false
+			$".".visible = false'''
 	
-
 
 
 func _on_ready() -> void:
