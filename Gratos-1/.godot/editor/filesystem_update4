@@ -1,11 +1,1 @@
-<<<<<<< HEAD
-res://selec_personaje.tscn
-res://loading.gd
 res://Menu.tscn
-res://loading.tscn
-res://selec_personaje1.tscn
-res://selec_personaje.gd
-=======
-res://Combat/Combat maps/Debe_combate.tscn
-res://selec_personaje.tscn
->>>>>>> sebass
