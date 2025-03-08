@@ -3,8 +3,8 @@ extends CanvasLayer
 
 @onready var menu = %Basic_menu
 @onready var combat = %Combat
-@onready var special = %Item
-@onready var item = %Special
+@onready var item = %Item
+@onready var special = %Special
 #var player = PlayerHandle.players[multiplayer.get_unique_id()]
 @export_file("*.tscn") var world 
 
@@ -35,19 +35,19 @@ func _on_basic_menu_item_clicked(index, at_position, mouse_button_index):
 	if mouse_button_index == MOUSE_BUTTON_LEFT:	
 		match index:
 			0: #Muestra los ataques normales
-				%Sfx.play()
+				Music.select.play()
 				menu.visible = false
 				combat.visible = true
 			1: #Muestra los ataques magicos
-				%Sfx.play()
+				Music.select.play()
 				menu.visible = false
 				special.visible = true
 			2: #Muestra los objetos
-				%Sfx.play()
+				Music.select.play()
 				menu.visible = false
 				item.visible = true
 			3: #Permite huir del combate
-				%Sfx.play()
+				Music.select.play()
 				$"Container Alpha".visible = false
 				$Textbox.dialogue("Escape exitoso")
 				$Textbox.show_textbox()
@@ -64,12 +64,25 @@ func _on_combat_item_clicked(index, at_position, mouse_button_index):
 	if mouse_button_index == MOUSE_BUTTON_LEFT:
 		for skill in PlayerHandle.players[multiplayer.get_unique_id()].skills:
 			if combat.get_item_text(index) == skill.Skill_name:
-				%Sfx.play()
-	
-			
+				Music.select.play()
+				get_parent().selection[0].show()
 
 
 #Permite seleccionar los items
 #(y que estos tengan efecto en el combate)
 func _on_item_item_clicked(index, at_position, mouse_button_index):
-	pass # Replace with function body.
+	if mouse_button_index == MOUSE_BUTTON_LEFT:
+		for skill in PlayerHandle.players[multiplayer.get_unique_id()].skills:
+			if combat.get_item_text(index) == skill.Skill_name:
+				Music.select.play()
+				
+
+#Permite seleccionar los ataques especiales
+#(y que estos tengan efecto en el combate)
+func _on_special_item_clicked(index, at_position, mouse_button_index):
+	if mouse_button_index == MOUSE_BUTTON_LEFT:
+		for skill in PlayerHandle.players[multiplayer.get_unique_id()].skills:
+			if special.get_item_text(index) == skill.Skill_name:
+				Music.select.play()
+				get_parent().selection[0].show()
+
