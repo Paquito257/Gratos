@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://6kd4dvasl6b2"]
 
 [ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="1_0y4h3"]
-[ext_resource type="Script" path="res://loading.gd" id="1_yqib8"]
+[ext_resource type="Script" uid="uid://r3c0y0deng3" path="res://loading.gd" id="1_yqib8"]
 [ext_resource type="Texture2D" uid="uid://caq452jc63xbx" path="res://Texture/fondoUDO.png" id="2_sr2oe"]
 [ext_resource type="Texture2D" uid="uid://drbv3t5dckmtn" path="res://Texture/Logo.png" id="5_rnrpl"]
 [ext_resource type="AudioStream" uid="uid://bu0qll011fmuv" path="res://Music/LoadTheme.mp3" id="6_v4obu"]
@@ -87,8 +87,8 @@ resource_name = "new_animation"
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xrlg8"]
 _data = {
-"RESET": SubResource("Animation_g7hfp"),
-"new_animation": SubResource("Animation_4qcw1")
+&"RESET": SubResource("Animation_g7hfp"),
+&"new_animation": SubResource("Animation_4qcw1")
 }
 
 [sub_resource type="Environment" id="Environment_dtvoa"]
@@ -132,7 +132,7 @@ horizontal_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_xrlg8")
+&"": SubResource("AnimationLibrary_xrlg8")
 }
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]

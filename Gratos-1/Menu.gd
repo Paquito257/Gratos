@@ -8,7 +8,10 @@ var carga = load("res://loading.tscn").instantiate()
 
 # Llama a una funcion segun el estado del jugador
 func _ready():
-	
+	$Control/Knight.play("default")
+	$Control/Barbarian.play("default")
+	$Control/Archer.play("default")
+	$Control/Wizard.play("default")
 	multiplayer.peer_connected.connect(peer_connected)
 	multiplayer.peer_disconnected.connect(peer_disconnected)
 	multiplayer.connected_to_server.connect(connected_to_server)
