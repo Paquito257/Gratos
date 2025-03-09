@@ -1,9 +1,12 @@
-[gd_scene load_steps=30 format=3 uid="uid://dvkacl0f54w3d"]
+[gd_scene load_steps=41 format=3 uid="uid://dvkacl0f54w3d"]
 
 [ext_resource type="Texture2D" uid="uid://vbgpc8ntuntf" path="res://Texture/Playable Characters/Character sprite/Knight/Knight-Idle.png" id="1_238u5"]
 [ext_resource type="Texture2D" uid="uid://wa2n26frfmnj" path="res://Texture/Playable Characters/Character sprite/Knight/Knight-Attack01.png" id="1_p61vl"]
 [ext_resource type="Texture2D" uid="uid://dq00nbal7vmmg" path="res://Texture/Playable Characters/Character sprite/Knight/Knight-Walk.png" id="2_f2ylb"]
+[ext_resource type="Texture2D" uid="uid://w3sat0cpnait" path="res://Texture/Playable Characters/Character sprite/Knight/Knight-Death.png" id="2_ucc20"]
+[ext_resource type="Texture2D" uid="uid://bhdo7ks315hpo" path="res://Texture/Playable Characters/Character sprite/Knight/Knight-Hurt.png" id="3_0p70c"]
 [ext_resource type="Script" path="res://Characters/PLayable characters/Scenes/Classes.gd" id="4_x876m"]
+[ext_resource type="Script" path="res://Addons/Skills.gd" id="5_184te"]
 [ext_resource type="Resource" uid="uid://de4l0h6xhowsa" path="res://Skills/Knight/Corte.tres" id="5_qgsf2"]
 [ext_resource type="Resource" uid="uid://d1lfa218hf1ms" path="res://Skills/Knight/Estocada.tres" id="6_e7ljy"]
 [ext_resource type="Resource" uid="uid://drwttwu742t22" path="res://Skills/Knight/Puñalada_Eterea.tres" id="7_31vp2"]
@@ -35,6 +38,38 @@ region = Rect2(500, 0, 100, 100)
 [sub_resource type="AtlasTexture" id="AtlasTexture_fv3iu"]
 atlas = ExtResource("1_p61vl")
 region = Rect2(600, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8cjc0"]
+atlas = ExtResource("2_ucc20")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ltdbl"]
+atlas = ExtResource("2_ucc20")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hlblr"]
+atlas = ExtResource("2_ucc20")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_00ebw"]
+atlas = ExtResource("2_ucc20")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tq7vq"]
+atlas = ExtResource("3_0p70c")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m1agr"]
+atlas = ExtResource("3_0p70c")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qqsdm"]
+atlas = ExtResource("3_0p70c")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qm1f"]
+atlas = ExtResource("3_0p70c")
+region = Rect2(300, 0, 100, 100)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_50yd4"]
 atlas = ExtResource("1_238u5")
@@ -116,8 +151,42 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_fv3iu")
 }],
-"loop": true,
+"loop": false,
 "name": &"Attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8cjc0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ltdbl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hlblr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_00ebw")
+}],
+"loop": false,
+"name": &"Death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tq7vq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m1agr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qqsdm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4qm1f")
+}],
+"loop": false,
+"name": &"Hurt",
 "speed": 5.0
 }, {
 "frames": [{
@@ -177,7 +246,6 @@ animations = [{
 z_index = 9
 sprite_frames = SubResource("SpriteFrames_ji0m7")
 animation = &"Attack"
-frame_progress = 0.161393
 script = ExtResource("4_x876m")
 clase = "caballero"
-attacks = Array[Resource]([ExtResource("5_qgsf2"), ExtResource("6_e7ljy"), ExtResource("7_31vp2")])
+attacks = Array[ExtResource("5_184te")]([ExtResource("5_qgsf2"), ExtResource("6_e7ljy"), ExtResource("7_31vp2")])

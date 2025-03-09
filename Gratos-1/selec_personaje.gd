@@ -98,7 +98,7 @@ func deshabilitar(nro):
 func revision():
 	var cantidad = personajes.size()
 	if cantidad == 1:
-		var game = load("res://Maps/Test_map2.tscn").instantiate()
+		var game = load("res://Maps/Test_map.tscn").instantiate()
 		get_tree().root.add_child(game)
 		$".".visible = false
 	'''else:

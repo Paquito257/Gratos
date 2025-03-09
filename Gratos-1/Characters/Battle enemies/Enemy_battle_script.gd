@@ -1,24 +1,26 @@
-extends CharacterBody2D
+extends AnimatedSprite2D
 
 @export var flipped : bool = false
 @export var enemy_name : String
-
 @onready var stats = $Stats
-@onready var animation = $animation
 @onready var life = $Life
+		
 @export var attacks : Array[Skill] = []
 
 func _ready():
 	life.max_value = stats.vida
 	life.value = stats.vida
-	animation.flip_h = flipped
-	animation.play()
-	
-	
+	flip_h = flipped
+	play("Idle")
 
 func _process(delta):
 	pass
-	
-func update_perc():
-	pass
-	
+		
+func update_stats():
+	if life.value > 0:
+		life.value = stats.vida
+		play("Hurt")
+		
+		
+	elif life.value <= 0:
+		play("Death")

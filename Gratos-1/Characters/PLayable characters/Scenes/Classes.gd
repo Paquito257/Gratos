@@ -6,3 +6,5 @@ extends AnimatedSprite2D
 @export_enum("caballero","mago", "arquero","barbaro") var clase = "mago"
 @export var nivel:int = 1
 @export var attacks : Array[Skill] 
+
+	

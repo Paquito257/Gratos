@@ -5,10 +5,9 @@ extends CanvasLayer
 @onready var combat = %Combat
 @onready var item = %Item
 @onready var special = %Special
-#var player = PlayerHandle.players[multiplayer.get_unique_id()]
-@export_file("*.tscn") var world 
 
-var hypothetical_skills = ["Golpe","Patada","Estocada","Corte"]
+var current_menu : String
+var current_skill 
 
 func menup():	
 	for node in get_tree().get_nodes_in_group("Menus"):
@@ -16,15 +15,20 @@ func menup():
 			if Input.is_action_just_pressed("ui_cancel") and node.visible:
 				menu.visible = true
 				node.visible = false
-	
+			
+			elif !node.visible and Input.is_action_just_pressed("ui_cancel") and current_menu == node.name:
+					get_parent().selection[get_parent().index].hide()
+					node.show()
+					
+			elif !node.visible and current_menu == node.name:
+				get_parent().enemy_selection()
+				
+			
+				
+			
 func _ready():
-	for i in len(PlayerHandle.players[multiplayer.get_unique_id()].skills):
-		if PlayerHandle.players[multiplayer.get_unique_id()].skills[i].Magic == 0:
-			combat.add_item(PlayerHandle.players[multiplayer.get_unique_id()].skills[i].Skill_name)
-			item.add_item(PlayerHandle.players[multiplayer.get_unique_id()].skills[i].Skill_name)
-		else:
-			special.add_item(PlayerHandle.players[multiplayer.get_unique_id()].skills[i].Skill_name)
-
+	current_menu = menu.name
+	add_items()
 
 
 func _process(delta):
@@ -32,6 +36,7 @@ func _process(delta):
 
 #Muestra una lista correspondiente a la accion seleccionada
 func _on_basic_menu_item_clicked(index, at_position, mouse_button_index):
+	current_menu = menu.name
 	if mouse_button_index == MOUSE_BUTTON_LEFT:	
 		match index:
 			0: #Muestra los ataques normales
@@ -54,23 +59,28 @@ func _on_basic_menu_item_clicked(index, at_position, mouse_button_index):
 				get_tree().create_timer(1)
 				if len($Textbox.text_queue) == 0:
 					Music.enemigo.stop()
-					get_tree().change_scene_to_file(world)
+					#get_tree().change_scene_to_file(world)
+					Manager.change_to(get_parent().get_tree().root, "Combate")
 					
 
 
 #Permite seleccionar los ataques normales
 #(y que estos tengan efecto en el combate)
 func _on_combat_item_clicked(index, at_position, mouse_button_index):
+	current_menu = combat.name
 	if mouse_button_index == MOUSE_BUTTON_LEFT:
 		for skill in PlayerHandle.players[multiplayer.get_unique_id()].skills:
 			if combat.get_item_text(index) == skill.Skill_name:
 				Music.select.play()
-				get_parent().selection[0].show()
+				get_parent().selection[get_parent().index].show()
+				combat.visible = false
+				current_skill = skill
 
 
 #Permite seleccionar los items
 #(y que estos tengan efecto en el combate)
 func _on_item_item_clicked(index, at_position, mouse_button_index):
+	current_menu = item.name
 	if mouse_button_index == MOUSE_BUTTON_LEFT:
 		for skill in PlayerHandle.players[multiplayer.get_unique_id()].skills:
 			if combat.get_item_text(index) == skill.Skill_name:
@@ -80,9 +90,20 @@ func _on_item_item_clicked(index, at_position, mouse_button_index):
 #Permite seleccionar los ataques especiales
 #(y que estos tengan efecto en el combate)
 func _on_special_item_clicked(index, at_position, mouse_button_index):
+	current_menu = special.name
 	if mouse_button_index == MOUSE_BUTTON_LEFT:
 		for skill in PlayerHandle.players[multiplayer.get_unique_id()].skills:
 			if special.get_item_text(index) == skill.Skill_name:
 				Music.select.play()
-				get_parent().selection[0].show()
-
+				get_parent().selection[get_parent().index].show()
+				special.visible = false
+				current_skill = skill
+				
+func add_items():
+	for i in len(PlayerHandle.players[multiplayer.get_unique_id()].skills):
+		if PlayerHandle.players[multiplayer.get_unique_id()].skills[i].Magic == 0:
+			combat.add_item(PlayerHandle.players[multiplayer.get_unique_id()].skills[i].Skill_name)
+			item.add_item(PlayerHandle.players[multiplayer.get_unique_id()].skills[i].Skill_name)
+		else:
+			special.add_item(PlayerHandle.players[multiplayer.get_unique_id()].skills[i].Skill_name)
+	

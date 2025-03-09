@@ -1,12 +1,5 @@
 extends CharacterBody2D
 
-#Variables que se mostraran en el inspector del nodo correspondiente
-#al personaje
-#@export_category("Player settings")
-#@export_enum("caballero","mago", "arquero","barbaro") var clase = "mago"
-#@export var nivel:int = 1
-#@export var attacks : Array[Resource] 
-
 @onready var camera = $Camera2D
 
 var mov_speed = 150
@@ -27,7 +20,7 @@ var step_pixel : float = 0.0:
 			$Stats.visible = false
 			$inventario.visible = false
 			camera.enabled = false
-			Manager.change_to_battle()
+			Manager.change_to(get_parent().get_tree().root, "Map")
 
 			step = 0
 			
@@ -42,7 +35,7 @@ func _ready():
 	stats = load("res://stats/stats.tscn").instantiate()
 	add_child(stats)
 	character.play("Idle")
-	
+
 	#Se guardan las skills en un script global
 	PlayerHandle.players[multiplayer.get_unique_id()].skills = character.attacks.duplicate()
 	set_multiplayer_authority(name.to_int())

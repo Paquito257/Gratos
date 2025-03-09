@@ -1029,7 +1029,7 @@ sources/2 = SubResource("TileSetAtlasSource_17cck")
 sources/3 = SubResource("TileSetAtlasSource_6piqy")
 sources/4 = SubResource("TileSetAtlasSource_b3ont")
 
-[node name="Basico" type="Node2D"]
+[node name="Combate" type="Node2D"]
 process_mode = 3
 z_index = 15
 script = ExtResource("1_78inm")

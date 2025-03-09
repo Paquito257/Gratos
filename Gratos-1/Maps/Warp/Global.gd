@@ -19,8 +19,19 @@ func _ready():
 	randomize()
 	encounter = randi_range(25,50)
 	
-func change_to_battle():
-	get_tree().change_scene_to_file(arena)
+func change_to(tree, type: String):
+	
+	if type == "Map":
+		tree.get_node(type).queue_free()
+		#current_tree.change_to_scene(arena)
+		var battle_scene = load(arena).instantiate()
+		tree.add_child(battle_scene)
+		
+	elif type == "Combate":
+		tree.get_node(type).queue_free()
+		#current_tree.change_to_scene(arena)
+		var battle_scene = load(GameControl.current_map).instantiate()
+		tree.add_child(battle_scene)
 
 func save_data(player):
 	player_last_position = player.position

@@ -8,3 +8,5 @@ Skill_name = "Corte"
 Damage = 4
 Magic = 0
 Success = 0.8
+Global = false
+Level_unlock = 1

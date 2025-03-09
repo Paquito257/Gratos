@@ -1,11 +1,83 @@
-[gd_scene load_steps=22 format=3 uid="uid://dvkacl0f54w3d"]
+[gd_scene load_steps=43 format=3 uid="uid://dvkacl0f54w3d"]
 
 [ext_resource type="Texture2D" uid="uid://dpynry271fibe" path="res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Idle.png" id="1_fb6rn"]
+[ext_resource type="Texture2D" uid="uid://cuwj3b34y5urq" path="res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Attack01.png" id="1_jjb1q"]
 [ext_resource type="Texture2D" uid="uid://65jtucyr84ki" path="res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Walk.png" id="2_c1hm5"]
+[ext_resource type="Texture2D" uid="uid://ls4f6umyum0c" path="res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Death.png" id="2_h4ax8"]
+[ext_resource type="Texture2D" uid="uid://cdnwudij7hr3s" path="res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Hurt.png" id="3_nlrs1"]
 [ext_resource type="Script" path="res://Characters/PLayable characters/Scenes/Classes.gd" id="3_upil0"]
 [ext_resource type="Resource" uid="uid://dxfichbgg1s5y" path="res://Skills/Barbarian/Hachazo.tres" id="4_jfe8f"]
 [ext_resource type="Resource" uid="uid://djjpmbfv46q0o" path="res://Skills/Barbarian/Temblor.tres" id="5_esk2f"]
 [ext_resource type="Resource" uid="uid://qbtnf7vwj8ue" path="res://Skills/Barbarian/Descontrol_I.tres" id="6_u2sa4"]
+[ext_resource type="Script" path="res://Addons/Skills.gd" id="7_cmlvi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iwson"]
+atlas = ExtResource("1_jjb1q")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fenp7"]
+atlas = ExtResource("1_jjb1q")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f3erg"]
+atlas = ExtResource("1_jjb1q")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ljav"]
+atlas = ExtResource("1_jjb1q")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6i367"]
+atlas = ExtResource("1_jjb1q")
+region = Rect2(400, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_co4wp"]
+atlas = ExtResource("1_jjb1q")
+region = Rect2(500, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p3chi"]
+atlas = ExtResource("1_jjb1q")
+region = Rect2(600, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28nu5"]
+atlas = ExtResource("1_jjb1q")
+region = Rect2(700, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yqmf2"]
+atlas = ExtResource("1_jjb1q")
+region = Rect2(800, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hg7p4"]
+atlas = ExtResource("2_h4ax8")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iic0a"]
+atlas = ExtResource("2_h4ax8")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pfhag"]
+atlas = ExtResource("2_h4ax8")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pqok5"]
+atlas = ExtResource("2_h4ax8")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5q0n3"]
+atlas = ExtResource("3_nlrs1")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pdygh"]
+atlas = ExtResource("3_nlrs1")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6i3pg"]
+atlas = ExtResource("3_nlrs1")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4l1ry"]
+atlas = ExtResource("3_nlrs1")
+region = Rect2(300, 0, 100, 100)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kq1uk"]
 atlas = ExtResource("1_fb6rn")
@@ -67,6 +139,72 @@ region = Rect2(700, 0, 100, 100)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_iwson")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fenp7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f3erg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ljav")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6i367")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_co4wp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p3chi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_28nu5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yqmf2")
+}],
+"loop": false,
+"name": &"Attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hg7p4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iic0a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pfhag")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pqok5")
+}],
+"loop": false,
+"name": &"Death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5q0n3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pdygh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6i3pg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4l1ry")
+}],
+"loop": false,
+"name": &"Hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_kq1uk")
 }, {
 "duration": 1.0,
@@ -121,7 +259,7 @@ animations = [{
 [node name="RPG_class" type="AnimatedSprite2D"]
 z_index = 9
 sprite_frames = SubResource("SpriteFrames_ji0m7")
-animation = &"Walk"
+animation = &"Hurt"
 script = ExtResource("3_upil0")
 clase = "barbaro"
-attacks = Array[Resource]([ExtResource("4_jfe8f"), ExtResource("5_esk2f"), ExtResource("6_u2sa4")])
+attacks = Array[ExtResource("7_cmlvi")]([ExtResource("4_jfe8f"), ExtResource("5_esk2f"), ExtResource("6_u2sa4")])

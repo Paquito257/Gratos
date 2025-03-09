@@ -42,7 +42,6 @@ content_margin_left = 20.0
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_1m7nu")
-world = "<null>"
 
 [node name="Textbox" parent="." instance=ExtResource("9_6npqt")]
 
@@ -79,8 +78,8 @@ clip_contents = false
 layout_mode = 2
 theme = ExtResource("2_ssl4v")
 theme_type_variation = &"Comic sans"
-theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_constants/icon_margin = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("1_by7rl")
@@ -105,8 +104,8 @@ unique_name_in_owner = true
 visible = false
 layout_mode = 2
 theme = ExtResource("2_ssl4v")
-theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 5
 theme_override_styles/panel = SubResource("StyleBoxEmpty_18y5c")
 
@@ -115,8 +114,8 @@ unique_name_in_owner = true
 visible = false
 layout_mode = 2
 theme = ExtResource("2_ssl4v")
-theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 5
 theme_override_styles/panel = SubResource("StyleBoxEmpty_xijo7")
 
@@ -125,8 +124,8 @@ unique_name_in_owner = true
 visible = false
 layout_mode = 2
 theme = ExtResource("2_ssl4v")
-theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 5
 theme_override_styles/panel = SubResource("StyleBoxEmpty_s1jj8")
 

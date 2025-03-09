@@ -21,6 +21,7 @@ PlayerHandle="*res://Global/Player_handle.gd"
 GameControl="*res://Global/Game_control.gd"
 Manager="*res://Maps/Warp/manager.tscn"
 Music="*res://Global/Music.tscn"
+DamageModifiers="*res://Combat/Damage_modifiers.gd"
 
 [editor]
 

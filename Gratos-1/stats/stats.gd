@@ -190,6 +190,7 @@ func set_all_stats(stats):
 	if stats.ataque != null:
 		add_to(stats.ataque,"ataque")
 		
+		
 	if stats.velocidad != null:
 		add_to(stats.velocidad,"velocidad")
 		
@@ -203,10 +204,10 @@ func set_all_stats(stats):
 		$"vida/ProgressBar".queue_redraw()
 		
 	if stats.magia != null:
-		$magia/ProgressBar.value = stats.magia
-		$magia/ProgressBar.max_value = stats.max_magia 
-		$magia/ProgressBar/Cantidad.text = str($magia/ProgressBar.value)
-		$"magia/ProgressBar".queue_redraw()
+		$Magia/ProgressBar.value = stats.magia
+		$Magia/ProgressBar.max_value = stats.max_magia 
+		$Magia/ProgressBar/Cantidad.text = str($Magia/ProgressBar.value)
+		$"Magia/ProgressBar".queue_redraw()
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	clase = get_parent().character.clase
@@ -229,6 +230,7 @@ func _process(delta: float) -> void:
 			"defensa": $menu/Defensa/Cantidad.text.to_int(),
 			"ataque": $menu/Ataque/Cantidad.text.to_int()
 			}
+			
 	PlayerHandle.players[multiplayer.get_unique_id()].stats = all_stats
 
 

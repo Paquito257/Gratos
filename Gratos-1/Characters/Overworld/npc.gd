@@ -16,17 +16,6 @@ func Show_textbox():
 		%Textbox.show_textbox()
 	elif !%Node2D.resource.Friendly:
 		%Textbox.visible = false
-
-#Funcion que pausa la escena del mapa correspondiente e instancia
-#una de combate
-func fight():
-	#TODO: crear variable global que almacene el escenario de combate
-	#correspondiente al nivel, para que se elija el respectivo escenario
-	Manager.battle_scene = true
-	Manager.change_to_battle()
-
-	
-
 	
 func _process(delta):
 	if %Node2D.resource.Friendly:
@@ -41,7 +30,7 @@ func _on_event_area_entered(area):
 	if %Node2D.resource.Friendly:
 		inside = true
 	else:
-		fight()
+		pass
 
 func _on_event_area_exited(area):
 	inside = false 
