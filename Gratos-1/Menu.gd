@@ -12,6 +12,8 @@ func _ready():
 	$Control/Barbarian.play("default")
 	$Control/Archer.play("default")
 	$Control/Wizard.play("default")
+	$BGcreditos.visible = false
+	$Cerrar.visible = false
 	multiplayer.peer_connected.connect(peer_connected)
 	multiplayer.peer_disconnected.connect(peer_disconnected)
 	multiplayer.connected_to_server.connect(connected_to_server)
@@ -68,6 +70,7 @@ func StartGame():
 	
 
 func _on_play_button_down():
+	print("play<<<<<<<<<<<")
 	peer = ENetMultiplayerPeer.new()
 	peer.create_server(port)
 	multiplayer.set_multiplayer_peer(peer)
@@ -81,6 +84,7 @@ func _on_ip_text_submitted(_new_string: String):
 
 
 func _on_join_pressed():
+	print("join><<<<<<<<<<<")
 	peer = ENetMultiplayerPeer.new()
 	peer.create_client(%IP_owner.text, port)
 	multiplayer.set_multiplayer_peer(peer)
@@ -105,3 +109,13 @@ func _on_cleaner_timeout() -> void:
 
 func _on_cleaner_2_timeout() -> void:
 	$Transtion2.visible = false
+
+
+func _on_credits_pressed():
+	$BGcreditos.visible = true
+	$Cerrar.visible = true
+
+
+func _on_close_pressed() -> void:
+	$BGcreditos.visible = false
+	$Cerrar.visible = false

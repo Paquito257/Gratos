@@ -1,7 +1,8 @@
-[gd_scene load_steps=55 format=3 uid="uid://csyf614fi1bwu"]
+[gd_scene load_steps=62 format=3 uid="uid://csyf614fi1bwu"]
 
-[ext_resource type="Script" uid="uid://dy2qgmxw3m4uq" path="res://selec_personaje.gd" id="1_6tvf1"]
+[ext_resource type="Script" path="res://selec_personaje.gd" id="1_6tvf1"]
 [ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="4_l8r70"]
+[ext_resource type="Texture2D" uid="uid://bxuolcxccleg6" path="res://Texture/Players.png" id="4_vbcow"]
 [ext_resource type="Texture2D" uid="uid://vbgpc8ntuntf" path="res://Texture/Playable Characters/Character sprite/Knight/Knight-Idle.png" id="4_wew3n"]
 [ext_resource type="Texture2D" uid="uid://dpynry271fibe" path="res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Idle.png" id="5_vnd7b"]
 [ext_resource type="Texture2D" uid="uid://c73ymqivr0hrj" path="res://Texture/Playable Characters/Character sprite/Archer/Archer-Idle.png" id="6_tjsw6"]
@@ -10,8 +11,14 @@
 [ext_resource type="PackedScene" uid="uid://cylangw0sb7mt" path="res://transitions/transtion.tscn" id="9_njgpy"]
 [ext_resource type="Texture2D" uid="uid://dq00nbal7vmmg" path="res://Texture/Playable Characters/Character sprite/Knight/Knight-Walk.png" id="10_arv7g"]
 [ext_resource type="Texture2D" uid="uid://65jtucyr84ki" path="res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Walk.png" id="11_iq0s6"]
+[ext_resource type="Texture2D" uid="uid://mt58dwglfqo7" path="res://Texture/Stars/yellow 04.png" id="11_m6rah"]
+[ext_resource type="Texture2D" uid="uid://cfeglueaoeiuh" path="res://Texture/Stars/yellow 03.png" id="12_o4m54"]
 [ext_resource type="Texture2D" uid="uid://b3isk0q4e5v1f" path="res://Texture/Playable Characters/Character sprite/Archer/Archer-Walk.png" id="12_xcuc2"]
+[ext_resource type="Texture2D" uid="uid://buuxmdnqy0xkb" path="res://Texture/Stars/yellow 02.png" id="13_3ao3y"]
 [ext_resource type="Texture2D" uid="uid://car6d7bpnky3c" path="res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Walk.png" id="13_s7wj6"]
+[ext_resource type="Texture2D" uid="uid://by0u2yh2e6ndn" path="res://Texture/Stars/yellow 05.png" id="15_cgdi5"]
+[ext_resource type="Texture2D" uid="uid://52xss8c3fa0o" path="res://Texture/Stars/yellow 01.png" id="16_enqj2"]
+[ext_resource type="Texture2D" uid="uid://dcnw4dyi0lace" path="res://Texture/Stars/yellow 00.png" id="17_owmje"]
 
 [sub_resource type="Animation" id="Animation_qdv7c"]
 length = 0.001
@@ -54,7 +61,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("confirmacion:visible")
+tracks/3/path = NodePath("Si:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -66,22 +73,10 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Si:visible")
+tracks/4/path = NodePath("No:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("No:visible")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -131,7 +126,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("confirmacion:visible")
+tracks/3/path = NodePath("Si:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -143,22 +138,10 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Si:visible")
+tracks/4/path = NodePath("No:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("No:visible")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -208,7 +191,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("confirmacion:visible")
+tracks/3/path = NodePath("Si:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -220,22 +203,10 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Si:visible")
+tracks/4/path = NodePath("No:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("No:visible")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -285,7 +256,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("confirmacion:visible")
+tracks/3/path = NodePath("Si:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -297,22 +268,10 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Si:visible")
+tracks/4/path = NodePath("No:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("No:visible")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -362,7 +321,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("confirmacion:visible")
+tracks/3/path = NodePath("Si:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -374,7 +333,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Si:visible")
+tracks/4/path = NodePath("No:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -383,26 +342,14 @@ tracks/4/keys = {
 "update": 1,
 "values": [true]
 }
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("No:visible")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1j2he"]
 _data = {
-&"RESET": SubResource("Animation_qdv7c"),
-&"selection1": SubResource("Animation_3b65o"),
-&"selection2": SubResource("Animation_tsh8i"),
-&"selection3": SubResource("Animation_2xd5u"),
-&"selection4": SubResource("Animation_iknn4")
+"RESET": SubResource("Animation_qdv7c"),
+"selection1": SubResource("Animation_3b65o"),
+"selection2": SubResource("Animation_tsh8i"),
+"selection3": SubResource("Animation_2xd5u"),
+"selection4": SubResource("Animation_iknn4")
 }
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f6qxv"]
@@ -680,6 +627,7 @@ offset_bottom = 649.0
 color = Color(0.0346092, 0.0216063, 0.0123178, 1)
 
 [node name="Label" type="Label" parent="."]
+visible = false
 layout_mode = 0
 offset_left = 319.0
 offset_top = -6.0
@@ -690,6 +638,15 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("4_l8r70")
 theme_override_font_sizes/font_size = 90
 text = "Seleccione su personaje"
+
+[node name="Seleccion" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = -82.0
+offset_right = 692.0
+offset_bottom = 101.0
+scale = Vector2(1.66017, 1.52728)
+texture = ExtResource("4_vbcow")
 
 [node name="Personaje1" type="Button" parent="."]
 layout_mode = 0
@@ -782,26 +739,13 @@ rotation = 1.58825
 scale = Vector2(0.602222, 0.548889)
 texture = ExtResource("8_ylugc")
 
-[node name="confirmacion" type="Label" parent="."]
-visible = false
-layout_mode = 0
-offset_left = 27.0
-offset_top = 246.0
-offset_right = 1952.0
-offset_bottom = 346.0
-scale = Vector2(0.584711, 1.03208)
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("4_l8r70")
-theme_override_font_sizes/font_size = 80
-text = "Desea usar este personaje?"
-
 [node name="Si" type="Button" parent="."]
 visible = false
 layout_mode = 0
-offset_left = 398.0
-offset_top = 517.0
-offset_right = 487.0
-offset_bottom = 625.0
+offset_left = 387.0
+offset_top = 552.0
+offset_right = 476.0
+offset_bottom = 660.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("4_l8r70")
 theme_override_font_sizes/font_size = 80
@@ -811,10 +755,10 @@ flat = true
 [node name="No" type="Button" parent="."]
 visible = false
 layout_mode = 0
-offset_left = 640.0
-offset_top = 514.0
-offset_right = 748.0
-offset_bottom = 602.0
+offset_left = 629.0
+offset_top = 549.0
+offset_right = 738.0
+offset_bottom = 651.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("4_l8r70")
 theme_override_font_sizes/font_size = 80
@@ -823,18 +767,71 @@ flat = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-&"": SubResource("AnimationLibrary_1j2he")
+"": SubResource("AnimationLibrary_1j2he")
 }
 
 [node name="cleaner" type="Timer" parent="."]
 wait_time = 0.5
 one_shot = true
 
+[node name="Stats" type="Label" parent="."]
+visible = false
+offset_left = 314.0
+offset_top = 301.0
+offset_right = 394.0
+offset_bottom = 428.0
+scale = Vector2(2.94552, 1.91558)
+text = "Vida:
+Ataque:
+Defensa:
+Velocidad:
+Magia:"
+
 [node name="Knight" type="AnimatedSprite2D" parent="."]
 visible = false
 position = Vector2(152, 482)
 scale = Vector2(7.60505, 7.71163)
 sprite_frames = SubResource("SpriteFrames_v1p4q")
+
+[node name="Vida" type="TextureRect" parent="Knight"]
+offset_left = 38.264
+offset_top = -24.7678
+offset_right = 663.264
+offset_bottom = 135.232
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("11_m6rah")
+
+[node name="Ataque" type="TextureRect" parent="Knight"]
+offset_left = 46.9425
+offset_top = -18.5434
+offset_right = 671.943
+offset_bottom = 141.457
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("11_m6rah")
+
+[node name="Defensa" type="TextureRect" parent="Knight"]
+offset_left = 49.1778
+offset_top = -12.0597
+offset_right = 674.178
+offset_bottom = 147.94
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("12_o4m54")
+
+[node name="Velocidad" type="TextureRect" parent="Knight"]
+offset_left = 52.8596
+offset_top = -5.44632
+offset_right = 677.86
+offset_bottom = 154.554
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("12_o4m54")
+
+[node name="Magia" type="TextureRect" parent="Knight"]
+offset_left = 42.6033
+offset_top = 1.0374
+offset_right = 667.603
+offset_bottom = 161.037
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("13_3ao3y")
 
 [node name="Barbarian" type="AnimatedSprite2D" parent="."]
 visible = false
@@ -843,17 +840,137 @@ scale = Vector2(8.31274, 8.05623)
 sprite_frames = SubResource("SpriteFrames_lgvhl")
 frame_progress = 0.276837
 
+[node name="Vida" type="TextureRect" parent="Barbarian"]
+offset_left = 38.264
+offset_top = -24.7678
+offset_right = 663.264
+offset_bottom = 135.232
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("15_cgdi5")
+
+[node name="Ataque" type="TextureRect" parent="Barbarian"]
+offset_left = 44.2694
+offset_top = -18.9915
+offset_right = 669.269
+offset_bottom = 141.008
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("15_cgdi5")
+
+[node name="Defensa" type="TextureRect" parent="Barbarian"]
+offset_left = 46.1942
+offset_top = -12.7851
+offset_right = 671.194
+offset_bottom = 147.215
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("12_o4m54")
+
+[node name="Velocidad" type="TextureRect" parent="Barbarian"]
+offset_left = 50.7654
+offset_top = -6.70289
+offset_right = 675.765
+offset_bottom = 153.297
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("16_enqj2")
+
+[node name="Magia" type="TextureRect" parent="Barbarian"]
+offset_left = 39.5778
+offset_top = -0.372385
+offset_right = 664.578
+offset_bottom = 159.628
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("17_owmje")
+
 [node name="Archer" type="AnimatedSprite2D" parent="."]
 visible = false
 position = Vector2(136, 482)
 scale = Vector2(8.33224, 8.46975)
 sprite_frames = SubResource("SpriteFrames_0vad6")
 
+[node name="Vida" type="TextureRect" parent="Archer"]
+offset_left = 35.4046
+offset_top = -22.905
+offset_right = 660.405
+offset_bottom = 137.095
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("13_3ao3y")
+
+[node name="Ataque" type="TextureRect" parent="Archer"]
+offset_left = 43.0857
+offset_top = -17.2378
+offset_right = 668.086
+offset_bottom = 142.762
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("15_cgdi5")
+
+[node name="Defensa" type="TextureRect" parent="Archer"]
+offset_left = 46.086
+offset_top = -11.6887
+offset_right = 671.086
+offset_bottom = 148.311
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("16_enqj2")
+
+[node name="Velocidad" type="TextureRect" parent="Archer"]
+offset_left = 49.9265
+offset_top = -5.78529
+offset_right = 674.927
+offset_bottom = 154.215
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("15_cgdi5")
+
+[node name="Magia" type="TextureRect" parent="Archer"]
+offset_left = 39.8452
+offset_top = 0.118067
+offset_right = 664.845
+offset_bottom = 160.118
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("11_m6rah")
+
 [node name="Wizard" type="AnimatedSprite2D" parent="."]
 visible = false
 position = Vector2(136, 476)
 scale = Vector2(7.74933, 8.20543)
 sprite_frames = SubResource("SpriteFrames_saq6w")
+
+[node name="Vida" type="TextureRect" parent="Wizard"]
+offset_left = 38.3259
+offset_top = -23.7648
+offset_right = 663.326
+offset_bottom = 136.235
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("12_o4m54")
+
+[node name="Ataque" type="TextureRect" parent="Wizard"]
+offset_left = 45.6814
+offset_top = -17.1837
+offset_right = 670.681
+offset_bottom = 142.816
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("16_enqj2")
+
+[node name="Defensa" type="TextureRect" parent="Wizard"]
+offset_left = 48.7784
+offset_top = -10.8465
+offset_right = 673.778
+offset_bottom = 149.154
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("12_o4m54")
+
+[node name="Velocidad" type="TextureRect" parent="Wizard"]
+offset_left = 52.7788
+offset_top = -4.50921
+offset_right = 677.779
+offset_bottom = 155.491
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("12_o4m54")
+
+[node name="Magia" type="TextureRect" parent="Wizard"]
+offset_left = 42.5843
+offset_top = 0.609354
+offset_right = 667.584
+offset_bottom = 160.609
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("15_cgdi5")
 
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="button_down" from="Personaje1" to="." method="_on_personaje_1_button_down"]

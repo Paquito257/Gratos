@@ -12,40 +12,40 @@ var nro = 0
 #e inicia la animación para confirmar la selección
 func _on_personaje_1_pressed():
 	texto.hide()
-	$confirmacion.visible = true
 	$Knight.visible = true
 	$Knight.play("default")
 	#animacion.play("selection1")
 	$Si.visible = true
 	$No.visible = true
+	$Stats.visible = true
 	nro = 1
 	
 func _on_personaje_2_pressed():
 	texto.hide()
-	$confirmacion.visible = true
 	$Barbarian.visible = true
 	$Barbarian.play("default")
 	#animacion.play("selection2")
+	$Stats.visible = true
 	$Si.visible = true
 	$No.visible = true
 	nro = 2
 
 func _on_personaje_3_pressed():
 	texto.hide()
-	$confirmacion.visible = true
 	$Archer.visible = true
 	$Archer.play("default")
 	#animacion.play("selection3")
+	$Stats.visible = true
 	$Si.visible = true
 	$No.visible = true
 	nro = 3
 	
 func _on_personaje_4_pressed():
 	texto.hide()
-	$confirmacion.visible = true
 	$Wizard.visible = true
 	$Wizard.play("default")
 	#animacion.play("selection4")
+	$Stats.visible = true
 	$Si.visible = true
 	$No.visible = true
 	nro = 4
@@ -87,6 +87,7 @@ func _on_si_pressed():
 #Detiene la animación de confirmación para poder seleccionar otro personaje
 func _on_no_pressed():
 	animacion.stop()
+	$Stats.visible = false
 	if nro == 1:
 		$Knight.stop()
 		$Knight.visible = false
@@ -132,7 +133,7 @@ func deshabilitar(nro):
 func revision():
 	var cantidad = personajes.size()
 	if cantidad == 1:
-		var game = load("res://Maps/Test_map2.tscn").instantiate()
+		var game = load("res://Maps/Basico/node_2d.tscn").instantiate()
 		get_tree().root.add_child(game)
 		$".".visible = false
 	'''else:
