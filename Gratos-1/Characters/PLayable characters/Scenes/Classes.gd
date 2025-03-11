@@ -22,13 +22,9 @@ func _process(delta: float):
 func _on_animation_finished():
 	if animation == "Attack":
 		play("Idle")
-		await get_tree().create_timer(1).timeout
-		get_parent().turn_actual = true
-		
+	
 	elif animation == "Hurt":
 		play("Idle")
-		await get_tree().create_timer(1).timeout
-		get_parent().turn_actual = true
 		
 	elif animation == "Death":
 		pass
@@ -55,12 +51,9 @@ func update_stats():
 		
 		if life.value > 0:
 			play("Hurt")
-			Music.hit.play()
 		
 		elif life.value <= 0:
 			play("Death")
-			Music.hit.play()
-		
 	
 	if magic.value != current_magic:
 		magic.value = current_magic

@@ -10,6 +10,5 @@ func _ready():
 func _on_animation_player_animation_finished(_anim_name: StringName="RESET"):
 	$WorldEnvironment.environment.glow_enabled = false
 	$".".visible = false
-	print(get_tree())
 	get_tree().root.add_child(listo)
 	$".".queue_free()

@@ -3,7 +3,6 @@ extends Node2D
 #TODO: se debe eliminar or completo la instancia anterior
 #del mapa (cuando se regrese del combate)
 @export var  RPG_character : PackedScene
-@export_file("*.tscn") var 
 var camera_pos 
 
 
@@ -28,7 +27,6 @@ func _ready():
 				
 				if PlayerHandle.players[i].stats != null:
 					current_player.global_position = Manager.player_last_position
-				
 				else:
 					current_player.global_position = spawn.global_position
 				#PlayerHandle.players[i].instance = current_player
