@@ -1,3 +1,6 @@
-res://Characters/PLayable characters/Scenes/Archer.tscn
-res://Combat/Combat maps/Combate.gd
+res://Menu.tscn
+res://stats/stats.tscn
 res://stats/stats.gd
+res://Maps/Manager.gd
+res://Maps/Test_map.tscn
+res://Maps/DEBE/DEBE.tscn
