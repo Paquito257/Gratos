@@ -16,6 +16,7 @@ var exp_total = 0 #Almacena la experiencia ganada
 var turn_actual = true
 var attack_done = false
 var finished = false
+var lost = false
 
 func _ready():
 	Music.change_track(Music.enemigo, Music.hub)
@@ -38,7 +39,7 @@ func _ready():
 #Permite seleccionar a uno de los oponentes para atacar
 #en el caso de que el ataque no sea multiple
 func _process(delta):
-	if !finished:
+	if !finished and !lost:
 		turn()
 		check_status()
 		
@@ -246,6 +247,10 @@ func check_status():
 			
 		if turn_order[turn].enemy and turn_order[turn].stats.vida <= 0:
 			turn_order.pop_at(turn)
+			
+	if players[0].life.value <= 0:
+		game_over()
+		
 
 func battle_end():
 	if enemies.is_empty() and !finished:
@@ -266,4 +271,19 @@ func battle_end():
 		menu.textbox.show_textbox()
 		
 	elif finished and !menu.textbox.textbox:
-			Manager.change_to(get_parent().get_tree().root, "Combate")
+		Manager.change_to(get_parent().get_tree().root, "Combate")
+		
+func game_over():
+	lost = true
+	Music.enemigo.stop()
+	menu.container.hide()
+	menu.show()
+	menu.textbox.show()
+	
+	menu.textbox.dialogue("Oh no...")
+	menu.textbox.show_textbox()
+	
+	if !menu.textbox.textbox:
+		pass
+	
+	

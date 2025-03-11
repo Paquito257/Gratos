@@ -130,7 +130,7 @@ func level_up(clase:String = "",nivel:int = 0):
 			$"menu/Ataque/Cantidad".queue_redraw()
 			
 		"arquero":
-			$vida/ProgressBar.max_value = 25 + 2 * nivel 
+			$vida/ProgressBar.max_value = 0 + 2 * nivel 
 			$vida/ProgressBar.value = $vida/ProgressBar.max_value
 			$vida/ProgressBar/Cantidad.text = str($vida/ProgressBar.value)
 			$"vida/ProgressBar".queue_redraw()

@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1741692330
+::res://::1741705133
 Attack_list.gd::GDScript::-1::1741387838::0::1::::<>Node2D<>::
 fondo1.jpeg::CompressedTexture2D::1302363779075723380::1741387839::1741657008::1::::<><>::
 font.tres::LabelSettings::4028788023841613964::1741387839::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
@@ -70,21 +70,21 @@ Merchant.tscn::PackedScene::2343659142518594185::1741684867::0::1::::<><>::res:/
 ::res://Characters/PLayable characters/::1741656732
 RPG_character.gd::GDScript::-1::1741656732::0::1::::<>CharacterBody2D<>::
 RPG_character.tscn::PackedScene::3546045638862774471::1741487588::0::1::::<><>::res://Characters/PLayable characters/RPG_character.gd<>uid://cjfy4ntmnlwtc::::res://inventory/inventario.tscn
-::res://Characters/PLayable characters/Scenes/::1741694112
-Archer.tscn::PackedScene::8653875733251786171::1741694112::0::1::::<><>::uid://bn04oom40ohy8::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Attack01.png<>uid://c73ymqivr0hrj::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Idle.png<>uid://b3isk0q4e5v1f::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Walk.png<>uid://bv3jsdwc0smyg::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Death.png<>res://Characters/PLayable characters/Scenes/Classes.gd<>uid://buvtp5ymalogx::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Hurt.png<>uid://p3kgdrmdad18::::res://Skills/Archer/Lanzamiento_de_Flecha.tres<>uid://decm2x340wet5::::res://Skills/Archer/Lluvia_de_Flechas.tres<>uid://bhjd8chy7x7ms::::res://Skills/Archer/Flecha_Ignea.tres<>res://Addons/Skills.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://gagg07oyv4no::::res://Skills/Archer/Flecha_Rapida.tres<>uid://0fx70q3cm2bw::::res://Skills/Archer/Punta_gelida_I.tres
-Barbarian.tscn::PackedScene::8653875733251786171::1741691526::0::1::::<><>::uid://dpynry271fibe::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Idle.png<>uid://cuwj3b34y5urq::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Attack01.png<>uid://65jtucyr84ki::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Walk.png<>uid://ls4f6umyum0c::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Death.png<>uid://cdnwudij7hr3s::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Hurt.png<>res://Characters/PLayable characters/Scenes/Classes.gd<>uid://dxfichbgg1s5y::::res://Skills/Barbarian/Hachazo.tres<>uid://djjpmbfv46q0o::::res://Skills/Barbarian/Temblor.tres<>uid://qbtnf7vwj8ue::::res://Skills/Barbarian/Descontrol_I.tres<>res://Addons/Skills.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
+::res://Characters/PLayable characters/Scenes/::1741695420
+Archer.tscn::PackedScene::8653875733251786171::1741694505::0::1::::<><>::uid://bn04oom40ohy8::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Attack01.png<>uid://c73ymqivr0hrj::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Idle.png<>uid://b3isk0q4e5v1f::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Walk.png<>uid://bv3jsdwc0smyg::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Death.png<>res://Characters/PLayable characters/Scenes/Classes.gd<>uid://buvtp5ymalogx::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Hurt.png<>uid://p3kgdrmdad18::::res://Skills/Archer/Lanzamiento_de_Flecha.tres<>uid://decm2x340wet5::::res://Skills/Archer/Lluvia_de_Flechas.tres<>uid://bhjd8chy7x7ms::::res://Skills/Archer/Flecha_Ignea.tres<>res://Addons/Skills.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://gagg07oyv4no::::res://Skills/Archer/Flecha_Rapida.tres<>uid://0fx70q3cm2bw::::res://Skills/Archer/Punta_gelida_I.tres<>uid://c6lwt2ojippew::::res://Skills/Archer/One_shot_one_kill.tres<>uid://bqyovwmvlu500::::res://Skills/Archer/Punta_gelida_II.tres<>uid://cj0xj4a46y68o::::res://Skills/Archer/Tormenta_de_flechas.tres
+Barbarian.tscn::PackedScene::8653875733251786171::1741694547::0::1::::<><>::uid://dpynry271fibe::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Idle.png<>uid://cuwj3b34y5urq::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Attack01.png<>uid://65jtucyr84ki::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Walk.png<>uid://ls4f6umyum0c::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Death.png<>uid://cdnwudij7hr3s::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Hurt.png<>res://Characters/PLayable characters/Scenes/Classes.gd<>uid://dxfichbgg1s5y::::res://Skills/Barbarian/Hachazo.tres<>uid://djjpmbfv46q0o::::res://Skills/Barbarian/Temblor.tres<>uid://qbtnf7vwj8ue::::res://Skills/Barbarian/Descontrol_I.tres<>res://Addons/Skills.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://dib07xcpr3v7g::::res://Skills/Barbarian/Descontrol_II.tres<>uid://c4ugu631mw3l8::::res://Skills/Barbarian/Descontrol_III.tres<>uid://c63d3ebw021y7::::res://Skills/Barbarian/Embestida.tres<>uid://2vv8ej3hny3l::::res://Skills/Barbarian/Fisico_Culturista.tres<>uid://di8w4sq81gff6::::res://Skills/Barbarian/Hachazo_certero.tres
 Classes.gd::GDScript::-1::1741691092::0::1::::<>AnimatedSprite2D<>::
-Knight.tscn::PackedScene::8653875733251786171::1741656732::0::1::::<><>::uid://vbgpc8ntuntf::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Idle.png<>uid://wa2n26frfmnj::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Attack01.png<>uid://dq00nbal7vmmg::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Walk.png<>uid://w3sat0cpnait::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Death.png<>uid://bhdo7ks315hpo::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Hurt.png<>res://Characters/PLayable characters/Scenes/Classes.gd<>res://Addons/Skills.gd<>uid://de4l0h6xhowsa::::res://Skills/Knight/Corte.tres<>uid://d1lfa218hf1ms::::res://Skills/Knight/Estocada.tres<>uid://drwttwu742t22::::res://Skills/Knight/Puñalada_Eterea.tres<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
-Wizard.tscn::PackedScene::8653875733251786171::1741678316::0::1::::<><>::uid://c8m7gfdpeug23::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Attack02.png<>uid://dkj3kmaaw02pm::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Idle.png<>uid://car6d7bpnky3c::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Walk.png<>uid://dunofgelshl1i::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-DEATH.png<>uid://d1ro4n32cc3xb::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Hurt.png<>res://Characters/PLayable characters/Scenes/Classes.gd<>uid://qnxgd3gnaqyi::::res://Skills/Wizard/Golpe_con_baston.tres<>uid://doprx0c65nn5h::::res://Skills/Wizard/Bola_de_fuego_I.tres<>uid://bdtgee6wx7p44::::res://Skills/Wizard/Rafaga_magica_I.tres<>res://Addons/Skills.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
-::res://Combat/::1741694111
-Combat_menu.gd::GDScript::-1::1741684799::0::1::::<>CanvasLayer<>::
+Knight.tscn::PackedScene::8653875733251786171::1741695023::0::1::::<><>::uid://vbgpc8ntuntf::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Idle.png<>uid://wa2n26frfmnj::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Attack01.png<>uid://dq00nbal7vmmg::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Walk.png<>uid://w3sat0cpnait::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Death.png<>uid://bhdo7ks315hpo::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Hurt.png<>res://Characters/PLayable characters/Scenes/Classes.gd<>res://Addons/Skills.gd<>uid://de4l0h6xhowsa::::res://Skills/Knight/Corte.tres<>uid://d1lfa218hf1ms::::res://Skills/Knight/Estocada.tres<>uid://drwttwu742t22::::res://Skills/Knight/Puñalada_Eterea.tres<>uid://cppol5if171mu::::res://Skills/Knight/Corte_certero.tres<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://ddcv5otvlit3x::::res://Skills/Knight/Corte_vital.tres<>uid://dfx7d1y7730a8::::res://Skills/Knight/Espada_oscura.tres<>uid://bbrlmq3fey33m::::res://Skills/Knight/Espiral_de_espada.tres<>uid://dewluwljx3ldf::::res://Skills/Knight/Super_Espada.tres
+Wizard.tscn::PackedScene::8653875733251786171::1741695420::0::1::::<><>::uid://c8m7gfdpeug23::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Attack02.png<>uid://dkj3kmaaw02pm::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Idle.png<>uid://car6d7bpnky3c::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Walk.png<>uid://dunofgelshl1i::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-DEATH.png<>uid://d1ro4n32cc3xb::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Hurt.png<>res://Characters/PLayable characters/Scenes/Classes.gd<>uid://qnxgd3gnaqyi::::res://Skills/Wizard/Golpe_con_baston.tres<>uid://doprx0c65nn5h::::res://Skills/Wizard/Bola_de_fuego_I.tres<>uid://bdtgee6wx7p44::::res://Skills/Wizard/Rafaga_magica_I.tres<>res://Addons/Skills.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://ljtuvwnmfyvn::::res://Skills/Wizard/Bola_de_fuego_II.tres<>uid://bpoenjl74pddl::::res://Skills/Wizard/Golpe_muy_fuerte_con_baston.tres<>uid://douqk5tral5yx::::res://Skills/Wizard/Mango_bajito.tres<>uid://cir5rqbtbmwl4::::res://Skills/Wizard/Rafaga_magica_II.tres<>uid://d0q4t07sk17g1::::res://Skills/Wizard/Rafaga_magica_III.tres
+::res://Combat/::1741696618
+Combat_menu.gd::GDScript::-1::1741696618::0::1::::<>CanvasLayer<>::
 Combat_menu.tscn::PackedScene::2401171033394759451::1741694111::0::1::::<><>::res://Combat/Combat_menu.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://cqekhr244iaxt::::res://Texture/Combat_icons/Sword.png<>uid://cvtqrrnc6kio8::::res://Texture/Combat_icons/Fire.webp<>uid://cvgypcfh7xnur::::res://Fonts/Combat_menu.tres<>uid://dk0yri2awrr8u::::res://Texture/Combat_icons/healing_potion.png<>uid://c34bexx0cwasx::::res://Texture/Combat_icons/Run.png<>uid://daho6ewyuivpt::::res://Sfx/menu-move.ogg<>uid://b4dgqhgyuawxu::::res://Textbox.tscn
 Damage_modifiers.gd::GDScript::-1::1741668177::0::1::::<>Node<>::
 modifiers.tscn::PackedScene::5303741393773266000::1741402454::0::1::::<><>::
-::res://Combat/Combat maps/::1741694112
+::res://Combat/Combat maps/::1741696511
 Basico_combate.tscn::PackedScene::1607698883855270164::1741694112::0::1::::<><>::res://Combat/Combat maps/Combate.gd<>uid://dgxqjn4yhw4jv::::res://Texture/Clouds 1/1.png<>uid://devctucr0iukf::::res://Texture/TX Struct.png<>uid://bmo1fxjjkup23::::res://Texture/Clouds 1/2.png<>uid://1rclml3p5d3c::::res://Texture/TX Tileset Grass.png<>uid://56am6bbo7j4e::::res://Texture/Clouds 1/4.png<>uid://gx5sidbfbjfo::::res://Texture/TX Tileset Wall.png<>uid://bahe63ewgm2mx::::res://Combat/Combat_menu.tscn<>uid://5lmeelwn7rhe::::res://Texture/TX Props.png
 Combate.gd::GDScript::-1::1741691330::0::1::::<>Node2D<>::
-Debe_combate.tscn::PackedScene::1607698883855270164::1741402454::0::1::::<><>::res://Combat/Combat maps/Combate.gd<>uid://cgmma0id87dkx::::res://Texture/Hub/Tiles.png<>uid://c5lducn6wfwf6::::res://Texture/Hub/Props2.png<>uid://bahe63ewgm2mx::::res://Combat/Combat_menu.tscn
+Debe_combate.tscn::PackedScene::1607698883855270164::1741696511::0::1::::<><>::res://Combat/Combat maps/Combate.gd<>uid://cgmma0id87dkx::::res://Texture/Hub/Tiles.png<>uid://ckemtjvnh0m3v::::res://Texture/Hub/Water+.png<>uid://c5lducn6wfwf6::::res://Texture/Hub/Props2.png<>uid://bahe63ewgm2mx::::res://Combat/Combat_menu.tscn
 Decanato_combate.tscn::PackedScene::1607698883855270164::1741402454::0::1::::<><>::res://Combat/Combat maps/Combate.gd<>uid://cgmma0id87dkx::::res://Texture/Hub/Tiles.png<>uid://c5lducn6wfwf6::::res://Texture/Hub/Props2.png<>uid://bahe63ewgm2mx::::res://Combat/Combat_menu.tscn
 Ingenieria_combate.tscn::PackedScene::1607698883855270164::1741402454::0::1::::<><>::res://Combat/Combat maps/Combate.gd<>uid://cgmma0id87dkx::::res://Texture/Hub/Tiles.png<>uid://c5lducn6wfwf6::::res://Texture/Hub/Props2.png<>uid://bahe63ewgm2mx::::res://Combat/Combat_menu.tscn
 ::res://Fonts/::1741387838
@@ -126,9 +126,9 @@ Nivel1.gd::GDScript::-1::1741387838::0::1::::<>Node2D<>::
 node_2d.gd::GDScript::-1::1741387838::0::1::::<>Node2D<>::
 node_2d.tscn::PackedScene::6011430266602940539::1741387838::0::1::::<><>::res://Maps/Basico/MissionManager.gd<>res://Maps/Basico/ManagerBasico.gd<>uid://1rclml3p5d3c::::res://Texture/TX Tileset Grass.png<>uid://bqry4a0o2fpul::::res://Characters/PLayable characters/RPG_character.tscn<>uid://devctucr0iukf::::res://Texture/TX Struct.png<>uid://b13ehvflif3q5::::res://Maps/Basico/medieval tileset exterior.png<>uid://dy87uooclvmgw::::res://Texture/TX Plant.png<>uid://5lmeelwn7rhe::::res://Texture/TX Props.png<>uid://ddlreo2g67fxy::::res://Texture/TX Tileset Stone Ground.png<>uid://ckemtjvnh0m3v::::res://Texture/Hub/Water+.png<>uid://gx5sidbfbjfo::::res://Texture/TX Tileset Wall.png<>uid://nsp551uexi36::::res://Maps/Basico/World01_002_Salamander.png<>uid://b7opfhs7jg6kc::::res://Characters/Overworld/Friendly/Guy.tscn<>uid://8njyus51vpf2::::res://Characters/Overworld/Friendly/Merchant.tscn<>uid://dumlg6mhrijpa::::res://Characters/Overworld/Friendly/Guy3.tscn<>uid://cbg2ew5x62k23::::res://Characters/Overworld/Friendly/Guy4.tscn<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
 World01_002_Salamander.png::CompressedTexture2D::950579712356527983::1741387838::1741657008::1::::<><>::
-::res://Maps/Warp/::1741694113
+::res://Maps/Warp/::1741694437
 Global.gd::GDScript::-1::1741692061::0::1::::<>Node2D<>::
-manager.tscn::PackedScene::1975101101974686306::1741694113::0::1::::<><>::res://Maps/Warp/Global.gd
+manager.tscn::PackedScene::1975101101974686306::1741694437::0::1::::<><>::res://Maps/Warp/Global.gd
 ::res://Misc/::1741387838
 Transition.gd::GDScript::-1::1741387838::0::1::::<>CanvasLayer<>::
 Transition.tscn::PackedScene::7109273025674359300::1741387838::0::1::::<><>::res://Misc/Transition.gd
@@ -149,39 +149,46 @@ Flecha_Ignea.tres::Resource/Skill::2896563188117512226::1741656732::0::1::::<><>
 Flecha_Rapida.tres::Resource/Skill::421509441734744740::1741402454::0::1::::<><>::res://Addons/Skills.gd
 Lanzamiento_de_Flecha.tres::Resource/Skill::1111253300756217489::1741387838::0::1::::<><>::res://Addons/Skills.gd
 Lluvia_de_Flechas.tres::Resource/Skill::7444924254131664660::1741656732::0::1::::<><>::res://Addons/Skills.gd
+One_shot_one_kill.tres::Resource/Skill::6972774819562851058::1741693700::0::1::::<><>::res://Addons/Skills.gd
 Punta_gelida_I.tres::Resource/Skill::1766497955035685540::1741693700::0::1::::<><>::res://Addons/Skills.gd
 Punta_gelida_II.tres::Resource/Skill::3559875962590808531::1741693700::0::1::::<><>::res://Addons/Skills.gd
-One_shot_one_kill.tres::Resource/Skill::6972774819562851058::1741693700::0::1::::<><>::res://Addons/Skills.gd
 Tormenta_de_flechas.tres::Resource/Skill::5457564491495948860::1741693700::0::1::::<><>::res://Addons/Skills.gd
 ::res://Skills/Barbarian/::1741693700
 Descontrol_I.tres::Resource/Skill::1126263027180332280::1741656732::0::1::::<><>::res://Addons/Skills.gd
-Hachazo.tres::Resource/Skill::8784417020544218124::1741387838::0::1::::<><>::res://Addons/Skills.gd
 Descontrol_II.tres::Resource/Skill::7724413459993777386::1741693700::0::1::::<><>::res://Addons/Skills.gd
 Descontrol_III.tres::Resource/Skill::6850007078481666103::1741693700::0::1::::<><>::res://Addons/Skills.gd
 Embestida.tres::Resource/Skill::7006730463158801056::1741693700::0::1::::<><>::res://Addons/Skills.gd
-Hachazo_certero.tres::Resource/Skill::7790285799603167821::1741693700::0::1::::<><>::res://Addons/Skills.gd
 Fisico_Culturista.tres::Resource/Skill::1939784924387813179::1741693700::0::1::::<><>::res://Addons/Skills.gd
+Hachazo.tres::Resource/Skill::8784417020544218124::1741387838::0::1::::<><>::res://Addons/Skills.gd
+Hachazo_certero.tres::Resource/Skill::7790285799603167821::1741693700::0::1::::<><>::res://Addons/Skills.gd
 Temblor.tres::Resource/Skill::7810473289267995976::1741387838::0::1::::<><>::res://Addons/Skills.gd
-::res://Skills/Enemies/::1741401735
+::res://Skills/Enemies/::1741695420
+Apuñalada.tres::Resource/Skill::4987787416193074472::1741695362::0::1::::<><>::res://Addons/Skills.gd
+Artes_oscuras.tres::Resource/Skill::7844431352958463422::1741695362::0::1::::<><>::res://Addons/Skills.gd
 Golpe.tres::Resource/Skill::5340712246740372842::1741387838::0::1::::<><>::res://Addons/Skills.gd
+Golpe_debilitante.tres::Resource/Skill::9172783634587365919::1741695420::0::1::::<><>::res://Addons/Skills.gd
 Magia_I.tres::Resource/Skill::2971591566347499612::1741387838::0::1::::<><>::res://Addons/Skills.gd
-::res://Skills/Knight/::1741694143
-Corte.tres::Resource/Skill::7500597328874553020::1741684799::0::1::::<><>::res://Addons/Skills.gd
+Magia_II.tres::Resource/Skill::1114638611912131865::1741695361::0::1::::<><>::res://Addons/Skills.gd
+Magia_III.tres::Resource/Skill::7816834247409089160::1741695361::0::1::::<><>::res://Addons/Skills.gd
+Proyectil.tres::Resource/Skill::8834671589297865095::1741695362::0::1::::<><>::res://Addons/Skills.gd
+::res://Skills/Knight/::1741694437
+Corte.tres::Resource/Skill::7500597328874553020::1741694437::0::1::::<><>::res://Addons/Skills.gd
+Corte_certero.tres::Resource/Skill::5857510958221418580::1741694437::0::1::::<><>::res://Addons/Skills.gd
+Corte_vital.tres::Resource/Skill::7375286733814129387::1741694437::0::1::::<><>::res://Addons/Skills.gd
+Espada_oscura.tres::Resource/Skill::7559636662943316965::1741694437::0::1::::<><>::res://Addons/Skills.gd
+Espiral_de_espada.tres::Resource/Skill::2492394149459064532::1741694437::0::1::::<><>::res://Addons/Skills.gd
 Estocada.tres::Resource/Skill::9007185185730954058::1741387838::0::1::::<><>::res://Addons/Skills.gd
 Puñalada_Eterea.tres::Resource/Skill::8399077444365487525::1741387838::0::1::::<><>::res://Addons/Skills.gd
-Espiral_de_espada.tres::Resource/Skill::2492394149459064532::1741694143::0::1::::<><>::res://Addons/Skills.gd
-Espada_oscura.tres::Resource/Skill::7559636662943316965::1741694213::0::1::::<><>::res://Addons/Skills.gd
-Corte_certero.tres::Resource/Skill::5857510958221418580::1741694289::0::1::::<><>::res://Addons/Skills.gd
-Super Espada.tres::Resource/Skill::7486138511966596423::1741694329::0::1::::<><>::res://Addons/Skills.gd
+Super_Espada.tres::Resource/Skill::7486138511966596423::1741694437::0::1::::<><>::res://Addons/Skills.gd
 ::res://Skills/Wizard/::1741694111
 Bola_de_fuego_I.tres::Resource/Skill::8173946108081973343::1741387838::0::1::::<><>::res://Addons/Skills.gd
-Golpe_con_baston.tres::Resource/Skill::1151265815722931592::1741387838::0::1::::<><>::res://Addons/Skills.gd
-Rafaga_magica_I.tres::Resource/Skill::2636582096080480931::1741656732::0::1::::<><>::res://Addons/Skills.gd
 Bola_de_fuego_II.tres::Resource/Skill::791847156128526655::1741694111::0::1::::<><>::res://Addons/Skills.gd
-Rafaga_magica_II.tres::Resource/Skill::5371299249372368123::1741694111::0::1::::<><>::res://Addons/Skills.gd
+Golpe_con_baston.tres::Resource/Skill::1151265815722931592::1741387838::0::1::::<><>::res://Addons/Skills.gd
 Golpe_muy_fuerte_con_baston.tres::Resource/Skill::3468421201308533509::1741694111::0::1::::<><>::res://Addons/Skills.gd
-Rafaga_magica_III.tres::Resource/Skill::8948809272319244694::1741694111::0::1::::<><>::res://Addons/Skills.gd
 Mango_bajito.tres::Resource/Skill::8184184352740922743::1741694111::0::1::::<><>::res://Addons/Skills.gd
+Rafaga_magica_I.tres::Resource/Skill::2636582096080480931::1741656732::0::1::::<><>::res://Addons/Skills.gd
+Rafaga_magica_II.tres::Resource/Skill::5371299249372368123::1741694111::0::1::::<><>::res://Addons/Skills.gd
+Rafaga_magica_III.tres::Resource/Skill::8948809272319244694::1741694111::0::1::::<><>::res://Addons/Skills.gd
 ::res://stats/::1741694112
 ataque.png::CompressedTexture2D::7377143336051651430::1741387839::1741657008::1::::<><>::
 defensa.png::CompressedTexture2D::110466871415839432::1741387839::1741657008::1::::<><>::
