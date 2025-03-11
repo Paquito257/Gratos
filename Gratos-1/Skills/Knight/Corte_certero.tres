@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Skill" load_steps=2 format=3 uid="uid://cppol5if171mu"]
+
+[ext_resource type="Script" path="res://Addons/Skills.gd" id="1_5clyh"]
+
+[resource]
+script = ExtResource("1_5clyh")
+Skill_name = "Corte Certero"
+Damage = 7
+Magic = 0
+Success = 0.8
+Global = false
+Level_unlock = 3

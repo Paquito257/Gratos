@@ -1,3 +1,8 @@
+res://Skills/Enemies
+res://Skills/Knight
+res://Skills/Wizard
+res://Skills/Barbarian
+res://Skills/Archer
 res://Maps
 res://
 C:/Users/dejam/Desktop/Godot/Godot_4.3/Projects/Gratos/Gratos-1/Maps/Warp
@@ -15,8 +20,4 @@ res://Texture/NPC/Orc
 res://Texture/Playable Characters/Character sprite/Wizard
 res://Texture/Playable Characters/Character sprite/Barbarian
 res://Texture/Playable Characters/Character sprite/Archer
-res://Characters/PLayable characters/Scenes
-res://Texture/Playable Characters/Character sprite/Knight
 C:/Users/dejam/Desktop/Godot/Godot_4.3/Projects/Gratos/Gratos-1
-res://Misc
-res://Global

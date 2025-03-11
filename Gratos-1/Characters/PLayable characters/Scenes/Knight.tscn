@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://dvkacl0f54w3d"]
+[gd_scene load_steps=53 format=3 uid="uid://dvkacl0f54w3d"]
 
 [ext_resource type="Texture2D" uid="uid://vbgpc8ntuntf" path="res://Texture/Playable Characters/Character sprite/Knight/Knight-Idle.png" id="1_238u5"]
 [ext_resource type="Texture2D" uid="uid://wa2n26frfmnj" path="res://Texture/Playable Characters/Character sprite/Knight/Knight-Attack01.png" id="1_p61vl"]
@@ -10,7 +10,12 @@
 [ext_resource type="Resource" uid="uid://de4l0h6xhowsa" path="res://Skills/Knight/Corte.tres" id="5_qgsf2"]
 [ext_resource type="Resource" uid="uid://d1lfa218hf1ms" path="res://Skills/Knight/Estocada.tres" id="6_e7ljy"]
 [ext_resource type="Resource" uid="uid://drwttwu742t22" path="res://Skills/Knight/Puñalada_Eterea.tres" id="7_31vp2"]
+[ext_resource type="Resource" uid="uid://cppol5if171mu" path="res://Skills/Knight/Corte_certero.tres" id="11_7vyai"]
 [ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="11_jvc66"]
+[ext_resource type="Resource" uid="uid://ddcv5otvlit3x" path="res://Skills/Knight/Corte_vital.tres" id="12_pn3uq"]
+[ext_resource type="Resource" uid="uid://dfx7d1y7730a8" path="res://Skills/Knight/Espada_oscura.tres" id="13_y3l1h"]
+[ext_resource type="Resource" uid="uid://bbrlmq3fey33m" path="res://Skills/Knight/Espiral_de_espada.tres" id="14_a0de0"]
+[ext_resource type="Resource" uid="uid://dewluwljx3ldf" path="res://Skills/Knight/Super_Espada.tres" id="15_eg7sd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sj4af"]
 atlas = ExtResource("1_p61vl")
@@ -285,7 +290,7 @@ sprite_frames = SubResource("SpriteFrames_ji0m7")
 animation = &"Idle"
 script = ExtResource("4_x876m")
 clase = "caballero"
-attacks = Array[ExtResource("5_184te")]([ExtResource("5_qgsf2"), ExtResource("6_e7ljy"), ExtResource("7_31vp2")])
+attacks = Array[ExtResource("5_184te")]([ExtResource("5_qgsf2"), ExtResource("6_e7ljy"), ExtResource("7_31vp2"), ExtResource("11_7vyai"), ExtResource("12_pn3uq"), ExtResource("13_y3l1h"), ExtResource("14_a0de0"), ExtResource("15_eg7sd")])
 
 [node name="Life" type="ProgressBar" parent="."]
 visible = false

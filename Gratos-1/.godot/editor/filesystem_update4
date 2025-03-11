@@ -1,25 +1,38 @@
-res://Combat/Combat_menu.tscn
-res://Characters/Battle enemies/Scripts/001.tscn
-res://Global/Music.tscn
-res://Characters/PLayable characters/Scenes/Archer.tscn
-res://Characters/PLayable characters/Scenes/Wizard.tscn
-res://Addons/Skills.tscn
-res://Combat/Combat maps/Basico_combate.tscn
-res://Combat/Combat maps/Combate.gd
-res://Characters/PLayable characters/Scenes/Classes.gd
-res://Characters/Battle enemies/Enemy_battle_script.gd
-res://Combat/Combat_menu.gd
-res://Global/Music.gd
-res://Characters/Battle enemies/Scripts/000.tscn
-res://Characters/Overworld/Friendly/Hub/Merchant.tscn
-res://Maps/Test_map.tscn
-res://Global/Game_control.gd
-res://Global/Player_handle.gd
-res://stats/stats.gd
-res://Characters/Overworld/Friendly/Hub/Guy6.tscn
-res://stats/stats.tscn
-res://Skills/Knight/Corte.tres
-res://Menu.gd
 res://Maps/Warp/manager.tscn
+res://Skills/Archer/Punta_gelida_I.tres
+res://Skills/Archer/Punta_gelida_II.tres
+res://Skills/Archer/Tormenta_de_flechas.tres
+res://Skills/Archer/One_shot_one_kill.tres
+res://Skills/Barbarian/Descontrol_II.tres
+res://Skills/Barbarian/Descontrol_III.tres
+res://Skills/Barbarian/Embestida.tres
+res://Skills/Barbarian/Hachazo_certero.tres
+res://Skills/Barbarian/Fisico_Culturista.tres
+res://Combat/Combat_menu.tscn
+res://Skills/Wizard/Bola_de_fuego_II.tres
+res://Skills/Wizard/Rafaga_magica_II.tres
+res://Skills/Wizard/Golpe_muy_fuerte_con_baston.tres
+res://Skills/Wizard/Rafaga_magica_III.tres
+res://Skills/Wizard/Mango_bajito.tres
+res://Global/Music.tscn
+res://Combat/Combat maps/Basico_combate.tscn
+res://stats/stats.tscn
+res://Characters/PLayable characters/Scenes/Archer.tscn
+res://Addons/Skills.tscn
+res://Skills/Knight/Corte.tres
+res://Skills/Knight/Espiral_de_espada.tres
+res://Skills/Knight/Espada_oscura.tres
+res://Skills/Knight/Corte_certero.tres
+res://Skills/Knight/Super_Espada.tres
+res://Skills/Knight/Corte_vital.tres
 res://Characters/PLayable characters/Scenes/Barbarian.tscn
-res://Maps/Warp/Global.gd
+res://Characters/PLayable characters/Scenes/Knight.tscn
+res://Characters/PLayable characters/Scenes/Wizard.tscn
+res://Skills/Enemies/Magia_II.tres
+res://Skills/Enemies/Magia_III.tres
+res://Skills/Enemies/Apuñalada.tres
+res://Skills/Enemies/Proyectil.tres
+res://Skills/Enemies/Artes_oscuras.tres
+res://Skills/Enemies/Golpe_debilitante.tres
+res://Combat/Combat maps/Debe_combate.tscn
+res://Combat/Combat_menu.gd

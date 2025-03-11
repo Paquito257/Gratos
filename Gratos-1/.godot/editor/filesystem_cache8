@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1741671667
+::res://::1741692330
 Attack_list.gd::GDScript::-1::1741387838::0::1::::<>Node2D<>::
 fondo1.jpeg::CompressedTexture2D::1302363779075723380::1741387839::1741657008::1::::<><>::
 font.tres::LabelSettings::4028788023841613964::1741387839::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
@@ -8,7 +8,7 @@ icon.svg::CompressedTexture2D::4238159558433039039::1741387839::1741657007::1:::
 loading.gd::GDScript::-1::1741403914::0::1::::<>Control<>::
 loading.tscn::PackedScene::2196732059356608497::1741403914::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>res://loading.gd<>uid://caq452jc63xbx::::res://Texture/fondoUDO.png<>uid://drbv3t5dckmtn::::res://Texture/Logo.png<>uid://bu0qll011fmuv::::res://Music/LoadTheme.mp3<>uid://cylangw0sb7mt::::res://transitions/transtion.tscn
 Manager.gd::GDScript::-1::1741387838::0::1::::NPC<>Resource<>::
-Menu.gd::GDScript::-1::1741403914::0::1::::<>Node<>::
+Menu.gd::GDScript::-1::1741684866::0::1::::<>Node<>::
 Menu.tscn::PackedScene::5781549948801808367::1741656938::0::1::::<><>::res://Menu.gd<>uid://lc3vjdj412n1::::res://Texture/Misc/Main_Background.jpeg<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://vbgpc8ntuntf::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Idle.png<>uid://dpynry271fibe::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Idle.png<>uid://c73ymqivr0hrj::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Idle.png<>uid://dkj3kmaaw02pm::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Idle.png<>uid://cylangw0sb7mt::::res://transitions/transtion.tscn
 Node2D.gd::GDScript::-1::1741387838::0::1::::<>Node2D<>::
 sample sprite.jpg::CompressedTexture2D::3950290544105030616::1741387839::1741657007::1::::<><>::
@@ -17,13 +17,13 @@ selec_personaje.tscn::PackedScene::6086145974188427188::1741450686::0::1::::<><>
 Textbox.gd::GDScript::-1::1741656732::0::1::::<>CanvasLayer<>::
 Textbox.tres::StyleBoxFlat::356236914399706217::1741387838::0::1::::<><>::
 Textbox.tscn::PackedScene::4428483535166777274::1741387838::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>res://Textbox.gd
-::res://Addons/::1741675585
+::res://Addons/::1741694112
 Custom_inspector.gd::GDScript::-1::1741387838::0::1::::<>Node2D<>::
 eeee.gd::GDScript::-1::1741387838::0::1::::<>Area2D<>::
 Enemy_stats.gd::GDScript::-1::1741656732::0::1::::NPC_stats<>Node2D<>::
 Inspector.tscn::PackedScene::7087114850846211186::1741387838::0::1::::<><>::res://Addons/Custom_inspector.gd<>res://Manager.gd
 Skills.gd::GDScript::-1::1741387838::0::1::::Skill<>Resource<>::
-Skills.tscn::PackedScene::3495112615495187664::1741675585::0::1::::<><>::res://Addons/Skills.gd
+Skills.tscn::PackedScene::3495112615495187664::1741694112::0::1::::<><>::res://Addons/Skills.gd
 Stats_inspector.tscn::PackedScene::8427098789379430096::1741656732::0::1::::<><>::res://Addons/Enemy_stats.gd
 ::res://Addons/FirebaseAPI/::1741387809
 ::res://Addons/FirebaseAPI/auth/::1741387808
@@ -33,11 +33,11 @@ Stats_inspector.tscn::PackedScene::8427098789379430096::1741656732::0::1::::<><>
 ::res://Addons/FirebaseAPI/realtime/::1741387809
 ::res://Addons/FirebaseAPI/storage/::1741387809
 ::res://Characters/::1741387810
-::res://Characters/Battle enemies/::1741672562
-Enemy_battle_script.gd::GDScript::-1::1741672562::0::1::::<>AnimatedSprite2D<>::
-::res://Characters/Battle enemies/Scripts/::1741675584
-000.tscn::PackedScene::5126859522387888075::1741656732::0::1::::<><>::res://Characters/Battle enemies/Enemy_battle_script.gd<>res://Addons/Skills.gd<>uid://dscfc6id23ecm::::res://Addons/Stats_inspector.tscn<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://x650yvfeai7b::::res://Texture/NPC/Orc/Orc-Attack01.png<>uid://cidc0rql5wigo::::res://Skills/Enemies/Golpe.tres<>uid://dpe77h70iaubg::::res://Texture/NPC/Orc/Orc-Idle.png<>uid://bilpxc4fxf48o::::res://Skills/Enemies/Magia_I.tres<>uid://dvrqqais10ugo::::res://Texture/NPC/Orc/Orc-Death.png<>uid://bdypjqpw5klx3::::res://Texture/NPC/Orc/Orc-Hurt.png
-001.tscn::PackedScene::5126859522387888075::1741675584::0::1::::<><>::res://Characters/Battle enemies/Enemy_battle_script.gd<>res://Addons/Skills.gd<>uid://dscfc6id23ecm::::res://Addons/Stats_inspector.tscn<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://demerct4djh8h::::res://Texture/NPC/Skeleton/Skeleton-Attack01.png<>uid://dticonse6whe0::::res://Texture/NPC/Skeleton/Skeleton-Idle.png<>uid://d1lfa218hf1ms::::res://Skills/Knight/Estocada.tres<>uid://dic3wyxo3voo8::::res://Texture/NPC/Skeleton/Skeleton-Death.png<>uid://3uvi74jngwn8::::res://Texture/NPC/Skeleton/Skeleton-Hurt.png
+::res://Characters/Battle enemies/::1741678315
+Enemy_battle_script.gd::GDScript::-1::1741678315::0::1::::<>AnimatedSprite2D<>::
+::res://Characters/Battle enemies/Scripts/::1741692062
+000.tscn::PackedScene::5126859522387888075::1741692062::0::1::::<><>::res://Characters/Battle enemies/Enemy_battle_script.gd<>res://Addons/Skills.gd<>uid://dscfc6id23ecm::::res://Addons/Stats_inspector.tscn<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://x650yvfeai7b::::res://Texture/NPC/Orc/Orc-Attack01.png<>uid://cidc0rql5wigo::::res://Skills/Enemies/Golpe.tres<>uid://dpe77h70iaubg::::res://Texture/NPC/Orc/Orc-Idle.png<>uid://bilpxc4fxf48o::::res://Skills/Enemies/Magia_I.tres<>uid://dvrqqais10ugo::::res://Texture/NPC/Orc/Orc-Death.png<>uid://bdypjqpw5klx3::::res://Texture/NPC/Orc/Orc-Hurt.png
+001.tscn::PackedScene::5126859522387888075::1741692062::0::1::::<><>::res://Characters/Battle enemies/Enemy_battle_script.gd<>res://Addons/Skills.gd<>uid://dscfc6id23ecm::::res://Addons/Stats_inspector.tscn<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://demerct4djh8h::::res://Texture/NPC/Skeleton/Skeleton-Attack01.png<>uid://dticonse6whe0::::res://Texture/NPC/Skeleton/Skeleton-Idle.png<>uid://d1lfa218hf1ms::::res://Skills/Knight/Estocada.tres<>uid://dic3wyxo3voo8::::res://Texture/NPC/Skeleton/Skeleton-Death.png<>uid://3uvi74jngwn8::::res://Texture/NPC/Skeleton/Skeleton-Hurt.png
 ::res://Characters/Battle enemies/Scripts/Basico/::1741674042
 002.tscn::PackedScene::-1::1741672644::0::1::::<><>::
 ::res://Characters/Battle enemies/Scripts/Debe/::1741674119
@@ -59,31 +59,31 @@ npc.gd::GDScript::-1::1741656732::0::1::::<>CharacterBody2D<>::
 ::res://Characters/Overworld/Enemies/::1741401734
 Orc_overworld.tscn::PackedScene::9184005908792330760::1741387838::0::1::::<><>::res://Characters/Overworld/npc.gd<>uid://cf7vfeaara47v::::res://Texture/NPC/Orc/Idle-Sheet.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
 ::res://Characters/Overworld/Friendly/::1741387838
-::res://Characters/Overworld/Friendly/Hub/::1741401734
+::res://Characters/Overworld/Friendly/Hub/::1741684868
 Guy2.tscn::PackedScene::7160759110803752562::1741387838::0::1::::<><>::res://Characters/Overworld/npc.gd<>uid://hmn5nxbmslbs::::res://Texture/NPC/Friendly/Swordsman-Idle.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
 Guy3.tscn::PackedScene::8588491705675127122::1741387838::0::1::::<><>::res://Characters/Overworld/npc.gd<>uid://hmn5nxbmslbs::::res://Texture/NPC/Friendly/Swordsman-Idle.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
 Guy4.tscn::PackedScene::4857064182474257794::1741387838::0::1::::<><>::res://Characters/Overworld/npc.gd<>uid://hmn5nxbmslbs::::res://Texture/NPC/Friendly/Swordsman-Idle.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
 Guy5.tscn::PackedScene::4857064182474257794::1741387838::0::1::::<><>::res://Characters/Overworld/npc.gd<>uid://hmn5nxbmslbs::::res://Texture/NPC/Friendly/Swordsman-Idle.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
-Guy6.tscn::PackedScene::3530957532218461444::1741387838::0::1::::<><>::res://Characters/Overworld/npc.gd<>uid://dvrtqguvsae3s::::res://Texture/NPC/Friendly/Priest-Idle.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
+Guy6.tscn::PackedScene::3530957532218461444::1741684868::0::1::::<><>::res://Characters/Overworld/npc.gd<>uid://dvrtqguvsae3s::::res://Texture/NPC/Friendly/Priest-Idle.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
 Guy.tscn::PackedScene::4662285049464158738::1741387838::0::1::::<><>::res://Characters/Overworld/npc.gd<>uid://hmn5nxbmslbs::::res://Texture/NPC/Friendly/Swordsman-Idle.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
-Merchant.tscn::PackedScene::2343659142518594185::1741387838::0::1::::<><>::res://Characters/Overworld/npc.gd<>uid://5oeyjr0f1h7a::::res://Texture/NPC/Friendly/Soldier-Idle.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
+Merchant.tscn::PackedScene::2343659142518594185::1741684867::0::1::::<><>::res://Characters/Overworld/npc.gd<>uid://5oeyjr0f1h7a::::res://Texture/NPC/Friendly/Soldier-Idle.png<>uid://b4dgqhgyuawxu::::res://Textbox.tscn<>uid://b6ty312ne64fw::::res://Sfx/rpg-text-speech-sound-131477.mp3<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
 ::res://Characters/PLayable characters/::1741656732
 RPG_character.gd::GDScript::-1::1741656732::0::1::::<>CharacterBody2D<>::
 RPG_character.tscn::PackedScene::3546045638862774471::1741487588::0::1::::<><>::res://Characters/PLayable characters/RPG_character.gd<>uid://cjfy4ntmnlwtc::::res://inventory/inventario.tscn
-::res://Characters/PLayable characters/Scenes/::1741675585
-Archer.tscn::PackedScene::8653875733251786171::1741675584::0::1::::<><>::uid://bn04oom40ohy8::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Attack01.png<>uid://c73ymqivr0hrj::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Idle.png<>uid://b3isk0q4e5v1f::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Walk.png<>uid://bv3jsdwc0smyg::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Death.png<>res://Characters/PLayable characters/Scenes/Classes.gd<>uid://buvtp5ymalogx::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Hurt.png<>uid://p3kgdrmdad18::::res://Skills/Archer/Lanzamiento_de_Flecha.tres<>uid://decm2x340wet5::::res://Skills/Archer/Lluvia_de_Flechas.tres<>uid://bhjd8chy7x7ms::::res://Skills/Archer/Flecha_Ignea.tres<>res://Addons/Skills.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
-Barbarian.tscn::PackedScene::8653875733251786171::1741656732::0::1::::<><>::uid://dpynry271fibe::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Idle.png<>uid://cuwj3b34y5urq::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Attack01.png<>uid://65jtucyr84ki::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Walk.png<>uid://ls4f6umyum0c::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Death.png<>uid://cdnwudij7hr3s::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Hurt.png<>res://Characters/PLayable characters/Scenes/Classes.gd<>uid://dxfichbgg1s5y::::res://Skills/Barbarian/Hachazo.tres<>uid://djjpmbfv46q0o::::res://Skills/Barbarian/Temblor.tres<>uid://qbtnf7vwj8ue::::res://Skills/Barbarian/Descontrol_I.tres<>res://Addons/Skills.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
-Classes.gd::GDScript::-1::1741672571::0::1::::<>AnimatedSprite2D<>::
+::res://Characters/PLayable characters/Scenes/::1741694112
+Archer.tscn::PackedScene::8653875733251786171::1741694112::0::1::::<><>::uid://bn04oom40ohy8::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Attack01.png<>uid://c73ymqivr0hrj::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Idle.png<>uid://b3isk0q4e5v1f::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Walk.png<>uid://bv3jsdwc0smyg::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Death.png<>res://Characters/PLayable characters/Scenes/Classes.gd<>uid://buvtp5ymalogx::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Hurt.png<>uid://p3kgdrmdad18::::res://Skills/Archer/Lanzamiento_de_Flecha.tres<>uid://decm2x340wet5::::res://Skills/Archer/Lluvia_de_Flechas.tres<>uid://bhjd8chy7x7ms::::res://Skills/Archer/Flecha_Ignea.tres<>res://Addons/Skills.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://gagg07oyv4no::::res://Skills/Archer/Flecha_Rapida.tres<>uid://0fx70q3cm2bw::::res://Skills/Archer/Punta_gelida_I.tres
+Barbarian.tscn::PackedScene::8653875733251786171::1741691526::0::1::::<><>::uid://dpynry271fibe::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Idle.png<>uid://cuwj3b34y5urq::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Attack01.png<>uid://65jtucyr84ki::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Walk.png<>uid://ls4f6umyum0c::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Death.png<>uid://cdnwudij7hr3s::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Hurt.png<>res://Characters/PLayable characters/Scenes/Classes.gd<>uid://dxfichbgg1s5y::::res://Skills/Barbarian/Hachazo.tres<>uid://djjpmbfv46q0o::::res://Skills/Barbarian/Temblor.tres<>uid://qbtnf7vwj8ue::::res://Skills/Barbarian/Descontrol_I.tres<>res://Addons/Skills.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
+Classes.gd::GDScript::-1::1741691092::0::1::::<>AnimatedSprite2D<>::
 Knight.tscn::PackedScene::8653875733251786171::1741656732::0::1::::<><>::uid://vbgpc8ntuntf::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Idle.png<>uid://wa2n26frfmnj::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Attack01.png<>uid://dq00nbal7vmmg::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Walk.png<>uid://w3sat0cpnait::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Death.png<>uid://bhdo7ks315hpo::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Hurt.png<>res://Characters/PLayable characters/Scenes/Classes.gd<>res://Addons/Skills.gd<>uid://de4l0h6xhowsa::::res://Skills/Knight/Corte.tres<>uid://d1lfa218hf1ms::::res://Skills/Knight/Estocada.tres<>uid://drwttwu742t22::::res://Skills/Knight/Puñalada_Eterea.tres<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
-Wizard.tscn::PackedScene::8653875733251786171::1741675585::0::1::::<><>::uid://c8m7gfdpeug23::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Attack02.png<>uid://dkj3kmaaw02pm::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Idle.png<>uid://car6d7bpnky3c::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Walk.png<>uid://dunofgelshl1i::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-DEATH.png<>uid://d1ro4n32cc3xb::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Hurt.png<>res://Characters/PLayable characters/Scenes/Classes.gd<>uid://qnxgd3gnaqyi::::res://Skills/Wizard/Golpe_con_baston.tres<>uid://doprx0c65nn5h::::res://Skills/Wizard/Bola_de_fuego_I.tres<>uid://bdtgee6wx7p44::::res://Skills/Wizard/Rafaga_magica_I.tres<>res://Addons/Skills.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
-::res://Combat/::1741675584
-Combat_menu.gd::GDScript::-1::1741675069::0::1::::<>CanvasLayer<>::
-Combat_menu.tscn::PackedScene::2401171033394759451::1741675584::0::1::::<><>::res://Combat/Combat_menu.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://cqekhr244iaxt::::res://Texture/Combat_icons/Sword.png<>uid://cvtqrrnc6kio8::::res://Texture/Combat_icons/Fire.webp<>uid://cvgypcfh7xnur::::res://Fonts/Combat_menu.tres<>uid://dk0yri2awrr8u::::res://Texture/Combat_icons/healing_potion.png<>uid://c34bexx0cwasx::::res://Texture/Combat_icons/Run.png<>uid://daho6ewyuivpt::::res://Sfx/menu-move.ogg<>uid://b4dgqhgyuawxu::::res://Textbox.tscn
+Wizard.tscn::PackedScene::8653875733251786171::1741678316::0::1::::<><>::uid://c8m7gfdpeug23::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Attack02.png<>uid://dkj3kmaaw02pm::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Idle.png<>uid://car6d7bpnky3c::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Walk.png<>uid://dunofgelshl1i::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-DEATH.png<>uid://d1ro4n32cc3xb::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Hurt.png<>res://Characters/PLayable characters/Scenes/Classes.gd<>uid://qnxgd3gnaqyi::::res://Skills/Wizard/Golpe_con_baston.tres<>uid://doprx0c65nn5h::::res://Skills/Wizard/Bola_de_fuego_I.tres<>uid://bdtgee6wx7p44::::res://Skills/Wizard/Rafaga_magica_I.tres<>res://Addons/Skills.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
+::res://Combat/::1741694111
+Combat_menu.gd::GDScript::-1::1741684799::0::1::::<>CanvasLayer<>::
+Combat_menu.tscn::PackedScene::2401171033394759451::1741694111::0::1::::<><>::res://Combat/Combat_menu.gd<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://cqekhr244iaxt::::res://Texture/Combat_icons/Sword.png<>uid://cvtqrrnc6kio8::::res://Texture/Combat_icons/Fire.webp<>uid://cvgypcfh7xnur::::res://Fonts/Combat_menu.tres<>uid://dk0yri2awrr8u::::res://Texture/Combat_icons/healing_potion.png<>uid://c34bexx0cwasx::::res://Texture/Combat_icons/Run.png<>uid://daho6ewyuivpt::::res://Sfx/menu-move.ogg<>uid://b4dgqhgyuawxu::::res://Textbox.tscn
 Damage_modifiers.gd::GDScript::-1::1741668177::0::1::::<>Node<>::
 modifiers.tscn::PackedScene::5303741393773266000::1741402454::0::1::::<><>::
-::res://Combat/Combat maps/::1741675585
-Basico_combate.tscn::PackedScene::1607698883855270164::1741675585::0::1::::<><>::res://Combat/Combat maps/Combate.gd<>uid://dgxqjn4yhw4jv::::res://Texture/Clouds 1/1.png<>uid://devctucr0iukf::::res://Texture/TX Struct.png<>uid://bmo1fxjjkup23::::res://Texture/Clouds 1/2.png<>uid://1rclml3p5d3c::::res://Texture/TX Tileset Grass.png<>uid://56am6bbo7j4e::::res://Texture/Clouds 1/4.png<>uid://gx5sidbfbjfo::::res://Texture/TX Tileset Wall.png<>uid://bahe63ewgm2mx::::res://Combat/Combat_menu.tscn<>uid://5lmeelwn7rhe::::res://Texture/TX Props.png
-Combate.gd::GDScript::-1::1741675584::0::1::::<>Node2D<>::
+::res://Combat/Combat maps/::1741694112
+Basico_combate.tscn::PackedScene::1607698883855270164::1741694112::0::1::::<><>::res://Combat/Combat maps/Combate.gd<>uid://dgxqjn4yhw4jv::::res://Texture/Clouds 1/1.png<>uid://devctucr0iukf::::res://Texture/TX Struct.png<>uid://bmo1fxjjkup23::::res://Texture/Clouds 1/2.png<>uid://1rclml3p5d3c::::res://Texture/TX Tileset Grass.png<>uid://56am6bbo7j4e::::res://Texture/Clouds 1/4.png<>uid://gx5sidbfbjfo::::res://Texture/TX Tileset Wall.png<>uid://bahe63ewgm2mx::::res://Combat/Combat_menu.tscn<>uid://5lmeelwn7rhe::::res://Texture/TX Props.png
+Combate.gd::GDScript::-1::1741691330::0::1::::<>Node2D<>::
 Debe_combate.tscn::PackedScene::1607698883855270164::1741402454::0::1::::<><>::res://Combat/Combat maps/Combate.gd<>uid://cgmma0id87dkx::::res://Texture/Hub/Tiles.png<>uid://c5lducn6wfwf6::::res://Texture/Hub/Props2.png<>uid://bahe63ewgm2mx::::res://Combat/Combat_menu.tscn
 Decanato_combate.tscn::PackedScene::1607698883855270164::1741402454::0::1::::<><>::res://Combat/Combat maps/Combate.gd<>uid://cgmma0id87dkx::::res://Texture/Hub/Tiles.png<>uid://c5lducn6wfwf6::::res://Texture/Hub/Props2.png<>uid://bahe63ewgm2mx::::res://Combat/Combat_menu.tscn
 Ingenieria_combate.tscn::PackedScene::1607698883855270164::1741402454::0::1::::<><>::res://Combat/Combat maps/Combate.gd<>uid://cgmma0id87dkx::::res://Texture/Hub/Tiles.png<>uid://c5lducn6wfwf6::::res://Texture/Hub/Props2.png<>uid://bahe63ewgm2mx::::res://Combat/Combat_menu.tscn
@@ -95,11 +95,11 @@ Ldfcomicsans-jj7l.ttf::FontFile::5455712321289802502::1741387838::1741657006::1:
 Ldfcomicsansbold-zgma.ttf::FontFile::1455116053613772833::1741387838::1741657006::1::::<><>::
 Ldfcomicsanshairline-5PmL.ttf::FontFile::809459794058717639::1741387838::1741657006::1::::<><>::
 Ldfcomicsanslight-6dZo.ttf::FontFile::5008688069458907892::1741387838::1741657006::1::::<><>::
-::res://Global/::1741675584
-Game_control.gd::GDScript::-1::1741656732::0::1::::<>Node<>::
-Music.gd::GDScript::-1::1741675326::0::1::::<>Node<>::
-Music.tscn::PackedScene::8857306918946143538::1741675584::0::1::::<><>::res://Global/Music.gd<>uid://d3ws552xemq3t::::res://Music/Hub theme.mp3<>uid://jxky33rvyfwg::::res://Music/Victory.mp3<>uid://b3kvcd5bjosmx::::res://Music/Battle Theme.mp3<>uid://daho6ewyuivpt::::res://Sfx/menu-move.ogg<>uid://6ke2ey08dbjg::::res://Sfx/Invalid.mp3
-Player_handle.gd::GDScript::-1::1741403914::0::1::::<>Node<>::
+::res://Global/::1741694111
+Game_control.gd::GDScript::-1::1741686216::0::1::::<>Node<>::
+Music.gd::GDScript::-1::1741675917::0::1::::<>Node<>::
+Music.tscn::PackedScene::8857306918946143538::1741694111::0::1::::<><>::res://Global/Music.gd<>uid://d3ws552xemq3t::::res://Music/Hub theme.mp3<>uid://jxky33rvyfwg::::res://Music/Victory.mp3<>uid://b3kvcd5bjosmx::::res://Music/Battle Theme.mp3<>uid://daho6ewyuivpt::::res://Sfx/menu-move.ogg<>uid://6ke2ey08dbjg::::res://Sfx/Invalid.mp3<>uid://c8t5b8scmeaob::::res://Sfx/Hit.mp3<>uid://jtr8exri2ro1::::res://Sfx/Hit2.mp3
+Player_handle.gd::GDScript::-1::1741682645::0::1::::<>Node<>::
 ::res://inventory/::1741657009
 election.gd::GDScript::-1::1741387839::0::1::::<>HBoxContainer<>::
 inventario.gd::GDScript::-1::1741403914::0::1::::<>CanvasLayer<>::
@@ -114,10 +114,10 @@ hacha.png::CompressedTexture2D::2650519062861763193::1741387839::1741657008::1::
 objetos.gd::GDScript::-1::1741403914::0::1::::<>Area2D<>::
 objetos.tscn::PackedScene::3218568723382095621::1741387839::0::1::::<><>::res://inventory/items/objetos.gd
 veneno.png::CompressedTexture2D::1182719246731706633::1741387839::1741657008::1::::<><>::
-::res://Maps/::1741656986
+::res://Maps/::1741684867
 hub.tscn::PackedScene::8432443394854468202::1741387838::0::1::::<><>::uid://1rclml3p5d3c::::res://Texture/TX Tileset Grass.png
 Manager.gd::GDScript::-1::1741656732::0::1::::<>Node2D<>::
-Test_map.tscn::PackedScene::669239784417098673::1741656732::0::1::::<><>::res://Maps/Manager.gd<>uid://bqry4a0o2fpul::::res://Characters/PLayable characters/RPG_character.tscn<>uid://b2sqgbnkfdh03::::res://Texture/Hub/Tileset_Road.png<>uid://b7opfhs7jg6kc::::res://Characters/Overworld/Friendly/Hub/Guy.tscn<>uid://du2u6x1x3jlx3::::res://Texture/Hub/Tileset_Ground.png<>uid://b7xvq80mgcggl::::res://Texture/Misc/Food.png<>uid://cgmma0id87dkx::::res://Texture/Hub/Tiles.png<>uid://ckemtjvnh0m3v::::res://Texture/Hub/Water+.png<>uid://bub8aq4yvpxqk::::res://Texture/Hub/Tileset_RockSlope.png<>uid://d0d3ng730bvru::::res://Texture/Hub/Tileset_RockSlope_Simple.png<>uid://c0ey2gccucnk6::::res://Texture/Hub/Props.png<>uid://vh6ygcmwgv3y::::res://Texture/Hub/Trees_Bushes.png<>uid://3to5abwx1736::::res://Texture/Hub/Tileset_Water.png<>uid://c5lducn6wfwf6::::res://Texture/Hub/Props2.png<>uid://8njyus51vpf2::::res://Characters/Overworld/Friendly/Hub/Merchant.tscn<>uid://daaywk0my6qsw::::res://Characters/Overworld/Friendly/Hub/Guy2.tscn<>uid://dumlg6mhrijpa::::res://Characters/Overworld/Friendly/Hub/Guy3.tscn<>uid://cbg2ew5x62k23::::res://Characters/Overworld/Friendly/Hub/Guy5.tscn<>uid://bl4dmejgvk7v2::::res://inventory/items/objetos.tscn<>uid://q36hipp17qlt::::res://inventory/items/veneno.png<>uid://bqkomcagxpo2o::::res://Characters/Overworld/Friendly/Hub/Guy6.tscn<>uid://bfwe46ptpumjg::::res://inventory/items/espada.png
+Test_map.tscn::PackedScene::669239784417098673::1741684867::0::1::::<><>::res://Maps/Manager.gd<>uid://bqry4a0o2fpul::::res://Characters/PLayable characters/RPG_character.tscn<>uid://b2sqgbnkfdh03::::res://Texture/Hub/Tileset_Road.png<>uid://b7opfhs7jg6kc::::res://Characters/Overworld/Friendly/Hub/Guy.tscn<>uid://du2u6x1x3jlx3::::res://Texture/Hub/Tileset_Ground.png<>uid://b7xvq80mgcggl::::res://Texture/Misc/Food.png<>uid://cgmma0id87dkx::::res://Texture/Hub/Tiles.png<>uid://ckemtjvnh0m3v::::res://Texture/Hub/Water+.png<>uid://bub8aq4yvpxqk::::res://Texture/Hub/Tileset_RockSlope.png<>uid://d0d3ng730bvru::::res://Texture/Hub/Tileset_RockSlope_Simple.png<>uid://c0ey2gccucnk6::::res://Texture/Hub/Props.png<>uid://vh6ygcmwgv3y::::res://Texture/Hub/Trees_Bushes.png<>uid://3to5abwx1736::::res://Texture/Hub/Tileset_Water.png<>uid://c5lducn6wfwf6::::res://Texture/Hub/Props2.png<>uid://8njyus51vpf2::::res://Characters/Overworld/Friendly/Hub/Merchant.tscn<>uid://daaywk0my6qsw::::res://Characters/Overworld/Friendly/Hub/Guy2.tscn<>uid://dumlg6mhrijpa::::res://Characters/Overworld/Friendly/Hub/Guy3.tscn<>uid://cbg2ew5x62k23::::res://Characters/Overworld/Friendly/Hub/Guy5.tscn<>uid://bl4dmejgvk7v2::::res://inventory/items/objetos.tscn<>uid://q36hipp17qlt::::res://inventory/items/veneno.png<>uid://bqkomcagxpo2o::::res://Characters/Overworld/Friendly/Hub/Guy6.tscn<>uid://bfwe46ptpumjg::::res://inventory/items/espada.png
 ::res://Maps/Basico/::1741657009
 ManagerBasico.gd::GDScript::-1::1741387838::0::1::::<>Node2D<>::
 medieval tileset exterior.png::CompressedTexture2D::4269389675149101814::1741387838::1741657009::1::::<><>::
@@ -126,9 +126,9 @@ Nivel1.gd::GDScript::-1::1741387838::0::1::::<>Node2D<>::
 node_2d.gd::GDScript::-1::1741387838::0::1::::<>Node2D<>::
 node_2d.tscn::PackedScene::6011430266602940539::1741387838::0::1::::<><>::res://Maps/Basico/MissionManager.gd<>res://Maps/Basico/ManagerBasico.gd<>uid://1rclml3p5d3c::::res://Texture/TX Tileset Grass.png<>uid://bqry4a0o2fpul::::res://Characters/PLayable characters/RPG_character.tscn<>uid://devctucr0iukf::::res://Texture/TX Struct.png<>uid://b13ehvflif3q5::::res://Maps/Basico/medieval tileset exterior.png<>uid://dy87uooclvmgw::::res://Texture/TX Plant.png<>uid://5lmeelwn7rhe::::res://Texture/TX Props.png<>uid://ddlreo2g67fxy::::res://Texture/TX Tileset Stone Ground.png<>uid://ckemtjvnh0m3v::::res://Texture/Hub/Water+.png<>uid://gx5sidbfbjfo::::res://Texture/TX Tileset Wall.png<>uid://nsp551uexi36::::res://Maps/Basico/World01_002_Salamander.png<>uid://b7opfhs7jg6kc::::res://Characters/Overworld/Friendly/Guy.tscn<>uid://8njyus51vpf2::::res://Characters/Overworld/Friendly/Merchant.tscn<>uid://dumlg6mhrijpa::::res://Characters/Overworld/Friendly/Guy3.tscn<>uid://cbg2ew5x62k23::::res://Characters/Overworld/Friendly/Guy4.tscn<>uid://c78b0ms2d4vqg::::res://Addons/Inspector.tscn<>res://Manager.gd
 World01_002_Salamander.png::CompressedTexture2D::950579712356527983::1741387838::1741657008::1::::<><>::
-::res://Maps/Warp/::1741656732
-Global.gd::GDScript::-1::1741656732::0::1::::<>Node2D<>::
-manager.tscn::PackedScene::1975101101974686306::1741637561::0::1::::<><>::res://Maps/Warp/Global.gd
+::res://Maps/Warp/::1741694113
+Global.gd::GDScript::-1::1741692061::0::1::::<>Node2D<>::
+manager.tscn::PackedScene::1975101101974686306::1741694113::0::1::::<><>::res://Maps/Warp/Global.gd
 ::res://Misc/::1741387838
 Transition.gd::GDScript::-1::1741387838::0::1::::<>CanvasLayer<>::
 Transition.tscn::PackedScene::7109273025674359300::1741387838::0::1::::<><>::res://Misc/Transition.gd
@@ -137,40 +137,57 @@ Battle Theme.mp3::AudioStreamMP3::4373630915506727959::1741387838::1741657006::1
 Hub theme.mp3::AudioStreamMP3::9171114081681542987::1741387838::1741657006::1::::<><>::
 LoadTheme.mp3::AudioStreamMP3::3842798733515699253::1741403914::1741657006::1::::<><>::
 Victory.mp3::AudioStreamMP3::679831824776791222::1741675255::1741675257::1::::<><>::
-::res://Sfx/::1741675787
+::res://Sfx/::1741675789
 Hit2.mp3::AudioStreamMP3::672014136553395058::1741675787::1741675789::1::::<><>::
 Hit.mp3::AudioStreamMP3::7130121441529404157::1741675752::1741675789::1::::<><>::
 Invalid.mp3::AudioStreamMP3::2196789263074910340::1741656732::1741657006::1::::<><>::
 menu-move.ogg::AudioStreamOggVorbis::7174618338064117733::1741387838::1741657006::1::::<><>::
 rpg-text-speech-sound-131477.mp3::AudioStreamMP3::4603006631769053900::1741387838::1741657006::1::::<><>::
 ::res://Skills/::1741387838
-::res://Skills/Archer/::1741656732
+::res://Skills/Archer/::1741693700
 Flecha_Ignea.tres::Resource/Skill::2896563188117512226::1741656732::0::1::::<><>::res://Addons/Skills.gd
 Flecha_Rapida.tres::Resource/Skill::421509441734744740::1741402454::0::1::::<><>::res://Addons/Skills.gd
 Lanzamiento_de_Flecha.tres::Resource/Skill::1111253300756217489::1741387838::0::1::::<><>::res://Addons/Skills.gd
 Lluvia_de_Flechas.tres::Resource/Skill::7444924254131664660::1741656732::0::1::::<><>::res://Addons/Skills.gd
-Punta_gelida_I.tres::Resource/Skill::1766497955035685540::1741656732::0::1::::<><>::res://Addons/Skills.gd
-::res://Skills/Barbarian/::1741656732
+Punta_gelida_I.tres::Resource/Skill::1766497955035685540::1741693700::0::1::::<><>::res://Addons/Skills.gd
+Punta_gelida_II.tres::Resource/Skill::3559875962590808531::1741693700::0::1::::<><>::res://Addons/Skills.gd
+One_shot_one_kill.tres::Resource/Skill::6972774819562851058::1741693700::0::1::::<><>::res://Addons/Skills.gd
+Tormenta_de_flechas.tres::Resource/Skill::5457564491495948860::1741693700::0::1::::<><>::res://Addons/Skills.gd
+::res://Skills/Barbarian/::1741693700
 Descontrol_I.tres::Resource/Skill::1126263027180332280::1741656732::0::1::::<><>::res://Addons/Skills.gd
 Hachazo.tres::Resource/Skill::8784417020544218124::1741387838::0::1::::<><>::res://Addons/Skills.gd
+Descontrol_II.tres::Resource/Skill::7724413459993777386::1741693700::0::1::::<><>::res://Addons/Skills.gd
+Descontrol_III.tres::Resource/Skill::6850007078481666103::1741693700::0::1::::<><>::res://Addons/Skills.gd
+Embestida.tres::Resource/Skill::7006730463158801056::1741693700::0::1::::<><>::res://Addons/Skills.gd
+Hachazo_certero.tres::Resource/Skill::7790285799603167821::1741693700::0::1::::<><>::res://Addons/Skills.gd
+Fisico_Culturista.tres::Resource/Skill::1939784924387813179::1741693700::0::1::::<><>::res://Addons/Skills.gd
 Temblor.tres::Resource/Skill::7810473289267995976::1741387838::0::1::::<><>::res://Addons/Skills.gd
 ::res://Skills/Enemies/::1741401735
 Golpe.tres::Resource/Skill::5340712246740372842::1741387838::0::1::::<><>::res://Addons/Skills.gd
 Magia_I.tres::Resource/Skill::2971591566347499612::1741387838::0::1::::<><>::res://Addons/Skills.gd
-::res://Skills/Knight/::1741656732
-Corte.tres::Resource/Skill::7500597328874553020::1741656732::0::1::::<><>::res://Addons/Skills.gd
+::res://Skills/Knight/::1741694143
+Corte.tres::Resource/Skill::7500597328874553020::1741684799::0::1::::<><>::res://Addons/Skills.gd
 Estocada.tres::Resource/Skill::9007185185730954058::1741387838::0::1::::<><>::res://Addons/Skills.gd
 Puñalada_Eterea.tres::Resource/Skill::8399077444365487525::1741387838::0::1::::<><>::res://Addons/Skills.gd
-::res://Skills/Wizard/::1741656732
+Espiral_de_espada.tres::Resource/Skill::2492394149459064532::1741694143::0::1::::<><>::res://Addons/Skills.gd
+Espada_oscura.tres::Resource/Skill::7559636662943316965::1741694213::0::1::::<><>::res://Addons/Skills.gd
+Corte_certero.tres::Resource/Skill::5857510958221418580::1741694289::0::1::::<><>::res://Addons/Skills.gd
+Super Espada.tres::Resource/Skill::7486138511966596423::1741694329::0::1::::<><>::res://Addons/Skills.gd
+::res://Skills/Wizard/::1741694111
 Bola_de_fuego_I.tres::Resource/Skill::8173946108081973343::1741387838::0::1::::<><>::res://Addons/Skills.gd
 Golpe_con_baston.tres::Resource/Skill::1151265815722931592::1741387838::0::1::::<><>::res://Addons/Skills.gd
 Rafaga_magica_I.tres::Resource/Skill::2636582096080480931::1741656732::0::1::::<><>::res://Addons/Skills.gd
-::res://stats/::1741657008
+Bola_de_fuego_II.tres::Resource/Skill::791847156128526655::1741694111::0::1::::<><>::res://Addons/Skills.gd
+Rafaga_magica_II.tres::Resource/Skill::5371299249372368123::1741694111::0::1::::<><>::res://Addons/Skills.gd
+Golpe_muy_fuerte_con_baston.tres::Resource/Skill::3468421201308533509::1741694111::0::1::::<><>::res://Addons/Skills.gd
+Rafaga_magica_III.tres::Resource/Skill::8948809272319244694::1741694111::0::1::::<><>::res://Addons/Skills.gd
+Mango_bajito.tres::Resource/Skill::8184184352740922743::1741694111::0::1::::<><>::res://Addons/Skills.gd
+::res://stats/::1741694112
 ataque.png::CompressedTexture2D::7377143336051651430::1741387839::1741657008::1::::<><>::
 defensa.png::CompressedTexture2D::110466871415839432::1741387839::1741657008::1::::<><>::
 magia.png::CompressedTexture2D::626117767910579172::1741387839::1741657008::1::::<><>::
-stats.gd::GDScript::-1::1741656732::0::1::::<>CanvasLayer<>::
-stats.tscn::PackedScene::8187137251108125494::1741656732::0::1::::<><>::res://stats/stats.gd<>uid://dddsqcycif3ly::::res://stats/ataque.png<>uid://i6kck18m42i7::::res://stats/magia.png<>uid://bxntsx7xb0kfc::::res://font.tres<>uid://btrmxpso3ocm::::res://stats/defensa.png<>uid://dyhhble6v6hoe::::res://stats/velocidad.png<>uid://lk215mrwtbwm::::res://stats/vida.png<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://fctf1pb8qdsj::::res://Textbox.tres<>uid://b1m84sil4okhj::::res://icon.svg
+stats.gd::GDScript::-1::1741690680::0::1::::<>CanvasLayer<>::
+stats.tscn::PackedScene::8187137251108125494::1741694112::0::1::::<><>::res://stats/stats.gd<>uid://dddsqcycif3ly::::res://stats/ataque.png<>uid://i6kck18m42i7::::res://stats/magia.png<>uid://bxntsx7xb0kfc::::res://font.tres<>uid://btrmxpso3ocm::::res://stats/defensa.png<>uid://dyhhble6v6hoe::::res://stats/velocidad.png<>uid://lk215mrwtbwm::::res://stats/vida.png<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://fctf1pb8qdsj::::res://Textbox.tres<>uid://b1m84sil4okhj::::res://icon.svg
 velocidad.png::CompressedTexture2D::8858672332787626404::1741387839::1741657008::1::::<><>::
 vida.png::CompressedTexture2D::794408442045883412::1741387839::1741657008::1::::<><>::
 ::res://Texture/::1741657008

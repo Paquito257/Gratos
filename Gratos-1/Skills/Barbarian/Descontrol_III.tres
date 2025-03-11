@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Skill" load_steps=2 format=3 uid="uid://c4ugu631mw3l8"]
+
+[ext_resource type="Script" path="res://Addons/Skills.gd" id="1_bpk6y"]
+
+[resource]
+script = ExtResource("1_bpk6y")
+Skill_name = "Descontrol III"
+Damage = 5
+Magic = 0
+Success = 1.0
+Global = true
+Level_unlock = 7
