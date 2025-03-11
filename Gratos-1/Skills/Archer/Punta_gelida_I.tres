@@ -6,7 +6,7 @@
 script = ExtResource("1_njb2p")
 Skill_name = "Punta Gelida I"
 Damage = 3
-Magic = 7
+Magic = 8
 Success = 1.0
 Global = true
 Level_unlock = 4

@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dov57pita5uig"]
+[gd_scene load_steps=20 format=3 uid="uid://dov57pita5uig"]
 
 [ext_resource type="Script" path="res://stats/stats.gd" id="1_5bxly"]
 [ext_resource type="Texture2D" uid="uid://dddsqcycif3ly" path="res://stats/ataque.png" id="1_oh1wn"]
@@ -19,7 +19,7 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y66it"]
-bg_color = Color(0.137255, 0.670588, 0.74902, 1)
+bg_color = Color(0.138138, 0.672101, 0.748995, 1)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
@@ -60,17 +60,11 @@ unicode = 109
 [sub_resource type="Shortcut" id="Shortcut_4nksr"]
 events = [SubResource("InputEventKey_v5b0f")]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h1g4t"]
-bg_color = Color(0.721569, 0.576471, 0.301961, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
 [node name="Stats" type="CanvasLayer"]
 script = ExtResource("1_5bxly")
 
 [node name="Magia" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = -1.0
@@ -278,42 +272,6 @@ text = "Menu"
 label_settings = ExtResource("1_vjejq")
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Exp" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = -1.0
-offset_top = 52.0
-offset_right = 238.0
-offset_bottom = 92.0
-
-[node name="ProgressBar" type="ProgressBar" parent="Exp"]
-custom_minimum_size = Vector2(195, 40)
-layout_mode = 2
-offset_left = 43.0
-offset_top = 53.0
-offset_right = 238.0
-offset_bottom = 93.0
-theme_override_styles/background = SubResource("StyleBoxFlat_hy5d2")
-theme_override_styles/fill = SubResource("StyleBoxFlat_h1g4t")
-show_percentage = false
-
-[node name="Cantidad" type="Label" parent="Exp/ProgressBar"]
-layout_mode = 2
-offset_left = 71.0
-offset_right = 116.0
-offset_bottom = 39.0
-text = "0"
-label_settings = ExtResource("1_vjejq")
-horizontal_alignment = 1
-
-[node name="Label" type="Label" parent="Exp"]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 54.0
-offset_right = 41.0
-offset_bottom = 114.0
-text = "Lvl 1"
 
 [connection signal="pressed" from="menu/cerrar" to="." method="_on_cerrar_pressed"]
 [connection signal="pressed" from="open" to="." method="_on_open_pressed"]
