@@ -1,23 +1,23 @@
+res://Skills/Enemies
+res://Skills/Knight
+res://Skills/Wizard
+res://Skills/Barbarian
+res://Skills/Archer
+res://Maps
+res://
 C:/Users/dejam/Desktop/Godot/Godot_4.3/Projects/Gratos/Gratos-1/Maps/Warp
 C:/Users/dejam/Desktop/Godot/Godot_4.3/Projects/Gratos/Gratos-1/Combat
 res://Characters/PLayable characters
 res://Characters/Battle enemies/Scripts
 res://Characters/Battle enemies
-res://
 res://Combat
 res://inventory
 res://stats
 res://Combat/Combat maps
-res://Maps
 C:/Users/dejam/Desktop/Godot/Godot_4.3/Projects/Gratos/Gratos-1/Global
 C:/Users/dejam/Desktop/Godot/Godot_4.3/Projects/Gratos/Gratos-1/Maps
 res://Texture/NPC/Orc
 res://Texture/Playable Characters/Character sprite/Wizard
 res://Texture/Playable Characters/Character sprite/Barbarian
 res://Texture/Playable Characters/Character sprite/Archer
-res://Characters/PLayable characters/Scenes
-res://Texture/Playable Characters/Character sprite/Knight
 C:/Users/dejam/Desktop/Godot/Godot_4.3/Projects/Gratos/Gratos-1
-res://Misc
-res://Global
-res://Addons

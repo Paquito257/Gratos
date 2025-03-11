@@ -13,7 +13,11 @@ var enemies = []
 var players = []
 var enemy_n = 1
 var exp_total = 0 #Almacena la experiencia ganada
-	
+var turn_actual = true
+var attack_done = false
+var finished = false
+var lost = false
+
 func _ready():
 	Music.change_track(Music.enemigo, Music.hub)
 	character_spawn()
@@ -31,14 +35,16 @@ func _ready():
 		selection[select].hide()
 		
 	order()
-
+	
 #Permite seleccionar a uno de los oponentes para atacar
 #en el caso de que el ataque no sea multiple
 func _process(delta):
+	if !finished and !lost:
+		turn()
+		check_status()
+		
+	battle_end()
 
-	turn(turn_order[0])
-	
-	check_status()
 		
 func character_spawn():
 	var player
@@ -98,20 +104,21 @@ func enemy_selection(all):
 		for select in selection:
 			select.show()
 			
-		attack_confirmation(PlayerHandle.players[multiplayer.get_unique_id()],enemies[index], all)
+		attack_confirmation(players[0],enemies[index], all)
 		
 	else:
-		#Cambia el target del ataque
-		if Input.is_action_just_pressed("ui_up"):
-			if index > 0:
-				index -= 1
-				switch_focus(selection[index], selection[index + 1])
-		elif Input.is_action_just_pressed("ui_down"):
-			if index < enemies.size() - 1:
-				index += 1
-				switch_focus(selection[index], selection[index - 1])
-				
-		attack_confirmation(players[0],enemies[index])
+		if !selection.is_empty():
+			#Cambia el target del ataque
+			if Input.is_action_just_pressed("ui_up"):
+				if index > 0:
+					index -= 1
+					switch_focus(selection[index], selection[index + 1])
+			elif Input.is_action_just_pressed("ui_down"):
+				if index < enemies.size() - 1:
+					index += 1
+					switch_focus(selection[index], selection[index - 1])
+					
+			attack_confirmation(players[0],enemies[index])
 
 #Cambia el focus a otro enemigo seleccionado
 func switch_focus(x,y):
@@ -122,33 +129,47 @@ func switch_focus(x,y):
 #Confirma el ataque a enemigo seleccionado
 func attack_confirmation(attacker, target, global = false):
 	
-	if !attacker.enemy:
-		if Input.is_action_just_pressed("ui_text_submit"):
+	if attacker.enemy:
+		var skill = attacker.choose_random_skill()
+		attacker.play("Attack")
+		Music.punch.play()
+		DamageModifiers.dmg_calculator(attacker.stats, PlayerHandle.players[multiplayer.get_unique_id()].stats, skill, attacker.stats.nivel)
+		target.update_stats()
+		
+	else:
+		if Input.is_action_just_pressed("ui_text_submit") and !attack_done:
+			attack_done = true
 			if global:
 				for enemy in enemies:
 					players[0].play("Attack")
-					DamageModifiers.dmg_calculator( PlayerHandle.players[multiplayer.get_unique_id()].stats,enemy.stats,menu.current_skill, players[0].nivel)
+					Music.punch.play()
+					DamageModifiers.dmg_calculator( PlayerHandle.players[multiplayer.get_unique_id()].stats,enemy.stats,menu.current_skill, players[0].nivel, true)
 					enemy.update_stats()
+					
+				
 			else:
 				#Calculador de ataque y update a los stats
 				players[0].play("Attack")
+				Music.punch.play()
 				DamageModifiers.dmg_calculator( PlayerHandle.players[multiplayer.get_unique_id()].stats,target.stats,menu.current_skill, players[0].nivel)
 				target.update_stats()
+				#selection[index].hide()
+							
 			
-			await get_tree().create_timer(2).timeout
+			
+					
+			DamageModifiers.global_dropped = false
+			menu.hide()
 			turn_order.pop_front()
-				
+			for select in selection:
+				select.hide()
+			
 	
-	elif attacker.enemy:
-		var skill = attacker.choose_random_skill()
-		attacker.play("Attack")
-		DamageModifiers.dmg_calculator(attacker.stats, PlayerHandle.players[multiplayer.get_unique_id()].stats, skill, attacker.stats.nivel)
-		target.update_stats()
-
+		
 #Establece el orden de turnos (Añade enemigos y jugadores)
 func order():
 	#TODO: Si se mata a un enemigo antes de que llegue su turno, sacarlo
-	#de ambas listas
+	#de ambas listas	
 	for enemy in enemies:
 		turn_order.append(enemy)
 		
@@ -184,33 +205,40 @@ func sort_descending(a, b):
 		return false
 		
 #Script para determinar quien es el siguiente en atacar
-func turn(player):
-
-	if player.enemy == false and menu.menu.name == menu.current_menu:
-		menu.menu.show()
+func turn():
+	if !turn_order.is_empty():
 		
-	elif player.enemy == true:
+		if !turn_order[0].enemy and menu.menu.name == menu.current_menu and turn_actual:
+			print("hey")
+			attack_done = false
+			turn_actual = false
+			menu.show()
+			menu.menu.show()
+		
+		elif turn_order[0].enemy and !menu.visible and turn_actual:
+			print("hey2")
+			turn_actual = false
+			attack_confirmation(turn_order[0],players[0])		
+			turn_order.pop_front()
+			
 	
-		attack_confirmation(player,players[0])		
-		await get_tree().create_timer(1).timeout
-		turn_order.pop_front()
-	
-	if len(turn_order) == 0:
-		menu.current_menu = menu.menu.name
+	else:
 		order()
-		await get_tree().create_timer(1).timeout
-		
+		menu.current_menu = menu.menu.name
+			
 	
 #Comprueba si los enemigos fueron derrotados, o si el jugador gano/murio
 func check_status():
 	for enemy in len(enemies):	
 		if enemy >= len(enemies):
 			break
-			
+		
 		if enemies[enemy].stats.vida <= 0:
+			exp_total += enemies[enemy].stats.exp
 			enemies.remove_at(enemy)
 			selection[enemy].hide()
 			selection.remove_at(enemy)
+			index = 0
 			
 	for turn in len(turn_order):
 		
@@ -219,5 +247,43 @@ func check_status():
 			
 		if turn_order[turn].enemy and turn_order[turn].stats.vida <= 0:
 			turn_order.pop_at(turn)
-
+			
+	if players[0].life.value <= 0:
+		game_over()
 		
+
+func battle_end():
+	if enemies.is_empty() and !finished:
+		Music.change_track(Music.victoria,Music.enemigo)
+		finished = true
+		menu.container.hide()
+		menu.show()
+		menu.textbox.show()
+		
+		menu.textbox.dialogue("¡Ganaste %s puntos de experiencia!" % exp_total)
+		PlayerHandle.players[multiplayer.get_unique_id()].stats.exp += exp_total
+		
+		if PlayerHandle.players[multiplayer.get_unique_id()].stats.exp >= GameControl.level_milestones:
+			PlayerHandle.players[multiplayer.get_unique_id()].level +=1
+			menu.textbox.dialogue("¡Subiste al nivel %s !" % PlayerHandle.players[multiplayer.get_unique_id()].level)
+			GameControl.level_milestones *= 2
+			
+		menu.textbox.show_textbox()
+		
+	elif finished and !menu.textbox.textbox:
+		Manager.change_to(get_parent().get_tree().root, "Combate")
+		
+func game_over():
+	lost = true
+	Music.enemigo.stop()
+	menu.container.hide()
+	menu.show()
+	menu.textbox.show()
+	
+	menu.textbox.dialogue("Oh no...")
+	menu.textbox.show_textbox()
+	
+	if !menu.textbox.textbox:
+		pass
+	
+	

@@ -17,7 +17,7 @@ var player_last_position : Vector2 = Vector2(0,0)
 
 func _ready():
 	randomize()
-	encounter = 3#randi_range(25,50)
+	encounter = randi_range(25,50)
 	
 func change_to(tree, type: String):
 	

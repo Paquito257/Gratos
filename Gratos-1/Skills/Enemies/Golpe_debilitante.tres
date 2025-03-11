@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Skill" load_steps=2 format=3 uid="uid://d3xmn2xi57312"]
+
+[ext_resource type="Script" path="res://Addons/Skills.gd" id="1_qd2cn"]
+
+[resource]
+script = ExtResource("1_qd2cn")
+Skill_name = "Golpe Debilitante"
+Damage = 7
+Magic = 0
+Success = 1.0
+Global = false
+Level_unlock = 1

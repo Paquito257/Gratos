@@ -1,25 +1,3 @@
-res://Combat/Combat_menu.tscn
-res://Combat/Combat maps/Basico_combate.tscn
-res://Addons/Stats_inspector.tscn
-res://Characters/Battle enemies/Scripts/000.tscn
-res://Combat/Combat_menu.gd
-res://Characters/Battle enemies/Enemy_battle_script.gd
-res://Skills/Knight/Corte.tres
-res://Characters/PLayable characters/Scenes/Classes.gd
 res://Characters/PLayable characters/Scenes/Archer.tscn
-res://Characters/PLayable characters/Scenes/Wizard.tscn
-res://Characters/PLayable characters/Scenes/Knight.tscn
-res://Characters/PLayable characters/Scenes/Barbarian.tscn
-res://Characters/Battle enemies/Scripts/001.tscn
 res://Combat/Combat maps/Combate.gd
-res://Global/Game_control.gd
-res://Maps/Manager.gd
-res://Maps/Warp/Global.gd
-res://Maps/Warp/manager.tscn
-res://Global/Music.tscn
-res://Global/Music.gd
-res://Skills/Archer/Lluvia_de_Flechas.tres
-res://Skills/Archer/Punta_gelida_I.tres
-res://Skills/Wizard/Rafaga_magica_I.tres
-res://Skills/Barbarian/Descontrol_I.tres
-res://Addons/Skills.tscn
+res://stats/stats.gd

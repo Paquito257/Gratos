@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Skill" load_steps=2 format=3 uid="uid://douqk5tral5yx"]
+
+[ext_resource type="Script" path="res://Addons/Skills.gd" id="1_pamfx"]
+
+[resource]
+script = ExtResource("1_pamfx")
+Skill_name = "Mango Bajito"
+Damage = 20
+Magic = 0
+Success = 1.0
+Global = false
+Level_unlock = 9

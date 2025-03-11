@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Skill" load_steps=2 format=3 uid="uid://d0q4t07sk17g1"]
+
+[ext_resource type="Script" path="res://Addons/Skills.gd" id="1_bfmhl"]
+
+[resource]
+script = ExtResource("1_bfmhl")
+Skill_name = "Rafaga magica III"
+Damage = 9
+Magic = 18
+Success = 1.0
+Global = false
+Level_unlock = 7

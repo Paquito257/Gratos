@@ -61,7 +61,7 @@ animations = [{
 script = ExtResource("6_cgb8f")
 Name = ""
 Friendly = true
-Dialogue = Array[String](["Feliz día, valiente aventurero", "¿Te apetece comprar algunos de los items?"])
+Dialogue = Array[String](["Feliz día, valiente aventurero", "¿Te apetece comer algo?"])
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x0i35"]
 size = Vector2(19, 24)

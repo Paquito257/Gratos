@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://dvkacl0f54w3d"]
+[gd_scene load_steps=52 format=3 uid="uid://dvkacl0f54w3d"]
 
 [ext_resource type="Texture2D" uid="uid://c8m7gfdpeug23" path="res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Attack02.png" id="1_kkxeo"]
 [ext_resource type="Texture2D" uid="uid://dkj3kmaaw02pm" path="res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Idle.png" id="1_kqrs4"]
@@ -11,6 +11,11 @@
 [ext_resource type="Resource" uid="uid://bdtgee6wx7p44" path="res://Skills/Wizard/Rafaga_magica_I.tres" id="6_7s65t"]
 [ext_resource type="Script" path="res://Addons/Skills.gd" id="7_f7yvr"]
 [ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="11_36wa8"]
+[ext_resource type="Resource" uid="uid://ljtuvwnmfyvn" path="res://Skills/Wizard/Bola_de_fuego_II.tres" id="11_mvk1q"]
+[ext_resource type="Resource" uid="uid://bpoenjl74pddl" path="res://Skills/Wizard/Golpe_muy_fuerte_con_baston.tres" id="12_7yo3q"]
+[ext_resource type="Resource" uid="uid://douqk5tral5yx" path="res://Skills/Wizard/Mango_bajito.tres" id="13_g4lya"]
+[ext_resource type="Resource" uid="uid://cir5rqbtbmwl4" path="res://Skills/Wizard/Rafaga_magica_II.tres" id="14_8hdio"]
+[ext_resource type="Resource" uid="uid://d0q4t07sk17g1" path="res://Skills/Wizard/Rafaga_magica_III.tres" id="15_1iru7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oufw6"]
 atlas = ExtResource("1_kkxeo")
@@ -277,7 +282,7 @@ z_index = 9
 sprite_frames = SubResource("SpriteFrames_ji0m7")
 animation = &"Idle"
 script = ExtResource("3_x4th4")
-attacks = Array[ExtResource("7_f7yvr")]([ExtResource("4_ie2ng"), ExtResource("5_m07tv"), ExtResource("6_7s65t")])
+attacks = Array[ExtResource("7_f7yvr")]([ExtResource("4_ie2ng"), ExtResource("5_m07tv"), ExtResource("6_7s65t"), ExtResource("11_mvk1q"), ExtResource("12_7yo3q"), ExtResource("13_g4lya"), ExtResource("14_8hdio"), ExtResource("15_1iru7")])
 
 [node name="Life" type="ProgressBar" parent="."]
 visible = false

@@ -1,12 +1,9 @@
-<<<<<<< HEAD
-=======
-TileMap
-Timer
->>>>>>> 902beff490002fe17f1ca3bb982ace159e9eb18f
+Label
 AudioStreamPlayer2D
+AudioListener2D
+Timer
 ProgressBar
 AnimationPlayer
-Timer
 Node
 Node2D
 Sprite2D

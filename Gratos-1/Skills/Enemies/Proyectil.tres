@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Skill" load_steps=2 format=3 uid="uid://dx4t0rmlxtr72"]
+
+[ext_resource type="Script" path="res://Addons/Skills.gd" id="1_8meij"]
+
+[resource]
+script = ExtResource("1_8meij")
+Skill_name = "Proyectil"
+Damage = 8
+Magic = 0
+Success = 0.75
+Global = false
+Level_unlock = 1

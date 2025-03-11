@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://dvkacl0f54w3d"]
+[gd_scene load_steps=55 format=3 uid="uid://dvkacl0f54w3d"]
 
 [ext_resource type="Texture2D" uid="uid://dpynry271fibe" path="res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Idle.png" id="1_fb6rn"]
 [ext_resource type="Texture2D" uid="uid://cuwj3b34y5urq" path="res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Attack01.png" id="1_jjb1q"]
@@ -11,6 +11,11 @@
 [ext_resource type="Resource" uid="uid://qbtnf7vwj8ue" path="res://Skills/Barbarian/Descontrol_I.tres" id="6_u2sa4"]
 [ext_resource type="Script" path="res://Addons/Skills.gd" id="7_cmlvi"]
 [ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="11_jginy"]
+[ext_resource type="Resource" uid="uid://dib07xcpr3v7g" path="res://Skills/Barbarian/Descontrol_II.tres" id="11_ulo1m"]
+[ext_resource type="Resource" uid="uid://c4ugu631mw3l8" path="res://Skills/Barbarian/Descontrol_III.tres" id="12_vvvn1"]
+[ext_resource type="Resource" uid="uid://c63d3ebw021y7" path="res://Skills/Barbarian/Embestida.tres" id="13_br44i"]
+[ext_resource type="Resource" uid="uid://2vv8ej3hny3l" path="res://Skills/Barbarian/Fisico_Culturista.tres" id="14_4mtqu"]
+[ext_resource type="Resource" uid="uid://di8w4sq81gff6" path="res://Skills/Barbarian/Hachazo_certero.tres" id="15_i4l15"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iwson"]
 atlas = ExtResource("1_jjb1q")
@@ -296,10 +301,10 @@ corner_radius_bottom_left = 10
 [node name="RPG_class" type="AnimatedSprite2D"]
 z_index = 9
 sprite_frames = SubResource("SpriteFrames_ji0m7")
-animation = &"Idle"
+animation = &"Attack"
 script = ExtResource("3_upil0")
 clase = "barbaro"
-attacks = Array[ExtResource("7_cmlvi")]([ExtResource("4_jfe8f"), ExtResource("5_esk2f"), ExtResource("6_u2sa4")])
+attacks = Array[ExtResource("7_cmlvi")]([ExtResource("4_jfe8f"), ExtResource("5_esk2f"), ExtResource("6_u2sa4"), ExtResource("11_ulo1m"), ExtResource("12_vvvn1"), ExtResource("13_br44i"), ExtResource("14_4mtqu"), ExtResource("15_i4l15")])
 
 [node name="Life" type="ProgressBar" parent="."]
 visible = false
