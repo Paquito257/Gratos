@@ -1,7 +1,7 @@
 extends Control
 
 
-var listo = load("res://selec_personaje.tscn").instantiate()
+var listo = load("res://selec_personaje1.tscn").instantiate()
 func _ready():
 	$Transtion._on_play()
 	$"AnimationPlayer".play("RESET")

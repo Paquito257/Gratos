@@ -1,0 +1,647 @@
+[gd_scene load_steps=56 format=3 uid="uid://csyf614fi1bwu"]
+
+[ext_resource type="Script" path="res://selec_personaje1.gd" id="1_smsch"]
+[ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="4_l8r70"]
+[ext_resource type="Texture2D" uid="uid://bxuolcxccleg6" path="res://Texture/Players.png" id="4_vbcow"]
+[ext_resource type="Texture2D" uid="uid://vbgpc8ntuntf" path="res://Texture/Playable Characters/Character sprite/Knight/Knight-Idle.png" id="4_wew3n"]
+[ext_resource type="Texture2D" uid="uid://dpynry271fibe" path="res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Idle.png" id="5_vnd7b"]
+[ext_resource type="Texture2D" uid="uid://c73ymqivr0hrj" path="res://Texture/Playable Characters/Character sprite/Archer/Archer-Idle.png" id="6_tjsw6"]
+[ext_resource type="Texture2D" uid="uid://dkj3kmaaw02pm" path="res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Idle.png" id="7_r1l1w"]
+[ext_resource type="Texture2D" uid="uid://c2tsa4mu2lfvt" path="res://Texture/Misc/finger.png" id="8_ylugc"]
+[ext_resource type="PackedScene" uid="uid://cylangw0sb7mt" path="res://transitions/transtion.tscn" id="9_njgpy"]
+[ext_resource type="Texture2D" uid="uid://dq00nbal7vmmg" path="res://Texture/Playable Characters/Character sprite/Knight/Knight-Walk.png" id="10_arv7g"]
+[ext_resource type="Texture2D" uid="uid://65jtucyr84ki" path="res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Walk.png" id="11_iq0s6"]
+[ext_resource type="Texture2D" uid="uid://mt58dwglfqo7" path="res://Texture/Stars/yellow 04.png" id="11_m6rah"]
+[ext_resource type="Texture2D" uid="uid://cfeglueaoeiuh" path="res://Texture/Stars/yellow 03.png" id="12_o4m54"]
+[ext_resource type="Texture2D" uid="uid://b3isk0q4e5v1f" path="res://Texture/Playable Characters/Character sprite/Archer/Archer-Walk.png" id="12_xcuc2"]
+[ext_resource type="Texture2D" uid="uid://buuxmdnqy0xkb" path="res://Texture/Stars/yellow 02.png" id="13_3ao3y"]
+[ext_resource type="Texture2D" uid="uid://car6d7bpnky3c" path="res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Walk.png" id="13_s7wj6"]
+[ext_resource type="Texture2D" uid="uid://by0u2yh2e6ndn" path="res://Texture/Stars/yellow 05.png" id="15_cgdi5"]
+[ext_resource type="Texture2D" uid="uid://52xss8c3fa0o" path="res://Texture/Stars/yellow 01.png" id="16_enqj2"]
+[ext_resource type="Texture2D" uid="uid://dcnw4dyi0lace" path="res://Texture/Stars/yellow 00.png" id="17_owmje"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f6qxv"]
+atlas = ExtResource("10_arv7g")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_drsff"]
+atlas = ExtResource("10_arv7g")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cp74y"]
+atlas = ExtResource("10_arv7g")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lfley"]
+atlas = ExtResource("10_arv7g")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_07die"]
+atlas = ExtResource("10_arv7g")
+region = Rect2(400, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2eqfd"]
+atlas = ExtResource("10_arv7g")
+region = Rect2(500, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tuuko"]
+atlas = ExtResource("10_arv7g")
+region = Rect2(600, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p8y6e"]
+atlas = ExtResource("10_arv7g")
+region = Rect2(700, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v1p4q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f6qxv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_drsff")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cp74y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lfley")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_07die")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2eqfd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tuuko")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p8y6e")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_libro"]
+atlas = ExtResource("11_iq0s6")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_60ta3"]
+atlas = ExtResource("11_iq0s6")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lqs87"]
+atlas = ExtResource("11_iq0s6")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o3xir"]
+atlas = ExtResource("11_iq0s6")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jwmnm"]
+atlas = ExtResource("11_iq0s6")
+region = Rect2(400, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r0fqi"]
+atlas = ExtResource("11_iq0s6")
+region = Rect2(500, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lalbp"]
+atlas = ExtResource("11_iq0s6")
+region = Rect2(600, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k67q6"]
+atlas = ExtResource("11_iq0s6")
+region = Rect2(700, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lgvhl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_libro")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_60ta3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lqs87")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o3xir")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jwmnm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r0fqi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lalbp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k67q6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u57yl"]
+atlas = ExtResource("12_xcuc2")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8od43"]
+atlas = ExtResource("12_xcuc2")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwuwe"]
+atlas = ExtResource("12_xcuc2")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cs8ey"]
+atlas = ExtResource("12_xcuc2")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ue6m8"]
+atlas = ExtResource("12_xcuc2")
+region = Rect2(400, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_53n3h"]
+atlas = ExtResource("12_xcuc2")
+region = Rect2(500, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_00gx6"]
+atlas = ExtResource("12_xcuc2")
+region = Rect2(600, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nbqtw"]
+atlas = ExtResource("12_xcuc2")
+region = Rect2(700, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0vad6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u57yl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8od43")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwuwe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cs8ey")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ue6m8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_53n3h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_00gx6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nbqtw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c4fws"]
+atlas = ExtResource("13_s7wj6")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tn2m3"]
+atlas = ExtResource("13_s7wj6")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_25g3u"]
+atlas = ExtResource("13_s7wj6")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ceiog"]
+atlas = ExtResource("13_s7wj6")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ratec"]
+atlas = ExtResource("13_s7wj6")
+region = Rect2(400, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y6svx"]
+atlas = ExtResource("13_s7wj6")
+region = Rect2(500, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_06wnd"]
+atlas = ExtResource("13_s7wj6")
+region = Rect2(600, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wgqab"]
+atlas = ExtResource("13_s7wj6")
+region = Rect2(700, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_saq6w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c4fws")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tn2m3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_25g3u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ceiog")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ratec")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y6svx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_06wnd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wgqab")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Selector" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_smsch")
+
+[node name="Transtion" parent="." instance=ExtResource("9_njgpy")]
+tipo_de_animacion = "Fade out"
+
+[node name="TextureRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1148.0
+offset_bottom = 649.0
+color = Color(0.0346092, 0.0216063, 0.0123178, 1)
+
+[node name="Label" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 319.0
+offset_top = -6.0
+offset_right = 1388.0
+offset_bottom = 100.0
+scale = Vector2(0.560951, 0.848894)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_l8r70")
+theme_override_font_sizes/font_size = 90
+text = "Seleccione su personaje"
+
+[node name="Seleccion" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = -82.0
+offset_right = 692.0
+offset_bottom = 101.0
+scale = Vector2(1.66017, 1.52728)
+texture = ExtResource("4_vbcow")
+
+[node name="Personaje1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 195.0
+offset_top = 106.0
+offset_right = 360.0
+offset_bottom = 340.0
+scale = Vector2(0.696999, 0.485789)
+expand_icon = true
+
+[node name="linea" type="Line2D" parent="Personaje1"]
+position = Vector2(-123, -230)
+scale = Vector2(1.22891, 1)
+points = PackedVector2Array(92, 228, 164.046, 228, 238, 228, 238, 462, 207.8, 462, 162.418, 462, 96, 462, 96, 229)
+default_color = Color(0, 0, 0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="Personaje1"]
+position = Vector2(119.082, 119.393)
+scale = Vector2(5.79896, 8.29425)
+texture = ExtResource("4_wew3n")
+hframes = 5
+
+[node name="Personaje2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 412.0
+offset_top = 104.0
+offset_right = 577.0
+offset_bottom = 338.0
+scale = Vector2(0.707862, 0.500005)
+expand_icon = true
+
+[node name="linea2" type="Line2D" parent="Personaje2"]
+position = Vector2(-123, -230)
+scale = Vector2(1.22891, 1)
+points = PackedVector2Array(92, 228, 164.046, 228, 238, 228, 238, 462, 207.8, 462, 162.418, 462, 96, 462, 96, 229)
+default_color = Color(0, 0, 0, 1)
+
+[node name="Barbarian" type="Sprite2D" parent="Personaje2"]
+position = Vector2(131, 132)
+scale = Vector2(5.92083, 6.485)
+texture = ExtResource("5_vnd7b")
+hframes = 5
+
+[node name="Personaje3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 644.0
+offset_top = 103.0
+offset_right = 809.0
+offset_bottom = 337.0
+scale = Vector2(0.732055, 0.498807)
+expand_icon = true
+
+[node name="linea3" type="Line2D" parent="Personaje3"]
+position = Vector2(-123, -230)
+scale = Vector2(1.22891, 1)
+points = PackedVector2Array(92, 228, 164.046, 228, 238, 228, 238, 462, 207.8, 462, 162.418, 462, 96, 462, 96, 229)
+default_color = Color(0, 0, 0, 1)
+
+[node name="Archer" type="Sprite2D" parent="Personaje3"]
+position = Vector2(131, 132)
+scale = Vector2(5.92083, 6.485)
+texture = ExtResource("6_tjsw6")
+hframes = 5
+
+[node name="Personaje4" type="Button" parent="."]
+layout_mode = 0
+offset_left = 871.0
+offset_top = 101.0
+offset_right = 1036.0
+offset_bottom = 335.0
+scale = Vector2(0.739143, 0.508327)
+expand_icon = true
+
+[node name="linea4" type="Line2D" parent="Personaje4"]
+position = Vector2(-123, -230)
+scale = Vector2(1.22891, 1)
+points = PackedVector2Array(92, 228, 164.046, 228, 238, 228, 238, 462, 207.8, 462, 162.418, 462, 96, 462, 96, 229)
+default_color = Color(0, 0, 0, 1)
+
+[node name="Wizard" type="Sprite2D" parent="Personaje4"]
+position = Vector2(131, 132)
+scale = Vector2(5.92083, 6.485)
+texture = ExtResource("7_r1l1w")
+hframes = 5
+
+[node name="finger" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(162, 165)
+rotation = 1.58825
+scale = Vector2(0.602222, 0.548889)
+texture = ExtResource("8_ylugc")
+
+[node name="Si" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 387.0
+offset_top = 552.0
+offset_right = 476.0
+offset_bottom = 660.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_l8r70")
+theme_override_font_sizes/font_size = 80
+text = "Si"
+flat = true
+
+[node name="No" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 629.0
+offset_top = 549.0
+offset_right = 738.0
+offset_bottom = 651.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_l8r70")
+theme_override_font_sizes/font_size = 80
+text = "No"
+flat = true
+
+[node name="cleaner" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="Stats" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 314.0
+offset_top = 301.0
+offset_right = 394.0
+offset_bottom = 428.0
+scale = Vector2(2.94552, 1.91558)
+text = "Vida:
+Ataque:
+Defensa:
+Velocidad:
+Magia:"
+
+[node name="Knight" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(152, 482)
+scale = Vector2(7.60505, 7.71163)
+sprite_frames = SubResource("SpriteFrames_v1p4q")
+
+[node name="Vida" type="TextureRect" parent="Knight"]
+offset_left = 38.264
+offset_top = -24.7678
+offset_right = 663.264
+offset_bottom = 135.232
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("11_m6rah")
+
+[node name="Ataque" type="TextureRect" parent="Knight"]
+offset_left = 46.9425
+offset_top = -18.5434
+offset_right = 671.943
+offset_bottom = 141.457
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("11_m6rah")
+
+[node name="Defensa" type="TextureRect" parent="Knight"]
+offset_left = 49.1778
+offset_top = -12.0597
+offset_right = 674.178
+offset_bottom = 147.94
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("12_o4m54")
+
+[node name="Velocidad" type="TextureRect" parent="Knight"]
+offset_left = 52.8596
+offset_top = -5.44632
+offset_right = 677.86
+offset_bottom = 154.554
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("12_o4m54")
+
+[node name="Magia" type="TextureRect" parent="Knight"]
+offset_left = 42.6033
+offset_top = 1.0374
+offset_right = 667.603
+offset_bottom = 161.037
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("13_3ao3y")
+
+[node name="Barbarian" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(136, 492)
+scale = Vector2(8.31274, 8.05623)
+sprite_frames = SubResource("SpriteFrames_lgvhl")
+frame_progress = 0.276837
+
+[node name="Vida" type="TextureRect" parent="Barbarian"]
+offset_left = 38.264
+offset_top = -24.7678
+offset_right = 663.264
+offset_bottom = 135.232
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("15_cgdi5")
+
+[node name="Ataque" type="TextureRect" parent="Barbarian"]
+offset_left = 44.2694
+offset_top = -18.9915
+offset_right = 669.269
+offset_bottom = 141.008
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("15_cgdi5")
+
+[node name="Defensa" type="TextureRect" parent="Barbarian"]
+offset_left = 46.1942
+offset_top = -12.7851
+offset_right = 671.194
+offset_bottom = 147.215
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("12_o4m54")
+
+[node name="Velocidad" type="TextureRect" parent="Barbarian"]
+offset_left = 50.7654
+offset_top = -6.70289
+offset_right = 675.765
+offset_bottom = 153.297
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("16_enqj2")
+
+[node name="Magia" type="TextureRect" parent="Barbarian"]
+offset_left = 39.5778
+offset_top = -0.372385
+offset_right = 664.578
+offset_bottom = 159.628
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("17_owmje")
+
+[node name="Archer" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(136, 482)
+scale = Vector2(8.33224, 8.46975)
+sprite_frames = SubResource("SpriteFrames_0vad6")
+
+[node name="Vida" type="TextureRect" parent="Archer"]
+offset_left = 35.4046
+offset_top = -22.905
+offset_right = 660.405
+offset_bottom = 137.095
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("13_3ao3y")
+
+[node name="Ataque" type="TextureRect" parent="Archer"]
+offset_left = 43.0857
+offset_top = -17.2378
+offset_right = 668.086
+offset_bottom = 142.762
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("15_cgdi5")
+
+[node name="Defensa" type="TextureRect" parent="Archer"]
+offset_left = 46.086
+offset_top = -11.6887
+offset_right = 671.086
+offset_bottom = 148.311
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("16_enqj2")
+
+[node name="Velocidad" type="TextureRect" parent="Archer"]
+offset_left = 49.9265
+offset_top = -5.78529
+offset_right = 674.927
+offset_bottom = 154.215
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("15_cgdi5")
+
+[node name="Magia" type="TextureRect" parent="Archer"]
+offset_left = 39.8452
+offset_top = 0.118067
+offset_right = 664.845
+offset_bottom = 160.118
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("11_m6rah")
+
+[node name="Wizard" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(136, 476)
+scale = Vector2(7.74933, 8.20543)
+sprite_frames = SubResource("SpriteFrames_saq6w")
+
+[node name="Vida" type="TextureRect" parent="Wizard"]
+offset_left = 38.3259
+offset_top = -23.7648
+offset_right = 663.326
+offset_bottom = 136.235
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("12_o4m54")
+
+[node name="Ataque" type="TextureRect" parent="Wizard"]
+offset_left = 45.6814
+offset_top = -17.1837
+offset_right = 670.681
+offset_bottom = 142.816
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("16_enqj2")
+
+[node name="Defensa" type="TextureRect" parent="Wizard"]
+offset_left = 48.7784
+offset_top = -10.8465
+offset_right = 673.778
+offset_bottom = 149.154
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("12_o4m54")
+
+[node name="Velocidad" type="TextureRect" parent="Wizard"]
+offset_left = 52.7788
+offset_top = -4.50921
+offset_right = 677.779
+offset_bottom = 155.491
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("12_o4m54")
+
+[node name="Magia" type="TextureRect" parent="Wizard"]
+offset_left = 42.5843
+offset_top = 0.609354
+offset_right = 667.584
+offset_bottom = 160.609
+scale = Vector2(0.0573085, 0.054358)
+texture = ExtResource("15_cgdi5")
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="button_down" from="Personaje1" to="." method="_on_personaje_1_button_down"]
+[connection signal="pressed" from="Personaje1" to="." method="_on_personaje_1_pressed"]
+[connection signal="pressed" from="Personaje2" to="." method="_on_personaje_2_pressed"]
+[connection signal="pressed" from="Personaje3" to="." method="_on_personaje_3_pressed"]
+[connection signal="pressed" from="Personaje4" to="." method="_on_personaje_4_pressed"]
+[connection signal="pressed" from="Si" to="." method="_on_si_pressed"]
+[connection signal="pressed" from="No" to="." method="_on_no_pressed"]
+[connection signal="timeout" from="cleaner" to="." method="_on_cleaner_timeout"]
