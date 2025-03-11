@@ -190,9 +190,7 @@ func turn(player):
 		menu.menu.show()
 		
 	elif player.enemy == true:
-		for menu in menu.get_tree().get_nodes_in_group("Menus"):
-			menu.hide()
-			
+	
 		attack_confirmation(player,players[0])		
 		await get_tree().create_timer(1).timeout
 		turn_order.pop_front()
@@ -200,6 +198,8 @@ func turn(player):
 	if len(turn_order) == 0:
 		menu.current_menu = menu.menu.name
 		order()
+		await get_tree().create_timer(1).timeout
+		
 	
 #Comprueba si los enemigos fueron derrotados, o si el jugador gano/murio
 func check_status():
