@@ -1,7 +1,9 @@
+Label
 AudioStreamPlayer2D
+AudioListener2D
+Timer
 ProgressBar
 AnimationPlayer
-Timer
 Node
 Node2D
 Sprite2D

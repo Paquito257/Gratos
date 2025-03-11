@@ -296,7 +296,7 @@ corner_radius_bottom_left = 10
 [node name="RPG_class" type="AnimatedSprite2D"]
 z_index = 9
 sprite_frames = SubResource("SpriteFrames_ji0m7")
-animation = &"Idle"
+animation = &"Attack"
 script = ExtResource("3_upil0")
 clase = "barbaro"
 attacks = Array[ExtResource("7_cmlvi")]([ExtResource("4_jfe8f"), ExtResource("5_esk2f"), ExtResource("6_u2sa4")])

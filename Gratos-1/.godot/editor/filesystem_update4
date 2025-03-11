@@ -1,25 +1,25 @@
 res://Combat/Combat_menu.tscn
-res://Combat/Combat maps/Basico_combate.tscn
-res://Addons/Stats_inspector.tscn
-res://Characters/Battle enemies/Scripts/000.tscn
-res://Combat/Combat_menu.gd
-res://Characters/Battle enemies/Enemy_battle_script.gd
-res://Skills/Knight/Corte.tres
-res://Characters/PLayable characters/Scenes/Classes.gd
+res://Characters/Battle enemies/Scripts/001.tscn
+res://Global/Music.tscn
 res://Characters/PLayable characters/Scenes/Archer.tscn
 res://Characters/PLayable characters/Scenes/Wizard.tscn
-res://Characters/PLayable characters/Scenes/Knight.tscn
-res://Characters/PLayable characters/Scenes/Barbarian.tscn
-res://Characters/Battle enemies/Scripts/001.tscn
-res://Combat/Combat maps/Combate.gd
-res://Global/Game_control.gd
-res://Maps/Manager.gd
-res://Maps/Warp/Global.gd
-res://Maps/Warp/manager.tscn
-res://Global/Music.tscn
-res://Global/Music.gd
-res://Skills/Archer/Lluvia_de_Flechas.tres
-res://Skills/Archer/Punta_gelida_I.tres
-res://Skills/Wizard/Rafaga_magica_I.tres
-res://Skills/Barbarian/Descontrol_I.tres
 res://Addons/Skills.tscn
+res://Combat/Combat maps/Basico_combate.tscn
+res://Combat/Combat maps/Combate.gd
+res://Characters/PLayable characters/Scenes/Classes.gd
+res://Characters/Battle enemies/Enemy_battle_script.gd
+res://Combat/Combat_menu.gd
+res://Global/Music.gd
+res://Characters/Battle enemies/Scripts/000.tscn
+res://Characters/Overworld/Friendly/Hub/Merchant.tscn
+res://Maps/Test_map.tscn
+res://Global/Game_control.gd
+res://Global/Player_handle.gd
+res://stats/stats.gd
+res://Characters/Overworld/Friendly/Hub/Guy6.tscn
+res://stats/stats.tscn
+res://Skills/Knight/Corte.tres
+res://Menu.gd
+res://Maps/Warp/manager.tscn
+res://Characters/PLayable characters/Scenes/Barbarian.tscn
+res://Maps/Warp/Global.gd
