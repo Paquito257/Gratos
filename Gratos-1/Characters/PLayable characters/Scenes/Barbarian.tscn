@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://dvkacl0f54w3d"]
+[gd_scene load_steps=50 format=3 uid="uid://dvkacl0f54w3d"]
 
 [ext_resource type="Texture2D" uid="uid://dpynry271fibe" path="res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Idle.png" id="1_fb6rn"]
 [ext_resource type="Texture2D" uid="uid://cuwj3b34y5urq" path="res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Attack01.png" id="1_jjb1q"]
@@ -10,6 +10,7 @@
 [ext_resource type="Resource" uid="uid://djjpmbfv46q0o" path="res://Skills/Barbarian/Temblor.tres" id="5_esk2f"]
 [ext_resource type="Resource" uid="uid://qbtnf7vwj8ue" path="res://Skills/Barbarian/Descontrol_I.tres" id="6_u2sa4"]
 [ext_resource type="Script" path="res://Addons/Skills.gd" id="7_cmlvi"]
+[ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="11_jginy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iwson"]
 atlas = ExtResource("1_jjb1q")
@@ -256,10 +257,68 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Theme" id="Theme_3hsjw"]
+default_font = ExtResource("11_jginy")
+default_font_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fih6t"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vp3rj"]
+bg_color = Color(0.984314, 0.27451, 0.211765, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="Theme" id="Theme_hh8kx"]
+default_font = ExtResource("11_jginy")
+default_font_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4iv7c"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jolol"]
+bg_color = Color(0.137255, 0.670588, 0.74902, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
 [node name="RPG_class" type="AnimatedSprite2D"]
 z_index = 9
 sprite_frames = SubResource("SpriteFrames_ji0m7")
-animation = &"Hurt"
+animation = &"Idle"
 script = ExtResource("3_upil0")
 clase = "barbaro"
 attacks = Array[ExtResource("7_cmlvi")]([ExtResource("4_jfe8f"), ExtResource("5_esk2f"), ExtResource("6_u2sa4")])
+
+[node name="Life" type="ProgressBar" parent="."]
+visible = false
+offset_left = -19.0
+offset_top = -40.0
+offset_right = 23.0
+offset_bottom = -28.0
+theme = SubResource("Theme_3hsjw")
+theme_override_styles/background = SubResource("StyleBoxFlat_fih6t")
+theme_override_styles/fill = SubResource("StyleBoxFlat_vp3rj")
+
+[node name="Magic" type="ProgressBar" parent="."]
+visible = false
+offset_left = -19.0
+offset_top = -25.0
+offset_right = 23.0
+offset_bottom = -13.0
+theme = SubResource("Theme_hh8kx")
+theme_override_styles/background = SubResource("StyleBoxFlat_4iv7c")
+theme_override_styles/fill = SubResource("StyleBoxFlat_jolol")
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

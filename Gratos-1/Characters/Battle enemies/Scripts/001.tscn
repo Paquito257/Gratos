@@ -1,13 +1,12 @@
-[gd_scene load_steps=35 format=3 uid="uid://cfbqvlfaphdvn"]
+[gd_scene load_steps=34 format=3 uid="uid://cfbqvlfaphdvn"]
 
 [ext_resource type="Script" path="res://Characters/Battle enemies/Enemy_battle_script.gd" id="1_s2nts"]
 [ext_resource type="Script" path="res://Addons/Skills.gd" id="2_byg43"]
 [ext_resource type="PackedScene" uid="uid://dscfc6id23ecm" path="res://Addons/Stats_inspector.tscn" id="3_xe8lu"]
 [ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="4_fey0d"]
-[ext_resource type="Resource" uid="uid://cidc0rql5wigo" path="res://Skills/Enemies/Golpe.tres" id="6_f8ns0"]
 [ext_resource type="Texture2D" uid="uid://demerct4djh8h" path="res://Texture/NPC/Skeleton/Skeleton-Attack01.png" id="7_5msce"]
 [ext_resource type="Texture2D" uid="uid://dticonse6whe0" path="res://Texture/NPC/Skeleton/Skeleton-Idle.png" id="7_8vav5"]
-[ext_resource type="Resource" uid="uid://bilpxc4fxf48o" path="res://Skills/Enemies/Magia_I.tres" id="7_k0ywk"]
+[ext_resource type="Resource" uid="uid://d1lfa218hf1ms" path="res://Skills/Knight/Estocada.tres" id="7_ksclt"]
 [ext_resource type="Texture2D" uid="uid://dic3wyxo3voo8" path="res://Texture/NPC/Skeleton/Skeleton-Death.png" id="8_vkfma"]
 [ext_resource type="Texture2D" uid="uid://3uvi74jngwn8" path="res://Texture/NPC/Skeleton/Skeleton-Hurt.png" id="9_t3fjv"]
 
@@ -195,11 +194,11 @@ corner_radius_bottom_left = 10
 [node name="animation" type="AnimatedSprite2D"]
 z_index = 10
 sprite_frames = SubResource("SpriteFrames_e2gwe")
-animation = &"Idle"
+animation = &"Attack"
 script = ExtResource("1_s2nts")
 flipped = true
-enemy_name = "Orc"
-attacks = Array[ExtResource("2_byg43")]([ExtResource("6_f8ns0"), ExtResource("7_k0ywk")])
+enemy_name = "Esqueleto"
+attacks = Array[ExtResource("2_byg43")]([ExtResource("7_ksclt")])
 
 [node name="Stats" parent="." instance=ExtResource("3_xe8lu")]
 vida = 10
@@ -212,7 +211,9 @@ exp = 5
 offset_left = -19.0
 offset_top = -25.0
 offset_right = 23.0
-offset_bottom = -17.0
+offset_bottom = -13.0
 theme = SubResource("Theme_f88ej")
 theme_override_styles/background = SubResource("StyleBoxFlat_xgs5k")
 theme_override_styles/fill = SubResource("StyleBoxFlat_npdvs")
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

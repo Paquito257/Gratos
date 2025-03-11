@@ -8,5 +8,5 @@ Skill_name = "Lluvia de Flechas"
 Damage = 2
 Magic = 0
 Success = 0.75
-Global = false
+Global = true
 Level_unlock = 1

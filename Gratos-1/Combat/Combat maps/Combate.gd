@@ -12,6 +12,7 @@ var turn_order = []
 var enemies = []
 var players = []
 var enemy_n = 1
+var exp_total = 0 #Almacena la experiencia ganada
 	
 func _ready():
 	Music.change_track(Music.enemigo, Music.hub)
@@ -28,11 +29,16 @@ func _ready():
 		$".".add_child(selection[select])
 		
 		selection[select].hide()
+		
+	order()
 
 #Permite seleccionar a uno de los oponentes para atacar
 #en el caso de que el ataque no sea multiple
 func _process(delta):
-	pass
+
+	turn(turn_order[0])
+	
+	check_status()
 		
 func character_spawn():
 	var player
@@ -58,8 +64,6 @@ func character_spawn():
 		players[n].play("Idle")
 		
 		n +=1
-	
-	order()
 	
 #TODO: esta funcion deberia ir dentro de global, y depende
 #(la aparicion) del area donde se encuentra el jugador
@@ -88,18 +92,26 @@ func spawn_enemies():
 	return random
 
 #Selecciona a un enemigo/aliado (o a todos, si es un ataque multiple)
-func enemy_selection():
-	#Cambia el target del ataque
-	if Input.is_action_just_pressed("ui_up"):
-		if index > 0:
-			index -= 1
-			switch_focus(selection[index], selection[index + 1])
-	elif Input.is_action_just_pressed("ui_down"):
-		if index < enemies.size() - 1:
-			index += 1
-			switch_focus(selection[index], selection[index - 1])
+func enemy_selection(all):
+	
+	if all:
+		for select in selection:
+			select.show()
 			
-	attack_confirmation(enemies[index])
+		attack_confirmation(PlayerHandle.players[multiplayer.get_unique_id()],enemies[index], all)
+		
+	else:
+		#Cambia el target del ataque
+		if Input.is_action_just_pressed("ui_up"):
+			if index > 0:
+				index -= 1
+				switch_focus(selection[index], selection[index + 1])
+		elif Input.is_action_just_pressed("ui_down"):
+			if index < enemies.size() - 1:
+				index += 1
+				switch_focus(selection[index], selection[index - 1])
+				
+		attack_confirmation(players[0],enemies[index])
 
 #Cambia el focus a otro enemigo seleccionado
 func switch_focus(x,y):
@@ -108,17 +120,104 @@ func switch_focus(x,y):
 	Music.select.play()
 	
 #Confirma el ataque a enemigo seleccionado
-func attack_confirmation(target):
-	if Input.is_action_just_pressed("ui_text_submit"):
-		print("yes")
-		DamageModifiers.dmg_calculator( PlayerHandle.players[multiplayer.get_unique_id()].stats,enemies[index].stats,menu.current_skill, players[0].nivel)
-		enemies[index].update_stats()
-#Establece el orden de turnos
+func attack_confirmation(attacker, target, global = false):
+	
+	if !attacker.enemy:
+		if Input.is_action_just_pressed("ui_text_submit"):
+			if global:
+				for enemy in enemies:
+					players[0].play("Attack")
+					DamageModifiers.dmg_calculator( PlayerHandle.players[multiplayer.get_unique_id()].stats,enemy.stats,menu.current_skill, players[0].nivel)
+					enemy.update_stats()
+			else:
+				#Calculador de ataque y update a los stats
+				players[0].play("Attack")
+				DamageModifiers.dmg_calculator( PlayerHandle.players[multiplayer.get_unique_id()].stats,target.stats,menu.current_skill, players[0].nivel)
+				target.update_stats()
+			
+			await get_tree().create_timer(2).timeout
+			turn_order.pop_front()
+				
+	
+	elif attacker.enemy:
+		var skill = attacker.choose_random_skill()
+		attacker.play("Attack")
+		DamageModifiers.dmg_calculator(attacker.stats, PlayerHandle.players[multiplayer.get_unique_id()].stats, skill, attacker.stats.nivel)
+		target.update_stats()
+
+#Establece el orden de turnos (Añade enemigos y jugadores)
 func order():
-	pass
+	#TODO: Si se mata a un enemigo antes de que llegue su turno, sacarlo
+	#de ambas listas
+	for enemy in enemies:
+		turn_order.append(enemy)
+		
+	for player in players:
+		turn_order.append(player)
+	
+	turn_order.sort_custom(sort_descending)
+	#for entity in turn_order:
+		#if entity.enemy == false:
+			#print(PlayerHandle.players[multiplayer.get_unique_id()].stats.velocidad)
+		#elif entity.enemy == true:
+			#print(entity.stats.velocidad)
+
 	
 #Funcion para usar como Callable y arreglar el orden de turnos
+#(TODO: limpiar la funcion, para que se vea mejor; esto requiere
+#los stats los tenga instanciados el propio personaje)
 func sort_descending(a, b):
-	if a[1] > b[1]:
-		return true
-	return false
+	
+	if a.enemy == false:
+		if PlayerHandle.players[multiplayer.get_unique_id()].stats.velocidad > b.stats.velocidad:
+			return true
+		return false
+		
+	elif b.enemy == false:
+		if  a.stats.velocidad > PlayerHandle.players[multiplayer.get_unique_id()].stats.velocidad:
+			return true
+		return false
+		
+	else:
+		if a.stats.velocidad > b.stats.velocidad:
+			return true
+		return false
+		
+#Script para determinar quien es el siguiente en atacar
+func turn(player):
+
+	if player.enemy == false and menu.menu.name == menu.current_menu:
+		menu.menu.show()
+		
+	elif player.enemy == true:
+		for menu in menu.get_tree().get_nodes_in_group("Menus"):
+			menu.hide()
+			
+		attack_confirmation(player,players[0])		
+		await get_tree().create_timer(1).timeout
+		turn_order.pop_front()
+	
+	if len(turn_order) == 0:
+		menu.current_menu = menu.menu.name
+		order()
+	
+#Comprueba si los enemigos fueron derrotados, o si el jugador gano/murio
+func check_status():
+	for enemy in len(enemies):	
+		if enemy >= len(enemies):
+			break
+			
+		if enemies[enemy].stats.vida <= 0:
+			enemies.remove_at(enemy)
+			selection[enemy].hide()
+			selection.remove_at(enemy)
+			
+	for turn in len(turn_order):
+		
+		if turn >= len(turn_order):
+			break	
+			
+		if turn_order[turn].enemy and turn_order[turn].stats.vida <= 0:
+			turn_order.pop_at(turn)
+
+		

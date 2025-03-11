@@ -44,6 +44,7 @@ content_margin_left = 20.0
 script = ExtResource("1_1m7nu")
 
 [node name="Textbox" parent="." instance=ExtResource("9_6npqt")]
+visible = false
 
 [node name="Container Alpha" type="MarginContainer" parent="."]
 anchors_preset = 15

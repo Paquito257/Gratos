@@ -8,5 +8,5 @@ Skill_name = "Descontrol_I"
 Damage = 2
 Magic = 0
 Success = 0.8
-Global = false
+Global = true
 Level_unlock = 1

@@ -8,5 +8,5 @@ Skill_name = "Punta Gelida I"
 Damage = 3
 Magic = 8
 Success = 1.0
-Global = false
+Global = true
 Level_unlock = 4

@@ -7,6 +7,6 @@ script = ExtResource("1_l3w06")
 Skill_name = "Flecha Ignea"
 Damage = 5
 Magic = 3
-Success = 0.0
+Success = 1.0
 Global = false
 Level_unlock = 1

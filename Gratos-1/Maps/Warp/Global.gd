@@ -2,7 +2,7 @@ extends Node2D
 
 @export_file("*.tscn") var arena 
 var reaady = false
-var battle_scene = false
+var battle= false
 var encounter : int = 30:
 	set(value):
 		encounter = value
@@ -25,12 +25,14 @@ func change_to(tree, type: String):
 		tree.get_node(type).queue_free()
 		#current_tree.change_to_scene(arena)
 		var battle_scene = load(arena).instantiate()
+		battle = true
 		tree.add_child(battle_scene)
 		
 	elif type == "Combate":
 		tree.get_node(type).queue_free()
 		#current_tree.change_to_scene(arena)
 		var battle_scene = load(GameControl.current_map).instantiate()
+		battle = false
 		tree.add_child(battle_scene)
 
 func save_data(player):
